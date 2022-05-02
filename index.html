@@ -290,7 +290,7 @@
       const SPIN_FIX_RATE = 0.05;
       // States organized [pos_from_top, x, y, z, rotation_y]
 
-      let notMobile = window.matchMedia("(max-width: 600px)");
+      let notMobile = !window.matchMedia("only screen and (max-width: 600px)").matches;
       let aboutMePosition = document.getElementById('about_me').getBoundingClientRect().top;
       let projectsPosition = document.getElementById('projects').getBoundingClientRect().top - document.getElementById('projects').clientHeight - document.getElementById('projects_bulk').clientHeight;
       let transitionPosition = projectsPosition - aboutMePosition;
@@ -359,9 +359,9 @@
           
               render();
             });
-          }
+          
 
-          renderer.render(scene, camera);
+            renderer.render(scene, camera);
 
                 //createss stars with a random position
             function addStar() {
@@ -380,6 +380,7 @@
             //create 100 stars
             Array(100).fill().forEach(addStar);
         }
+      }
 
         // ---------------------------
 
@@ -456,14 +457,16 @@
       function animate() {
         requestAnimationFrame(animate);
       
-        if (notMobile && spinning) {
+        if (notMobile) {
+          if (spinning) {
           scene.rotation.y += SPIN_RATE;
           scene.rotation.y = scene.rotation.y % (2 * Math.PI);
-        } else if (notMobile && (scene.rotation.y != 0 || scene.rotation.y % (2 * Math.PI) != 0)) {
+          } else if (scene.rotation.y != 0 || scene.rotation.y % (2 * Math.PI) != 0) {
           scene.rotation.y = scene.rotation.y + SPIN_FIX_RATE >= (2 * Math.PI) ? 0 : scene.rotation.y + SPIN_FIX_RATE; 
         }
-      
-        renderer.render(scene, camera);
+          renderer.render(scene, camera);
+        }
+
       }
 
 
@@ -548,6 +551,13 @@
       //initialize page
 
       startUp();
+
+      // if (notMobile) {
+      //   console.log("fuck")
+      // } else {
+      //   console.log("ahhhh")
+      // }
+
 
       document.body.onscroll = moveCamera;
       moveCamera();
