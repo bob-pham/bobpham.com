@@ -193,3 +193,10 @@
       font-size: 12px;
   }
   
+  .float-right span {
+      display: none;
+  }
+
+  .float-right a {
+      display: none;
+  }
