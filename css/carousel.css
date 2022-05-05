@@ -337,6 +337,10 @@
       margin-top: 10%;
   }
 
+  .tag-container {
+    margin: 2vh;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -655,4 +659,9 @@
     font-size: 1.5vw;
     margin-top: 10%;
 }
+
+.tag-container {
+  margin: 2vh;
+}
+
 }
