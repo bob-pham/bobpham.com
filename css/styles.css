@@ -407,7 +407,8 @@
     text-decoration: none;
     color:black;
     padding: 0.5%;
-    font-size: 2rem;
+    font-size: 7vh;
+    margin-bottom: 1vh;
   }
 
   .header-container {
