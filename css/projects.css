@@ -44,6 +44,7 @@ body {
     font-family: 'Bebas Neue';
     font-size: 1.9em;
     margin-left: 2%;
+    white-space: nowrap;
 }
 
 .header a img {
