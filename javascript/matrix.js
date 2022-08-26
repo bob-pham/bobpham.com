@@ -2,7 +2,7 @@
 export default function Matrix() {
 
 const state = {
-  fps: 25,
+  fps: 30,
   color: "#ffffff",
   charset: "0123456789ABCDEF"
 };

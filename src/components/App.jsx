@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Matrix from '../../javascript/matrix'
 import '../index.css'
+
+import AboutMe from './AboutMe'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  useEffect(() => {
+    setTimeout(Matrix, 1);
+  }, [])
+
   return (
     <>
-        <main className="grid grid-cols-1 min-h-screen bg-gradient-to-br from-slate-900 to-zinc-800 via-gray-900 animate-gradient-x ">
+        <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y ">
           <menu className="w-screen absolute z-40">
             <div className="navbar bg-gradient-to-br from-slate-900 to-zinc-800 via-gray-900 animate-gradient-x text-white">
               <div className="navbar-start">
@@ -53,18 +60,19 @@ function App() {
               </div>
             </div>
           </menu>
-          <article className="">
+          <article>
             <div className="h-screen grid place-items-center font-bebasneue sm:text-5xl text-3xl text-white text-center">
-              <div className="md:w-fit w-11/12 z-40 rounded-xl p-10 bg-gradient-to-br from-slate-900 to-zinc-800 via-gray-900 animate-gradient-x">
-                <h1 className="h-min m-1">Hey, I'm Bob</h1>
-                <h1 className="h-min m-1">Firmware Engineer Intern @ Intel</h1>
+              <div className="md:w-fit w-11/12 z-40 rounded-xl p-10 bg-gradient-to-br from-slate-900 to-zinc-800 via-gray-900 animate-gradient-x drop-shadow-lg">
+                <h1 className="h-min m-1">Hello, I'm Bob</h1>
+                <h1 className="h-min m-1">Firmware Engineer CO-OP @ Intel</h1>
                 <h1 className="h-min m-1">Honours CS Student @ UBC</h1>
               </div>
               <canvas className="absolute z-0 bg-white montserrat text-lg" id="canvas"></canvas>
             </div>
           </article>
-          <article className="my-96">
-            <h1>About Me</h1>
+          <article className="grid place-items-center bg-gray-900 text-white my-24 py-2">
+            <h1 className="w-11/12 py-4 bg-slate-800 rounded-xl text-center text-5xl font-bebasneue">About Me</h1>
+            <AboutMe />
           </article>
         </main>
         </>
