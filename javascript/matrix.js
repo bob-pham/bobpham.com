@@ -2,7 +2,7 @@
 export default function Matrix() {
 
 const state = {
-  fps: 30,
+  fps: 15,
   color: "#ffffff",
   charset: "0123456789ABCDEF"
 };
@@ -26,19 +26,14 @@ const draw = () => {
   ctx.fillStyle = "rgba(17,24,39,0.05)";
   ctx.fillRect(0, 0, w, h);
   ctx.fillStyle = state.color;
+  ctx.font = '20pt monospace';
 
   for (let i = 0; i < p.length; i++) {
     let v = p[i];
-    ctx.fillText(random(state.charset), i * 10, v);
-    p[i] = v >= h || v >= 10000 * Math.random() ? 0 : v + 10;
+    ctx.fillText(random(state.charset), i * 25, v);
+    p[i] = v >= h || v >= 10000 * Math.random() ? 0 : v + 30;
   }
 };
 
 let interval = setInterval(draw, 1000 / state.fps);
-fpsCtrl.onFinishChange((fps) => {
-  if (interval) {
-    clearInterval(interval);
-  }
-  interval = setInterval(draw, 1000 / fps);
-});
 }

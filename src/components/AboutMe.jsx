@@ -14,10 +14,8 @@ export default function AboutMe() {
     return (
     <>
         <div className="grid grid-cols-12 overflow-hidden">
-            <canvas className="col-span-5"></canvas>
             <ReactMarkdown className="col-span-7 p-10 text-white text-lg font-montserrat">{markdown}</ReactMarkdown>
         </div>
-
     </>
     );
 }
