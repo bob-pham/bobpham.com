@@ -1,6 +1,6 @@
 import { useState, useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
-import aboutMe from '../markdown/aboutme.mdx';
+import aboutMe from '../../markdown/aboutme.mdx';
 
 export default function AboutMe() {
     

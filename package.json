@@ -13,6 +13,7 @@
     "daisyui": "^2.24.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.3.4",
     "react-markdown": "^8.0.3"
   },
   "devDependencies": {

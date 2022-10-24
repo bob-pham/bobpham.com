@@ -4,6 +4,10 @@ import { useRef, useEffect } from 'react'
 export default function LandingPage({ timeout = 60 }) {
     const canvas = useRef();
 
+    const backgroundColor = 'rgba(17, 24, 39, 1)';
+    const backgroundFade = 'rgba(17, 24, 39, 0.25)';
+    const textColor = '#16A34A';
+
     useEffect(() =>{
         const context = canvas.current.getContext('2d');
 
@@ -13,7 +17,7 @@ export default function LandingPage({ timeout = 60 }) {
         canvas.current.height = height;
     
         // context.fillStyle = '#0F172A';
-        context.fillStyle = 'rgba(17,24,39,1)';
+        context.fillStyle = backgroundColor;
         context.fillRect(0, 0, width, height);
     
         // calculate how many 'lines' to show and animate
@@ -22,11 +26,10 @@ export default function LandingPage({ timeout = 60 }) {
     
         const matrixEffect = () => {
 
-            context.fillStyle = 'rgba(17,24,39, 0.12)';
-            // context.fillStyle = 'rgba(15, 23, 42, 0.12)';
+            context.fillStyle = backgroundFade;
             context.fillRect(0, 0, width, height);
     
-            context.fillStyle = '#ffffff';
+            context.fillStyle = textColor;
             context.font = '20pt monospace';
     
             yPositions.forEach((y, index) => {
@@ -34,7 +37,7 @@ export default function LandingPage({ timeout = 60 }) {
                 const x = index * 25;
                 context.fillText(text, x, y);
     
-                yPositions[index] = y > 100 + Math.random() * 10000 ? 0 : y + 20
+                yPositions[index] = y > 100 + Math.random() * 10000 ? 0 : y + 30
 
             });
         };
@@ -47,7 +50,7 @@ export default function LandingPage({ timeout = 60 }) {
 
     return(
         <div className=" w-100 grid place-items-center font-bebasneue sm:text-5xl text-3xl text-white text-center">
-            <canvas className="h-full w-full absolute z-0 bg-white montserrat text-lg" ref={canvas}></canvas>
+            <canvas className="h-full w-full absolute z-0 bg-white text-lg" ref={canvas}></canvas>
             <div className="md:w-fit w-11/12 z-40 rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x border-2 border-slate-800 drop-shadow-sm">
                 <h1 className="h-min m-1">Hello, I'm Bob</h1>
                 <h1 className="h-min m-1">Firmware Engineer Intern @ Intel</h1>

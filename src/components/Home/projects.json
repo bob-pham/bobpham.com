@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Project Cornucopia",
+        "score": 1,
+        "dateStart": "2022-05",
+        "dateEnd": "2022-07",
+        "description": "Full-stack web app that aims to reduce food waste by scanning user grocery receipts to manage kitchen pantries",
+        "tech": ["Python", "Django", "React", "Tailwindcss", "OpenCV"]
+    },
+    {
+        "name": "Benten",
+        "score": 2,
+        "dateStart": "2022-05",
+        "dateEnd": "Present",
+        "description": "Multithreaded CLI Image Editor, mutates images into predefined variations",
+        "tech": ["C++", "Image Magick"]
+    },
+    {
+        "name": "right angle",
+        "score": 3,
+        "dateStart": "2022-10",
+        "dateEnd": "2022-10",
+        "description": "right angle is a posture correction web-application that uses computer vision help users improve their posture by detecting and notifying users when they have good and bad sitting posture.",
+        "tech": ["Python", "Flask", "React", "Tailwindcss", "OpenCV"]
+    },
+    {
+        "name": "Portfolio Website",
+        "score": 4,
+        "dateStart": "2022-9",
+        "dateEnd": "2022-10",
+        "description": "This website! Portfolio website to showcase my projects",
+        "tech": ["React", "Tailwindcss", "Three.js"]
+    },
+    {
+        "name": "Hercules",
+        "score": 5,
+        "dateStart": "2022-01",
+        "dateEnd": "2022-01",
+        "description": "Android app which incentives healthy living by gamifying healthy habits",
+        "tech": ["Java", "Android", "Android Studio"]
+    },
+    {
+        "name": "Homework Manager",
+        "score": 6,
+        "dateStart": "2022-04",
+        "dateEnd": "2022-03",
+        "description": "Google Chrome extention homework manager, created entirely using vanilla JS - using a barebones framework I created",
+        "tech": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        "name": "Simple Device Repair Manager",
+        "score": 7,
+        "dateStart": "2021-09",
+        "dateEnd": "2021-12",
+        "description": "Desktop application that streamlines the computer repair process by keeping track of progress and parts",
+        "tech": ["Java", "Java Swing", "JUnit"]
+    },
+    {
+        "name": "Useful R Functions",
+        "score": 8,
+        "dateStart": "2022-02",
+        "dateEnd": "2022-02",
+        "description": "R Script that contains useful statistical formulas",
+        "tech": ["R"]
+    },
+    {
+        "name": "CLI Pomodoro",
+        "score": 9,
+        "dateStart": "2022-08",
+        "dateEnd": "2022-08",
+        "description": "Bash script pomodoro script",
+        "tech": ["Bash"]
+    }
+]
