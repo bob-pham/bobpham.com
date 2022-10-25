@@ -26,10 +26,7 @@ function App() {
           </article>
           <article className="grid place-items-center bg-gray-900 text-white my-24 py-2 overflow-hidden">
             <h1 className="w-11/12 py-4 bg-gradient-to-br from-green-600 to-emerald-700 via-green-700 drop-shadow-2xl animate-gradient-x rounded-xl text-center text-5xl font-bebasneue">About Me</h1>
-            <div className="grid grid-cols-2 gap-x-1 w-11/12 my-5">
-              <ReactMarkdown className=" grid-col-span-1 p-10 text-white text-lg font-montserrat">{markdown}</ReactMarkdown>
-              <canvas className="grid-col-span-1"></canvas>            
-            </div>
+            <AboutMe />
           </article>
           <article className="grid place-items-center bg-gray-900 text-white my-24 py-2">
             <h1 className="w-11/12 py-4 bg-gradient-to-br from-green-600 to-emerald-700 via-green-700 drop-shadow-2xl animate-gradient-x rounded-xl text-center text-5xl font-bebasneue">Projects</h1>
