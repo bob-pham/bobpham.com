@@ -49,7 +49,7 @@ export default function AboutMe() {
   return (
     <>
       <div className="grid grid-cols-2 overflow-hidden w-11/12">
-        <div className="bg-gray-400 h-fit my-3 rounded-xl px-10">
+        <div className="bg-gray-400 h-fit m-3 rounded-xl px-10 drop-shadow-2xl">
           <ReactMarkdown className="p-10 cols-span-1 text-lg font-montserrat text-slate-900">
             {markdown}
           </ReactMarkdown>

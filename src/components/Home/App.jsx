@@ -1,24 +1,9 @@
-import { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
-
-import "../../index.css";
-import aboutMe from "../../markdown/aboutme.mdx";
-
 import AboutMe from "./AboutMe";
 import MenuBar from "./MenuBar";
 import LandingPage from "./LandingPage";
 import ProjectsSection from "./ProjectsSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [markdown, setMarkdown] = useState("");
-
-  useEffect(() => {
-    fetch(aboutMe)
-      .then((response) => response.text())
-      .then((str) => setMarkdown(str));
-  }, []);
-
   return (
     <>
       <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y overflow-hidden">
