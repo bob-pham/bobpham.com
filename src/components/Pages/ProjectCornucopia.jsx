@@ -1,19 +1,35 @@
 import Youtube from "react-youtube";
+import { useRef } from "react";
 
 import logo from "../../assets/images/cornucopia/logo.png";
 import ProjectHeader from "./ProjectHeader";
 import monochromeProcess from "../../assets/images/cornucopia/monochromatization.png";
 import finalProcess from "../../assets/images/cornucopia/finalprocess.png";
+import home from "../../assets/images/cornucopia/home.png";
+import mobileAddItem from "../../assets/images/cornucopia/mobile add item.png";
+import homeMobile from "../../assets/images/cornucopia/homemobile.png";
+import login from "../../assets/images/cornucopia/Cornucopia Login.png";
 
 const tech = ["Python", "Django", "React", "Tailwindcss", "OpenCV"];
 
 export default function ProjectCornucopia() {
+  const imageProcessing = useRef(null);
+  const textFiltering = useRef(null);
+  const testingFramework = useRef(null);
+  const recipeFinding = useRef(null);
+  const recalls = useRef(null);
+  const backFrontEnd = useRef(null);
+  const pictures = useRef(null);
+
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
       <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} />
-      <Youtube videoId="FyvjRFwsdPY" className="place-self-center max-w-fit mb-10"/>
+      <Youtube
+        videoId="FyvjRFwsdPY"
+        className="place-self-center max-w-fit mb-10"
+      />
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
-        <p className="">
+        <p>
           Cornucopia is an app which helps users manage kitchen pantries and
           minimize food waste Users are able to add grocery items to their
           pantry, and Cornucopia will notify them when their items are expired.
@@ -23,12 +39,98 @@ export default function ProjectCornucopia() {
           Cornucopia also is able to scan user pantry, and suggest meals which
           use items that may expire soon.
         </p>
+        <div className="grid place-items-center my-5 text-green-500">
+          <div className="flex flex-col w-1/2 place-self-center">
+            <h1 className="text-xl text-white text-center">Page Navigation</h1>
+            <div className="divider"></div>
+          </div>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: imageProcessing.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Image Processing + Text Recognition
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: textFiltering.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Text Filtering + Correction
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: testingFramework.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Custom (accuracy) Testing Framework
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: recipeFinding.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Recipe Finding
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: recalls.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Recall Identification
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: backFrontEnd.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Backend + Frontend
+          </button>
+          <button
+            className="my-2"
+            onClick={() =>
+              window.scrollTo({
+                top: pictures.current.offsetTop,
+                behaviour: "smooth",
+              })
+            }
+          >
+            - Image Gallery
+          </button>
+        </div>
         <div className="flex flex-col w-1/2 place-self-center">
           <h1 className="text-xl mt-10 text-center">
             Developement + Implementation
           </h1>
           <div className="divider"></div>
-          <h2 className="text-center text-lg mb-4">
+          <h2
+            className="text-center text-lg mb-4 text-green-500"
+            ref={imageProcessing}
+          >
             Image Processing + Text Recognition
           </h2>
         </div>
@@ -128,7 +230,10 @@ export default function ProjectCornucopia() {
         />
         <p>Thus, the final process that was chosen was to down + grayscale</p>
         <img className="my-5 rounded-xl place-self-center" src={finalProcess} />
-        <h2 className="text-center text-lg mb-4">
+        <h2
+          className="text-center text-lg mb-4 text-green-500"
+          ref={textFiltering}
+        >
           Text-Filtering + Correction
         </h2>
         <p>
@@ -153,7 +258,10 @@ export default function ProjectCornucopia() {
           the user. Some receipts also abbreviate product and company names,
           which are corrected through a similar process.
         </p>
-        <h2 className="text-center text-lg m-8">
+        <h2
+          className="text-center text-lg m-8 text-green-500"
+          ref={testingFramework}
+        >
           Custom (accuracy) Testing Framework
         </h2>
         <p>
@@ -184,7 +292,12 @@ export default function ProjectCornucopia() {
           {"{!}"}". If a characteris misidentified, the correct character would
           be displayed as well "cor{"{n(m)}"}ucopia is amazing"
         </p>
-        <h2 className="text-center text-lg m-8">Recipe Finding</h2>
+        <h2
+          className="text-center text-lg m-8 text-green-500"
+          ref={recipeFinding}
+        >
+          Recipe Finding
+        </h2>
         <p>
           Recipes are stored in the backend as a graph, which each node in the
           graph being an ingredient, and clusters of interwoven nodes
@@ -197,7 +310,9 @@ export default function ProjectCornucopia() {
           the head node is returned. Overall, this process takes O(nlogn), where
           n is the size of the user's pantry.
         </p>
-        <h2 className="text-center text-lg m-8">Recall Indentification</h2>
+        <h2 className="text-center text-lg m-8 text-green-500" ref={recalls}>
+          Recall Indentification
+        </h2>
         <p>
           Recalls are found by calling the API's of government institutions.
           This happens on the server daily, however the user can request an
@@ -206,7 +321,12 @@ export default function ProjectCornucopia() {
           and if they do, notifies them that their pantry contains recalled
           items.
         </p>
-        <h2 className="text-center text-lg m-8">Backend + Frontend</h2>
+        <h2
+          className="text-center text-lg m-8 text-green-500"
+          ref={backFrontEnd}
+        >
+          Backend + Frontend
+        </h2>
         <p>
           Since this is my first Full Stack project, this has been an experience
           in learning the technologies. Due to this, there is not that much
@@ -214,6 +334,71 @@ export default function ProjectCornucopia() {
           using Django Models, however some MySQL was also written. The frontend
           was created using the React Framework.
         </p>
+      </div>
+      <div className="grid place-items-center mb-10 text-green-500">
+        <h1 className="text-2xl" ref={pictures}>
+          Image Gallery
+        </h1>
+        <div className="w-1/2">
+          <div className="carousel w-full rounded-xl max-h-80">
+            <div
+              id="slide1"
+              className="carousel-item relative w-full justify-center bg-slate-700 p-3"
+            >
+              <img src={login} className="w-auto" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slide2"
+              className="carousel-item relative w-full justify-center bg-slate-700 p-3"
+            >
+              <img src={homeMobile} className="w-auto" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slide3"
+              className="carousel-item relative w-full justify-center bg-slate-700 p-3"
+            >
+              <img src={home} className="w-auto" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide4" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div
+              id="slide4"
+              className="carousel-item relative w-full justify-center bg-slate-700 p-3"
+            >
+              <img src={mobileAddItem} className="w-auto" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
