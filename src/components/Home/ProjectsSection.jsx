@@ -7,6 +7,24 @@ import projectsOriginal from "./projects.json";
 import gitlogo from "../../assets/icons/github.png";
 import calendar from "../../assets/icons/calendar.png";
 
+import cornucopiaLogo from "../../assets/images/cornucopia/logo.png";
+import deviceRepairManager from "../../assets/images/device_repair_manager/simple_device_repair_manager.png";
+import hercules from "../../assets/images/hercules/home.png";
+import hwManager from "../../assets/images/hw_manager/hw homescreen.png";
+import pomodoro from "../../assets/images/pomodoro.png";
+import rightAngle from "../../assets/images/right_angle/logo.png";
+import projectsDefault from "../../assets/images/projects.png"
+
+const images = {
+  "Project Cornucopia": cornucopiaLogo,
+  "right angle": rightAngle,
+  "Hercules": hercules,
+  "Homework Manager": hwManager,
+  "Simple Device Repair Manager": deviceRepairManager,
+  "CLI Pomodoro": pomodoro
+}
+
+
 export default function ProjectsSection(props) {
   const [mode, setMode] = useState(0);
   const [projects, setProjects] = useState(projectsOriginal);
@@ -57,7 +75,7 @@ export default function ProjectsSection(props) {
       <div className="hero w-11/12 bg-base-200 rounded-3xl mb-3 bg-gradient-to-r from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x font-montserrat">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            src="https://placeimg.com/260/400/arch"
+            src={images[projects[0]["name"]] != undefined ? images[projects[0]["name"]] : projectsDefault}
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
@@ -91,6 +109,7 @@ export default function ProjectsSection(props) {
             dateStart={proj["dateStart"]}
             dateEnd={proj["dateEnd"]}
             pagelink={proj["url"]}
+            logo={images[proj["name"]] != undefined ? images[proj["name"]] : projectsDefault}
           />
         ))}
       </div>

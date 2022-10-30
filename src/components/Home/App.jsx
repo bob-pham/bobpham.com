@@ -6,12 +6,12 @@ import ProjectsSection from "./ProjectsSection";
 function App() {
   return (
     <>
-      <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y overflow-hidden">
+      <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y overflow-hidden scroll-smooth snap-proximity snap-y">
         <MenuBar />
-        <article className="grid place-items-center h-screen overflow-hidden">
+        <article className="grid place-items-center h-screen overflow-hidden snap-start">
           <LandingPage />
         </article>
-        <article className="grid place-items-center bg-gray-900 py-2 overflow-hidden">
+        <article className="grid place-items-center bg-gray-900 py-2 overflow-hidden snap-start">
           {/* <h1 className="w-11/12 py-4 bg-gradient-to-br from-green-600 to-emerald-700 via-green-700 drop-shadow-2xl animate-gradient-x rounded-xl text-center text-5xl font-bebasneue"> */}
           <div className="flex flex-col w-1/2 border-opacity-50">
             <h1 className="w-11/12 rounded-xl text-center text-3xl font-montserrat text-green-500">
@@ -21,7 +21,7 @@ function App() {
           </div>
           <AboutMe />
         </article>
-        <article className="grid place-items-center bg-gray-900 text-white my-24 py-2">
+        <article className="grid place-items-center bg-gray-900 text-white my-24 py-2 snap-start">
           <div className="flex flex-col w-1/2 border-opacity-50">
             <h1 className="rounded-xl text-center text-3xl font-montserrat text-green-500">
               Projects

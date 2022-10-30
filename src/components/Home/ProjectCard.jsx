@@ -3,8 +3,8 @@ import calendar from "../../assets/icons/calendar.png";
 export default function ProjectCard(props) {
   return (
     <div className="grid-col-span-1 card card-compact w-11/12 h-full bg-slate-800 shadow-xl font-montserrat">
-      <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+      <figure className="h-1/2">
+        <img className="max-h-52 min-h-52 w-auto pt-5 px-5 drop-shadow-xl" src={props.logo} alt="Shoes"/>
       </figure>
       <div className="card-body">
         <h2 className="card-title font-bebasneue text-2xl">{props.name}</h2>
