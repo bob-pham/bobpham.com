@@ -30,7 +30,7 @@ export default function MenuBar() {
                 <a>About Me</a>
               </li>
               <li>
-                <a>Resume</a>
+                <a href="/resume">Resume</a>
               </li>
               <li tabindex="0">
                 <a className="justify-between">
@@ -68,7 +68,7 @@ export default function MenuBar() {
               <a>About Me</a>
             </li>
             <li>
-              <a>Resume</a>
+              <a href="/resume">Resume</a>
             </li>
             <li tabindex="0">
               <a>
