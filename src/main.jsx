@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route exact path="/resume" element={<Resume />} />
         <Route
           exact
-          path="/project_cornucopia"
+          path="/project-cornucopia"
           element={<ProjectCornucopia />}
         />
       </Routes>

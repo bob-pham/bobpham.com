@@ -23,7 +23,7 @@ export default function ProjectCornucopia() {
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
-      <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} />
+      <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} gitLink="https://github.com/bob-pham/Project-Cornucopia" />
       <Youtube
         videoId="FyvjRFwsdPY"
         className="place-self-center max-w-fit mb-10"

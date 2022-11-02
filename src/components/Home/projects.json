@@ -6,7 +6,7 @@
         "dateEnd": "2022-07",
         "description": "Full-stack web app that aims to reduce food waste by scanning user grocery receipts to manage kitchen pantries",
         "tech": ["Python", "Django", "React", "Tailwindcss", "OpenCV"],
-        "url": "/project_cornucopia"
+        "url": "/project-cornucopia"
     },
     {
         "name": "Benten",
@@ -15,7 +15,7 @@
         "dateEnd": "Present",
         "description": "Multithreaded CLI Image Editor, mutates images into predefined variations",
         "tech": ["C++", "Image Magick"],
-        "url": "/project_cornucopia"
+        "url": "/benten"
     },
     {
         "name": "right angle",
@@ -24,7 +24,7 @@
         "dateEnd": "2022-10",
         "description": "right angle is a posture correction web-application that uses computer vision help users improve their posture by detecting and notifying users when they have good and bad sitting posture.",
         "tech": ["Python", "Flask", "React", "Tailwindcss", "OpenCV"], 
-        "url": "/project_cornucopia"
+        "url": "/right-angle"
     },
     {
         "name": "Portfolio Website",
@@ -33,7 +33,7 @@
         "dateEnd": "2022-10",
         "description": "This website! Portfolio website to showcase my projects",
         "tech": ["React", "Tailwindcss", "Three.js"],
-        "url": "/project_cornucopia"
+        "url": "/portfolio-website"
     },
     {
         "name": "Hercules",
@@ -42,7 +42,7 @@
         "dateEnd": "2022-01",
         "description": "Android app which incentives healthy living by gamifying healthy habits",
         "tech": ["Java", "Android", "Android Studio"],
-        "url": "/project_cornucopia"
+        "url": "/hercules"
     },
     {
         "name": "Homework Manager",
@@ -51,7 +51,7 @@
         "dateEnd": "2022-03",
         "description": "Google Chrome extention homework manager, created entirely using vanilla JS - using a barebones framework I created",
         "tech": ["JavaScript", "HTML", "CSS"],
-        "url": "/project_cornucopia"
+        "url": "/homework-manager"
     },
     {
         "name": "Simple Device Repair Manager",
@@ -60,24 +60,36 @@
         "dateEnd": "2021-12",
         "description": "Desktop application that streamlines the computer repair process by keeping track of progress and parts",
         "tech": ["Java", "Java Swing", "JUnit"],
-        "url": "/project_cornucopia"
+        "url": "/simple-device-repair-manager"
+    },
+    {
+        "name": "DaisyUI Code Mockup Scripts",
+        "score": 8,
+        "dateStart": "2022-10",
+        "dateEnd": "2022-10",
+        "tech": ["Python"],
+        "description": "Scripts that generate HTML or JSX to be used in DaisyUI's Code Markup Blocks",
+        "url": "/daisyui-code-mockup-scripts",
+        "script": true
     },
     {
         "name": "Useful R Functions",
-        "score": 8,
+        "score": 9,
         "dateStart": "2022-02",
         "dateEnd": "2022-02",
         "description": "R Script that contains useful statistical formulas",
         "tech": ["R"],
-        "url": "/project_cornucopia"
+        "url": "/useful-r-functions",
+        "script": true
     },
     {
         "name": "CLI Pomodoro",
-        "score": 9,
+        "score": 10,
         "dateStart": "2022-08",
         "dateEnd": "2022-08",
         "description": "Bash script pomodoro script",
         "tech": ["Bash"],
-        "url": "/project_cornucopia"
+        "url": "/cli-pomodoro",
+        "script": true
     }
 ]
