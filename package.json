@@ -17,7 +17,8 @@
     "react-github-calendar": "^3.3.4",
     "react-google-charts": "^4.0.0",
     "react-router-dom": "^6.4.2",
-    "react-youtube": "^10.0.0"
+    "react-youtube": "^10.0.0",
+    "reactjs-popup": "^2.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
