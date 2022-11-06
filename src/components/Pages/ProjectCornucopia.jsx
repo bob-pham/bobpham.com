@@ -23,11 +23,7 @@ export default function ProjectCornucopia() {
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
-      <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} gitLink="https://github.com/bob-pham/Project-Cornucopia" />
-      <Youtube
-        videoId="FyvjRFwsdPY"
-        className="place-self-center max-w-fit mb-10"
-      />
+      <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} gitLink="https://github.com/bob-pham/Project-Cornucopia" demo="FyvjRFwsdPY"/>
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
         <p>
           Cornucopia is an app which helps users manage kitchen pantries and
@@ -124,7 +120,7 @@ export default function ProjectCornucopia() {
         </div>
         <div className="flex flex-col w-1/2 place-self-center">
           <h1 className="text-xl mt-10 text-center">
-            Developement + Implementation
+            Development + Implementation
           </h1>
           <div className="divider"></div>
           <h2

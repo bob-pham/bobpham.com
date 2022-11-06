@@ -14,7 +14,7 @@
         "dateStart": "2022-05",
         "dateEnd": "Present",
         "description": "Multithreaded CLI Image Editor, mutates images into predefined variations",
-        "tech": ["C++", "Image Magick"],
+        "tech": ["C++", "Image Magick", "C"],
         "url": "/benten"
     },
     {
@@ -23,7 +23,7 @@
         "dateStart": "2022-10",
         "dateEnd": "2022-10",
         "description": "right angle is a posture correction web-application that uses computer vision help users improve their posture by detecting and notifying users when they have good and bad sitting posture.",
-        "tech": ["Python", "Flask", "React", "Tailwindcss", "OpenCV"], 
+        "tech": ["Python", "Flask", "React", "Tailwindcss", "OpenCV", "media pipe"], 
         "url": "/right-angle"
     },
     {
@@ -41,7 +41,7 @@
         "dateStart": "2022-01",
         "dateEnd": "2022-01",
         "description": "Android app which incentives healthy living by gamifying healthy habits",
-        "tech": ["Java", "Android", "Android Studio"],
+        "tech": ["Java", "Android", "Android Studio", "XML"],
         "url": "/hercules"
     },
     {

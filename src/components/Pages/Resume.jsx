@@ -2,8 +2,11 @@ import { useState } from "react";
 import Popup from "reactjs-popup";
 
 import MenuBar from "../Home/MenuBar";
+import ResumeCode from "./ResumeCode";
 
 import header from "../../assets/images/coopHeader.png";
+import Cornucopia from "../../assets/images/cornucopia/logo.png";
+import Hercules from "../../assets/images/hercules/home.png";
 
 const Languages = () => {
   const [languages, setLanguages] = useState(0);
@@ -80,11 +83,11 @@ const Tools = () => {
         >
           !
         </span>
-        <h3 className="font-bold">Developement Tools and Environments</h3>
+        <h3 className="font-bold">Development Tools and Environments</h3>
       </div>
       <p className="mb-0">
-        Android Studio, CMake, Git/GitHub, IntelliJ IDEA, Linux*, Vim, Visual
-        Studio, VSCode, Vite, Webpack*
+        Android Studio, Azure DevOps, CMake, Git/GitHub, IntelliJ IDEA, Jira,
+        Linux*, Vim, Visual Studio, VSCode, Vite, Webpack*
       </p>
     </div>
   );
@@ -117,16 +120,20 @@ const Job1 = () => {
           </p>
         </div>
       </div>
-      <ul className="leading-4 list-disc px-4">
+      <ul className="leading-4 list-disc px-3">
         <li>
-          Developing microcode using <strong>Assembly</strong> and{" "}
-          <strong>C</strong> for custom security HW block for next generation
-          Infrastructure Processing Units (IPU’s) as part of the Ethernet
-          Products Group (EPG)
+          Implementing new <strong>cryptographic algorithms</strong> for custom
+          security HW block using <strong>Assembly</strong> and{" "}
+          <strong>C</strong>, for next generation IPU's and FNIC's as part of
+          NEX Cloud Networking Group (NCNG), FW security team
         </li>
         <li>
-          Developing system test suites and scripts using{" "}
-          <strong>Python</strong> for new and previous untested functionality
+          designed binary data and <strong>device attestation</strong> parsers,
+          streamlining verification and cross team collaboration
+        </li>
+        <li>
+          Developing <strong>Python</strong> testing framework and system test
+          suites that simplifiy verification of new functionality
         </li>
       </ul>
     </div>
@@ -160,7 +167,7 @@ const Job2 = () => {
           </p>
         </div>
       </div>
-      <ul className="leading-4 list-disc px-4">
+      <ul className="leading-4 list-disc px-3">
         <li>
           Project leader of the computer repair and refurbish process,
           contributing to shipping and receiving, inventory management,
@@ -229,7 +236,7 @@ const Project1 = () => {
       </div>
       <div className="w-full">
         <p>Multithreaded CLI Image Editor</p>
-        <ul className="list-disc leading-4 px-4">
+        <ul className="list-disc leading-4 px-3">
           <li>
             Isolates areas by similar colour or shape using BFS and
             edge-detection algorithms for parallel processing
@@ -279,12 +286,7 @@ const Project2 = () => {
           Full-stack web app that reduces food waste by scanning grocery
           receipts to manage kitchen pantries
         </p>
-        <ul className="list-disc leading-4 px-4">
-          <li>
-            Notifies users of food recalls using periodic API calls to
-            government institutions and a web scraper developed with Beautiful
-            Soup
-          </li>
+        <ul className="list-disc leading-4 px-3">
           <li>
             Grocery receipt image manipulation and text recognition accomplished
             with <strong>OpenCV</strong>and <strong>PyTesseract</strong>
@@ -292,6 +294,10 @@ const Project2 = () => {
           <li>
             Developed custom unit testing framework to assess accuracy of text
             parsing and filtering algorithms
+          </li>
+          <li>
+            Notifies users of food recalls using periodic API calls to
+            government institutions and a web scraper
           </li>
           <li>
             Backend logic managed with <strong>Django</strong>, user data stored
@@ -335,20 +341,17 @@ const Project3 = () => {
           Android app which incentivizes healthy living by gamifying healthy
           habits
         </p>
-        <ul className="list-disc leading-4 px-4">
+        <ul className="list-disc leading-4 px-3">
           <li>
             Developed backend systems managing in-game currency, experience,
             item-inventory, item-shop, quests, and questline systems using{" "}
-            <strong>Java</strong>
+            <strong>Java</strong>, and frontend GUI with{" "}
+            <strong>Android Studio</strong> tools and <strong>XML</strong>
           </li>
           <li>
             Architected algorithm that encourages continuous user progress by
             rewarding users in-game experience and currency based on consistency
             in questline completion
-          </li>
-          <li>
-            Graphical user interface implemented using built-in
-            <strong> Android Studio</strong> tools and <strong>XML</strong>
           </li>
         </ul>
       </div>
@@ -421,7 +424,7 @@ export default function Resume() {
                 </div>
               </div>
               <div className="w-full">
-                <ul className="list-disc px-4 m-0 leading-snug">
+                <ul className="list-disc px-3 m-0 leading-snug">
                   <li>
                     3rd Year Bachelor of Science,{" "}
                     <strong>Honours Computer Science</strong>
@@ -447,7 +450,6 @@ export default function Resume() {
                       </button>
                     }
                     modal
-                    nested
                   >
                     <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 mx-20 font-montserrat">
                       <h1 className="font-bold mb-10">Programming Languages</h1>
@@ -476,8 +478,28 @@ export default function Resume() {
                     }
                     modal
                   >
-                    <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                      now this is some dummy text
+                    <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                      <h1 className="font-bold mb-10">
+                        Frameworks, Engines, Libraries and Databases
+                      </h1>
+                      <p>
+                        You don't always have to reinvent the wheel for every
+                        project - even if I try to. Most of my projects have
+                        been full-stack, and so most of this list revolves
+                        around that, though my favorite library to play with is
+                        OpenCV.
+                        <br />
+                        <br />
+                      </p>
+                      <p className="text-center">
+                        My current go-to tech stack:
+                      </p>
+                      <ul className="list-disc leading-4">
+                        <li>React + NextJS</li>
+                        <li>Tailwindcss</li>
+                        <li>Flask</li>
+                        <li>MongoDB</li>
+                      </ul>
                     </div>
                   </Popup>
                   <Popup
@@ -488,8 +510,17 @@ export default function Resume() {
                     }
                     modal
                   >
-                    <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                      now this is some dummy text
+                    <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                      <h1 className="font-bold mb-5">
+                        Development Tools and Environments
+                      </h1>
+                      <p>My current developer setup is:</p>
+                      <ul className="list-disc leading-4">
+                        <li>VSCode</li>
+                        <li>VSCode Neovim - Extension (Highly recommended)</li>
+                        <li>Atom One Dark Pro - Theme</li>
+                        <li>Git/GitHub</li>
+                      </ul>
                     </div>
                   </Popup>
                 </div>
@@ -512,8 +543,38 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">
+                      Intel - Firmware Engineer Intern
+                    </h1>
+                    <p>
+                      As of the time of writing, I am a Firmware Engineer Itern
+                      at Intel. Since I work in a security team and handle
+                      sensitive device information/secrets, I cannot speak about
+                      much of what I was able to create and accomplish. As far
+                      as what is currently within the resume, this is a
+                      representative but vague description of some of these
+                      tasks. Though, based on these facts the knowledgable
+                      reader should be able to extrapolate my abilities. Feel
+                      free to contact me if you want any clarifications. many of
+                      my accomplishments at Intel need to be kept vague and
+                      non-specific.
+                      <br />
+                      <br />
+                      Other tidbits of information:
+                    </p>
+                    <ul className="list-disc leading-4">
+                      <li>Intel Security Yellow + White Belt Certified</li>
+                      <li>
+                        Developed suite of scripts to parse and interpret
+                        previously unknown binary data
+                      </li>
+                      <li>
+                        Implemented assembly microcode of functions implementing
+                        cutting edge cryptography algorithms
+                      </li>
+                      <li>Pushing for further C adoption within team</li>
+                    </ul>
                   </div>
                 </Popup>
                 <Popup
@@ -524,8 +585,22 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">Product Repurposing Solutions</h1>
+                    <p>
+                      Product Repurposing Solutions (PRS) is a local business
+                      that refurbishes used electronics. As one of the first
+                      hires are PRS, I was able to influence much of the repair
+                      and refurbish process, and was able to touch many
+                      different aspects of the business, though my focus was
+                      primarily on laptop repair.
+                      <br />
+                      <br />
+                      Part of being a professional is being knowledgable in the
+                      tools that you use. Having a job both designing low-level
+                      computer systems and repairing them are skills that I
+                      value.
+                    </p>
                   </div>
                 </Popup>
               </div>
@@ -538,8 +613,15 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">Technical Projects</h1>
+                    <p>
+                      Just like every other computer science students, I work on
+                      a lot of technical projects in my spare time. The three
+                      projects here are the three that I am currently the most
+                      proud of. A complete list of my projects can be found on
+                      the home page.
+                    </p>
                   </div>
                 </Popup>
                 <div className="divider bg-black h-[2px] m-0"></div>
@@ -551,8 +633,33 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">Benten</h1>
+                    <p>
+                      Benten is a multithreaded CLI image editor written in C++
+                      and utilizes the ImageMagick library. Benten does not give
+                      the user the usual granular control of a traditional
+                      editor, rather it transforms images into predefined
+                      permutations. Each permutation is a testbed for different
+                      algorithms, and computer vision tools.
+                      <br />
+                      <br />
+                      Current permutations supported / under development (goal
+                      is to have 10):
+                    </p>
+                    <ul className="list-disc leading-4">
+                      <li>PixelArtTransform</li>
+                      <li>TriangleVectorTransform</li>
+                      <li>CircleAreaTransform</li>
+                      <li>AbstractBlobTransform</li>
+                      <li>ColorReducer</li>
+                      <li>Silhoutter</li>
+                    </ul>
+                    <a href="/benten">
+                      <button className="btn bg-green-500 text-white mt-10">
+                        Learn More
+                      </button>
+                    </a>
                   </div>
                 </Popup>
                 <Popup
@@ -563,8 +670,26 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">Cornucopia</h1>
+                    <img className="w-1/2 my-5" src={Cornucopia} />
+                    <p>
+                      Project Cornucopia PythonDjangoReactTailwindcssOpenCV
+                      Cornucopia is an app which helps users manage kitchen
+                      pantries and minimize food waste Users are able to add
+                      grocery items to their pantry, and Cornucopia will notify
+                      them when their items are expired. Pantry items can be
+                      added individually, or in batches by scanning grocery
+                      receipts. Additionally, users will be notified if any food
+                      item within their pantry has been recalled for saftey
+                      reasons. Cornucopia also is able to scan user pantry, and
+                      suggest meals which use items that may expire soon.
+                    </p>
+                    <a href="/project-cornucopia">
+                      <button className="btn bg-green-500 text-white mt-10">
+                        Learn More
+                      </button>
+                    </a>
                   </div>
                 </Popup>
                 <Popup
@@ -575,14 +700,37 @@ export default function Resume() {
                   }
                   modal
                 >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat">
-                    now this is some dummy text
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">Hercules</h1>
+                    <p>
+                      Hercules is a project created during NwHacks 2022 by
+                      myself and a team of three others. Hercules is a
+                      "gamified" health tracking app, oriented towards those who
+                      struggle to maintain a healthy lifestyle. The app is
+                      engineered to incentivize users to work out, eat well, and
+                      develop healthy habits by rewarding them for fulfilling
+                      their fitness plans, or “questlines”, which are comprised
+                      of different tasks. Each user has a customizable avatar,
+                      and upon completion of certain goals "quests", users will
+                      earn gold and experience points that can be used to buy
+                      items at the shop and increase their character’s stats. As
+                      a proof of concept developed over the course of 24 hours,
+                      it is relatively simple, however a simple algorithm was
+                      developed to make it harder to earn rewards with
+                      inconsistent or unhealthy progress.
+                    </p>
+                    <a href="/hercules">
+                      <button className="btn bg-green-500 text-white mt-10">
+                        Learn More
+                      </button>
+                    </a>
                   </div>
                 </Popup>
               </div>
             </div>
           </article>
         </div>
+        <ResumeCode />
       </main>
     </>
   );
