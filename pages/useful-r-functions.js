@@ -1,4 +1,4 @@
-import ProjectHeader from "./ProjectHeader";
+import ProjectHeader from "../components/ProjectHeader";
 
 export default function UsefulRFunctions() {
   return (

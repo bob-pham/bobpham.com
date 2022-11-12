@@ -1,20 +1,22 @@
 import { useState } from "react";
+import Image from "next/image";
+
 import GitHubCalendar from "react-github-calendar";
-import quickSort from "../../javascript/quicksort";
+import quickSort from "../javascript/quicksort";
 import ProjectCard from "./ProjectCard";
 
-import projectsOriginal from "./projects.json";
-import gitlogo from "../../assets/icons/github.png";
-import calendar from "../../assets/icons/calendar.png";
+import projectsOriginal from "../public/projects.json";
+import gitlogo from "../public/icons/github.png";
+import calendar from "../public/icons/calendar.png";
 
-import cornucopiaLogo from "../../assets/images/cornucopia/logo.png";
-import deviceRepairManager from "../../assets/images/device_repair_manager/simple_device_repair_manager.png";
-import hercules from "../../assets/images/hercules/home.png";
-import hwManager from "../../assets/images/hw_manager/hw homescreen.png";
-import pomodoro from "../../assets/images/pomodoro.png";
-import rightAngle from "../../assets/images/right_angle/logo.png";
-import projectsDefault from "../../assets/images/projects.png";
-import script from "../../assets/icons/scripts.png"
+import cornucopiaLogo from "../public/images/cornucopia/logo.png";
+import deviceRepairManager from "../public/images/device_repair_manager/simple_device_repair_manager.png";
+import hercules from "../public/images/hercules/home.png";
+import hwManager from "../public/images/hw_manager/hw homescreen.png";
+import pomodoro from "../public/images/pomodoro.png";
+import rightAngle from "../public/images/right_angle/logo.png";
+import projectsDefault from "../public/images/projects.png";
+import script from "../public/icons/scripts.png"
 
 const images = {
   "Project Cornucopia": cornucopiaLogo,
@@ -44,7 +46,7 @@ export default function ProjectsSection(props) {
           target="_"
           className="btn grid grid-cols-2 gap-0 text-white border-white border-2 my-2"
         >
-          <img src={gitlogo} />
+          <Image src={gitlogo} alt="Github"/>
           Github
         </a>
         <div className="tabs my-5 ">
@@ -73,20 +75,21 @@ export default function ProjectsSection(props) {
           <h1>{mode == 0 ? "Featured" : "Latest"}</h1>
         </div>
       </div>
-      <div className="hero w-11/12 bg-base-200 rounded-3xl mb-3 bg-gradient-to-r from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x font-montserrat">
+      <div className="hero w-11/12 bg-base-200 rounded-3xl mb-3 bg-gradient-to-r from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x font-montserrat hover:scale-110 transition duration-300 ease-in-out">
         <div className="hero-content flex-col lg:flex-row">
-          <img
+          <Image
             src={
               images[projects[0]["name"]] != undefined
                 ? images[projects[0]["name"]]
                 : projectsDefault
             }
             className="max-w-sm rounded-lg shadow-2xl"
+            alt={projects[0]["name"]}
           />
           <div>
             <h1 className="text-5xl font-bebasneue">{projects[0]["name"]}</h1>
             <div className="grid grid-cols-5 place-items-center w-fit bg-slate-900 p-2 rounded-xl">
-              <img className="col-span-1" src={calendar} />
+              <Image className="col-span-1" src={calendar} alt="calendar" />
               <h1 className="col-span-4">
                 {projects[0]["dateStart"] + " "}-{" " + projects[0]["dateEnd"]}
               </h1>
@@ -94,7 +97,7 @@ export default function ProjectsSection(props) {
             <p className="py-6">{projects[0]["description"]}</p>
             <div className="w-11/12">
               {projects[0]["tech"].map((item) => (
-                <span className="badge badge-outline m-1">{item}</span>
+                <span key={item} className="badge badge-outline m-1">{item}</span>
               ))}
             </div>
             <a href={projects[0]["url"]}>
@@ -121,6 +124,7 @@ export default function ProjectsSection(props) {
                 ? images["script"]
                 : projectsDefault
             }
+            key={proj["name"]}
           />
         ))}
       </div>

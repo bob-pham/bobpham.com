@@ -1,4 +1,4 @@
-import ProjectHeader from "./ProjectHeader";
+import ProjectHeader from "../components/ProjectHeader";
 
 const tech = ["Python"];
 

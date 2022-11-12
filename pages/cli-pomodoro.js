@@ -1,5 +1,5 @@
-import ProjectHeader from "./ProjectHeader";
-import pomodoro from "../../assets/images/pomodoro.png";
+import ProjectHeader from "../components/ProjectHeader";
+import pomodoro from "../public/images/pomodoro.png";
 
 const tech = ["Bash"];
 

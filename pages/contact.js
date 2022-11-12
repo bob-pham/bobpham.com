@@ -1,9 +1,9 @@
-import MenuBar from "./MenuBar";
+import MenuBar from "../components/MenuBar";
 
 export default function Contact() {
   return (
     <>
-      <MenuBar />
+      <MenuBar head="Contact"/>
       <main className="grid place-items-center h-screen w-screen">
         <div className="text-center font-montserrat text-white bg-slate-700 border-white border p-10 rounded-xl">
           <div className="md:w-fit w-11/12 rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x drop-shadow-sm font-bebasneue text-2xl">

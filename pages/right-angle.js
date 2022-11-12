@@ -1,11 +1,12 @@
 import { useRef } from "react";
+import Image from "next/image";
 
-import ProjectHeader from "./ProjectHeader";
+import ProjectHeader from "../components/ProjectHeader";
 
-import Logo from "../../assets/images/right_angle/logo.png";
-import Correct from "../../assets/images/right_angle/Correct.png";
-import Calibrate from "../../assets/images/right_angle/Calibrate.png";
-import Incorrect from "../../assets/images/right_angle/Incorrect.png";
+import Logo from "../public/images/right_angle/logo.png";
+import Correct from "../public/images/right_angle/Correct.png";
+import Calibrate from "../public/images/right_angle/Calibrate.png";
+import Incorrect from "../public/images/right_angle/Incorrect.png";
 
 const tech = [
   "Python",
@@ -142,7 +143,7 @@ export default function RightAngle() {
           a 24 hour hackathon we were unable to implement it.
         </p>
       </div>
-      <div className="grid place-items-center mb-10 text-green-500">
+      <div className="grid place-items-center text-green-500">
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
@@ -152,7 +153,7 @@ export default function RightAngle() {
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={Calibrate} className="w-auto" />
+              <Image src={Calibrate} className="w-auto" alt="Calibration Showcase"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -166,7 +167,7 @@ export default function RightAngle() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={Correct} className="w-auto" />
+              <Image src={Correct} className="w-auto" alt="Correct Posture Showcase"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -180,7 +181,7 @@ export default function RightAngle() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={Incorrect} className="w-auto" />
+              <Image src={Incorrect} className="w-auto" alt="Slouching Showcase"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
@@ -192,6 +193,17 @@ export default function RightAngle() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex mb-10 justify-center w-full py-2 gap-2">
+        <a href="#slide1" className="btn btn-xs">
+          1
+        </a>
+        <a href="#slide2" className="btn btn-xs">
+          2
+        </a>
+        <a href="#slide3" className="btn btn-xs">
+          3
+        </a>
       </div>
     </main>
   );

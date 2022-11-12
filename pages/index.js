@@ -1,13 +1,16 @@
-import AboutMe from "./AboutMe";
-import MenuBar from "./MenuBar";
-import LandingPage from "./LandingPage";
-import ProjectsSection from "./ProjectsSection";
+import Head from 'next/head';
+import Image from 'next/image';
 
-function App() {
+import AboutMe from "../components/AboutMe";
+import MenuBar from "../components/MenuBar";
+import LandingPage from "../components/LandingPage";
+import ProjectsSection from "../components/ProjectsSection";
+
+function Home() {
   return (
     <>
       <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y overflow-hidden scroll-smooth snap-proximity snap-y">
-        <MenuBar />
+        <MenuBar head="Portfolio" />
         <article className="grid place-items-center h-screen overflow-hidden snap-start">
           <LandingPage />
         </article>
@@ -38,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

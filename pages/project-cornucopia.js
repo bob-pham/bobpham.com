@@ -1,14 +1,15 @@
-import Youtube from "react-youtube";
 import { useRef } from "react";
+import Image from "next/image";
 
-import logo from "../../assets/images/cornucopia/logo.png";
-import ProjectHeader from "./ProjectHeader";
-import monochromeProcess from "../../assets/images/cornucopia/monochromatization.png";
-import finalProcess from "../../assets/images/cornucopia/finalprocess.png";
-import home from "../../assets/images/cornucopia/home.png";
-import mobileAddItem from "../../assets/images/cornucopia/mobile add item.png";
-import homeMobile from "../../assets/images/cornucopia/homemobile.png";
-import login from "../../assets/images/cornucopia/Cornucopia Login.png";
+import ProjectHeader from "../components/ProjectHeader";
+
+import logo from "../public/images/cornucopia/logo.png";
+import monochromeProcess from "../public/images/cornucopia/monochromatization.png";
+import finalProcess from "../public/images/cornucopia/finalprocess.png";
+import home from "../public/images/cornucopia/home.png";
+import mobileAddItem from "../public/images/cornucopia/mobile add item.png";
+import homeMobile from "../public/images/cornucopia/homemobile.png";
+import login from "../public/images/cornucopia/Cornucopia Login.png";
 
 const tech = ["Python", "Django", "React", "Tailwindcss", "OpenCV"];
 
@@ -23,7 +24,13 @@ export default function ProjectCornucopia() {
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
-      <ProjectHeader name="Project Cornucopia" logo={logo} tech={tech} gitLink="https://github.com/bob-pham/Project-Cornucopia" demo="FyvjRFwsdPY"/>
+      <ProjectHeader
+        name="Project Cornucopia"
+        logo={logo}
+        tech={tech}
+        gitLink="https://github.com/bob-pham/Project-Cornucopia"
+        demo="FyvjRFwsdPY"
+      />
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
         <p>
           Cornucopia is an app which helps users manage kitchen pantries and
@@ -220,12 +227,13 @@ export default function ProjectCornucopia() {
           negligable performance benefits, and suffered from the same accuracy
           issues.
         </p>
-        <img
+        <Image
           className="my-5 rounded-xl place-self-center"
           src={monochromeProcess}
+          alt="Monochrome Process"
         />
         <p>Thus, the final process that was chosen was to down + grayscale</p>
-        <img className="my-5 rounded-xl place-self-center" src={finalProcess} />
+        <Image className="my-5 rounded-xl place-self-center" src={finalProcess} alt="Final Process"/>
         <h2
           className="text-center text-lg mb-4 text-green-500"
           ref={textFiltering}
@@ -331,7 +339,7 @@ export default function ProjectCornucopia() {
           was created using the React Framework.
         </p>
       </div>
-      <div className="grid place-items-center mb-10 text-green-500">
+      <div className="grid place-items-center text-green-500">
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
@@ -341,7 +349,7 @@ export default function ProjectCornucopia() {
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={login} className="w-auto" />
+              <Image src={login} className="w-auto" alt="Login Screen"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">
                   ❮
@@ -355,7 +363,7 @@ export default function ProjectCornucopia() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={homeMobile} className="w-auto" />
+              <Image src={homeMobile} className="w-auto" alt="Mobile Home Screen"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -369,7 +377,7 @@ export default function ProjectCornucopia() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={home} className="w-auto" />
+              <Image src={home} className="w-auto" alt="Home Screen"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
@@ -383,7 +391,7 @@ export default function ProjectCornucopia() {
               id="slide4"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={mobileAddItem} className="w-auto" />
+              <Image src={mobileAddItem} className="w-auto" alt="Add Item Menu"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -395,6 +403,20 @@ export default function ProjectCornucopia() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex mb-10 justify-center w-full py-2 gap-2">
+        <a href="#slide1" className="btn btn-xs">
+          1
+        </a>
+        <a href="#slide2" className="btn btn-xs">
+          2
+        </a>
+        <a href="#slide3" className="btn btn-xs">
+          3
+        </a>
+        <a href="#slide4" className="btn btn-xs">
+          4
+        </a>
       </div>
     </main>
   );

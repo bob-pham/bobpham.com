@@ -1,12 +1,12 @@
 import { useState } from "react";
+import Image from "next/image";
 import Popup from "reactjs-popup";
 
-import MenuBar from "../Home/MenuBar";
-import ResumeCode from "./ResumeCode";
+import MenuBar from "../components/MenuBar";
+import ResumeCode from "../components/ResumeCode";
 
-import header from "../../assets/images/coopHeader.png";
-import Cornucopia from "../../assets/images/cornucopia/logo.png";
-import Hercules from "../../assets/images/hercules/home.png";
+import header from "../public/images/coopHeader.png";
+import Cornucopia from "../public/images/cornucopia/logo.png";
 
 const Languages = () => {
   const [languages, setLanguages] = useState(0);
@@ -363,22 +363,25 @@ export default function Resume() {
   return (
     <>
       <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-xy overflow-hidden scroll-smooth snap-proximity snap-y">
-        <MenuBar />
+        <MenuBar head="Resume"/>
         <div className="grid place-items-center mt-20">
           <h1 className="font-montserrat text-white text-xl text-center">
             Interactive Resume
           </h1>
           <h3 className="text-center">
-            Created Entirely with React + CSS! Identical to my actual resume!
+            Created Entirely with React + TailwindCSS! Identical to my actual resume!
           </h3>
           <h3 className="font-montserrat text-green-500 text-lg mb-5 animate-bounce">
             Click around!
           </h3>
+
+        <a href="https://drive.google.com/file/d/1s9E60gqCFklQF0CQgA9NobL5Ain8a6b9/view?usp=share_link" target="_" className="btn btn-accent my-5">Download my real resume here</a>
+
         </div>
         <div className="grid place-self-center place-items-center w-11/12 overflow-scroll mt-5  text-[14px]">
           <article className="place-self-center bg-white w-[794px] h-[1123px] pt-5 z-0">
             <div className="flex justify-end w-full px-10">
-              <img className="w-3/4 " src={header} />
+              <Image className="w-3/4 " src={header} alt="Co-op Header"/>
             </div>
             <div className="flex flex-col font-serif text-black px-[80px] w-full">
               <div className="flex w-full">
@@ -672,7 +675,7 @@ export default function Resume() {
                 >
                   <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
                     <h1 className="font-bold">Cornucopia</h1>
-                    <img className="w-1/2 my-5" src={Cornucopia} />
+                    <Image className="w-1/2 my-5" src={Cornucopia} alt="Cornucopia"/>
                     <p>
                       Project Cornucopia PythonDjangoReactTailwindcssOpenCV
                       Cornucopia is an app which helps users manage kitchen

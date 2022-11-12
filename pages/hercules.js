@@ -1,9 +1,10 @@
 import { useRef } from "react";
-import ProjectHeader from "./ProjectHeader";
+import Image from "next/image";
+import ProjectHeader from "../components/ProjectHeader";
 
-import HomeScreen from "../../assets/images/hercules/home.png";
-import ChangeRoom from "../../assets/images/hercules/changeroomscreenshot.png";
-import QuestPage from "../../assets/images/hercules/questpage.png";
+import HomeScreen from "../public/images/hercules/home.png";
+import ChangeRoom from "../public/images/hercules/changeroomscreenshot.png";
+import QuestPage from "../public/images/hercules/questpage.png";
 
 const tech = ["Java", "Android", "Android Studio", "XML"];
 
@@ -144,7 +145,7 @@ export default function Hercules() {
           revisit this project in the future.
         </p>
       </div>
-      <div className="grid place-items-center mb-10 text-green-500">
+      <div className="grid place-items-center text-green-500">
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
@@ -154,7 +155,7 @@ export default function Hercules() {
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={ChangeRoom} className="w-auto" />
+              <Image src={ChangeRoom} className="w-auto" alt="Change Room"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -168,7 +169,7 @@ export default function Hercules() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={QuestPage} className="w-auto" />
+              <Image src={QuestPage} className="w-auto" alt="Quest Page"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -182,7 +183,7 @@ export default function Hercules() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <img src={HomeScreen} className="w-auto" />
+              <Image src={HomeScreen} className="w-auto" alt="Home Screen"/>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
@@ -194,6 +195,17 @@ export default function Hercules() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex mb-10 justify-center w-full py-2 gap-2">
+        <a href="#slide1" className="btn btn-xs">
+          1
+        </a>
+        <a href="#slide2" className="btn btn-xs">
+          2
+        </a>
+        <a href="#slide3" className="btn btn-xs">
+          3
+        </a>
       </div>
     </main>
   );
