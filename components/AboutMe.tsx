@@ -90,7 +90,7 @@ export default function AboutMe() {
             }
             modal
           >
-            <div className="mx-10 bg-slate-600 p-10 rounded-xl grid place-items-center text-white font-montserrat overflow-hidden">
+            <div className="mx-10 bg-slate-600 p-10 rounded-xl grid place-items-center text-white font-montserrat">
               <h1 className="text-xl text-green-500">
                 This section is still a WIP
               </h1>
@@ -153,9 +153,9 @@ export default function AboutMe() {
             </a>
           </div>
         </div>
-        <div className="grid overflow-hidden">
-          <div className="grid bg-gradient-to-r from-slate-800 to-gray-800 h-full m-3 rounded-xl px-10 pb-10 overflow-hidden">
-            <p className="text-white font-montserrat pt-10 place-self-center overflow-hidden">
+        <div className="grid">
+          <div className="grid bg-gradient-to-r from-slate-800 to-gray-800 h-full m-3 rounded-xl px-10 pb-10">
+            <p className="text-white font-montserrat pt-10 place-self-center ">
               Hello! I'm Bob.
               <br />
               <br />

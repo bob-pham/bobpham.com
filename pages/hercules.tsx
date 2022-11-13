@@ -9,9 +9,9 @@ import QuestPage from "../public/images/hercules/questpage.png";
 const tech = ["Java", "Android", "Android Studio", "XML"];
 
 export default function Hercules() {
-  const Dev = useRef(null);
-  const improvements = useRef(null);
-  const pictures = useRef(null);
+  const development = useRef<null | HTMLHeadingElement>(null);
+  const improvements = useRef<null | HTMLHeadingElement>(null);
+  const pictures = useRef<null | HTMLHeadingElement>(null);
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
@@ -44,40 +44,50 @@ export default function Hercules() {
           </div>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: Dev.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (development.current) {
+                window.scrollTo({
+                  top: development.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Development and Implementation
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: improvements.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (improvements.current) {
+                window.scrollTo({
+                  top: improvements.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Possible Future Improvements
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: pictures.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+
+              if (pictures.current) {
+                window.scrollTo({
+                  top: pictures.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Image Gallery
           </button>
         </div>
         <div className="flex flex-col w-1/2 place-self-center">
-          <h1 className="text-xl mt-10 text-center" ref={Dev}>
+          <h1 className="text-xl mt-10 text-center" ref={development}>
             Development + Implementation
           </h1>
           <div className="divider"></div>

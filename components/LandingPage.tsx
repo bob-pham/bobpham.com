@@ -1,19 +1,21 @@
 import { useRef, useEffect } from "react";
 
 export default function LandingPage({ timeout = 60 }) {
-  const canvas = useRef();
+  const canvas = useRef<null | HTMLCanvasElement>(null);
 
-  const backgroundColor = "rgba(17, 24, 39, 1)";
-  const backgroundFade = "rgba(17, 24, 39, 0.25)";
-  const textColor = "#16A34A";
+  const backgroundColor: string = "rgba(17, 24, 39, 1)";
+  const backgroundFade: string = "rgba(17, 24, 39, 0.25)";
+  const textColor: string = "#16A34A";
 
   useEffect(() => {
-    const context = canvas.current.getContext("2d");
+    const context: any = canvas.current ? canvas.current.getContext("2d") : null;
 
-    const width = document.body.offsetWidth;
-    const height = document.body.offsetHeight;
-    canvas.current.width = width;
-    canvas.current.height = height;
+    const width: number = document.body.offsetWidth;
+    const height: number = document.body.offsetHeight;
+    if (canvas.current) {
+      canvas.current.width = width;
+      canvas.current.height = height;
+    }
 
     // context.fillStyle = '#0F172A';
     context.fillStyle = backgroundColor;
@@ -30,9 +32,9 @@ export default function LandingPage({ timeout = 60 }) {
       context.fillStyle = textColor;
       context.font = "20pt monospace";
 
-      yPositions.forEach((y, index) => {
-        const text = String.fromCharCode(Math.random() * 128);
-        const x = index * 25;
+      yPositions.forEach((y: any, index ) => {
+        const text: string = String.fromCharCode(Math.random() * 128);
+        const x: number = index * 25;
         context.fillText(text, x, y);
 
         yPositions[index] = y > 100 + Math.random() * 10000 ? 0 : y + 30;

@@ -6,7 +6,7 @@ import MenuBar from "./MenuBar";
 import gitlogo from "../public/icons/github.png";
 import projects from "../public/images/projects.png";
 
-export default function ProjectHeader(props) {
+export default function ProjectHeader(props: any) {
   return (
     <>
       <MenuBar head={props.name} />
@@ -26,7 +26,7 @@ export default function ProjectHeader(props) {
           Github
         </a>
         <div className="place-self-center">
-          {props.tech.map(item => (
+          {props.tech.map((item: any) => (
             <span
               key={item}
               className="badge badge-outline mx-1 lg:text-lg md:text-md text-sm p-4"

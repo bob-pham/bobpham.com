@@ -10,8 +10,8 @@ import ViewClass from "../public/images/hw_manager/hw view class.png";
 const tech = ["JavaScript", "HTML", "CSS"];
 
 export default function HomeworkManager() {
-  const development = useRef(null);
-  const pictures = useRef(null);
+  const development = useRef<null | HTMLHeadingElement>(null);
+  const pictures = useRef<null | HTMLHeadingElement>(null);
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
@@ -37,22 +37,28 @@ export default function HomeworkManager() {
           </div>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: Dev.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (development.current) {
+                window.scrollTo({
+                  top: development.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Development and Implementation
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: pictures.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (pictures.current) {
+                window.scrollTo({
+                  top: pictures.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Image Gallery

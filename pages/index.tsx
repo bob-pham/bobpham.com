@@ -20,7 +20,7 @@ function Home() {
           </div>
           <AboutMe />
         </article>
-        <article className="grid place-items-center bg-gray-900 text-white my-24 py-2 snap-start overflow-hidden">
+        <article className="grid place-items-center bg-gray-900 text-white my-24 py-2 snap-start">
           <div className="flex flex-col w-1/2 border-opacity-50">
             <h1 className="rounded-xl text-center text-3xl font-montserrat text-green-500">
               Projects

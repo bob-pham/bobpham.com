@@ -14,13 +14,13 @@ import login from "../public/images/cornucopia/Cornucopia Login.png";
 const tech = ["Python", "Django", "React", "Tailwindcss", "OpenCV"];
 
 export default function ProjectCornucopia() {
-  const imageProcessing = useRef(null);
-  const textFiltering = useRef(null);
-  const testingFramework = useRef(null);
-  const recipeFinding = useRef(null);
-  const recalls = useRef(null);
-  const backFrontEnd = useRef(null);
-  const pictures = useRef(null);
+  const imageProcessing = useRef<null | HTMLHeadingElement>(null);
+  const textFiltering = useRef<null | HTMLHeadingElement>(null);
+  const testingFramework = useRef<null | HTMLHeadingElement>(null);
+  const recipeFinding = useRef<null | HTMLHeadingElement>(null);
+  const recalls = useRef<null | HTMLHeadingElement>(null);
+  const backFrontEnd = useRef<null | HTMLHeadingElement>(null);
+  const pictures = useRef<null | HTMLHeadingElement>(null);
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
@@ -49,78 +49,92 @@ export default function ProjectCornucopia() {
           </div>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: imageProcessing.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (imageProcessing.current) {
+                window.scrollTo({
+                  top: imageProcessing.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Image Processing + Text Recognition
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: textFiltering.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (textFiltering.current) {
+                window.scrollTo({
+                  top: textFiltering.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Text Filtering + Correction
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: testingFramework.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (testingFramework.current) {
+                window.scrollTo({
+                  top: testingFramework.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Custom (accuracy) Testing Framework
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: recipeFinding.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (recipeFinding.current) {
+                window.scrollTo({
+                  top: recipeFinding.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Recipe Finding
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: recalls.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (recalls.current) {
+                window.scrollTo({
+                  top: recalls.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Recall Identification
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: backFrontEnd.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (backFrontEnd.current) {
+                window.scrollTo({
+                  top: backFrontEnd.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Backend + Frontend
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: pictures.current.offsetTop,
-                behaviour: "smooth"
-              })
-            }
+            onClick={() => {
+              if (pictures.current) {
+                window.scrollTo({
+                  top: pictures.current.offsetTop,
+                  behavior: "smooth"
+                });
+              }
+            }}
           >
             - Image Gallery
           </button>

@@ -1,15 +1,15 @@
 import Head from "next/head";
 import projects from "../public/projects.json";
 
-export default function MenuBar(props) {
+export default function MenuBar(props: any) {
   return (
     <>
       <Head>
         <title>Bob Pham - {props.head}</title>
         <meta name="description" content="Bob's Portfolio Site" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet" /> 
         <link
           rel="icon"
@@ -21,7 +21,7 @@ export default function MenuBar(props) {
         <div className="navbar bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x text-white border-b-2 border-slate-800">
           <div className="navbar-start">
             <div className="dropdown">
-              <label tabIndex="0" className="btn btn-ghost lg:hidden">
+              <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -38,7 +38,7 @@ export default function MenuBar(props) {
                 </svg>
               </label>
               <ul
-                tabIndex="0"
+                tabIndex={0}
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-green-500"
               >
                 <li>
@@ -47,7 +47,7 @@ export default function MenuBar(props) {
                 <li>
                   <a href="/resume">Resume</a>
                 </li>
-                <li tabIndex="0">
+                <li tabIndex={0}>
                   <a className="justify-between">
                     Projects
                     <svg
@@ -85,7 +85,7 @@ export default function MenuBar(props) {
               <li>
                 <a href="/resume">Resume</a>
               </li>
-              <li tabIndex="0">
+              <li tabIndex={0}>
                 <a>
                   Projects
                   <svg
@@ -113,7 +113,6 @@ export default function MenuBar(props) {
               <input
                 className="h-8 md:px-5"
                 type="image"
-                href=""
                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiNGRkZGRkY7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw1LjYyMywzLjg3MiwxMC4zMjgsOS4wOTIsMTEuNjNDMTIuMDM2LDI2LjQ2OCwxMiwyNi4yOCwxMiwyNi4wNDd2LTIuMDUxIGMtMC40ODcsMC0xLjMwMywwLTEuNTA4LDBjLTAuODIxLDAtMS41NTEtMC4zNTMtMS45MDUtMS4wMDljLTAuMzkzLTAuNzI5LTAuNDYxLTEuODQ0LTEuNDM1LTIuNTI2IGMtMC4yODktMC4yMjctMC4wNjktMC40ODYsMC4yNjQtMC40NTFjMC42MTUsMC4xNzQsMS4xMjUsMC41OTYsMS42MDUsMS4yMjJjMC40NzgsMC42MjcsMC43MDMsMC43NjksMS41OTYsMC43NjkgYzAuNDMzLDAsMS4wODEtMC4wMjUsMS42OTEtMC4xMjFjMC4zMjgtMC44MzMsMC44OTUtMS42LDEuNTg4LTEuOTYyYy0zLjk5Ni0wLjQxMS01LjkwMy0yLjM5OS01LjkwMy01LjA5OCBjMC0xLjE2MiwwLjQ5NS0yLjI4NiwxLjMzNi0zLjIzM0M5LjA1MywxMC42NDcsOC43MDYsOC43Myw5LjQzNSw4YzEuNzk4LDAsMi44ODUsMS4xNjYsMy4xNDYsMS40ODFDMTMuNDc3LDkuMTc0LDE0LjQ2MSw5LDE1LjQ5NSw5IGMxLjAzNiwwLDIuMDI0LDAuMTc0LDIuOTIyLDAuNDgzQzE4LjY3NSw5LjE3LDE5Ljc2Myw4LDIxLjU2NSw4YzAuNzMyLDAuNzMxLDAuMzgxLDIuNjU2LDAuMTAyLDMuNTk0IGMwLjgzNiwwLjk0NSwxLjMyOCwyLjA2NiwxLjMyOCwzLjIyNmMwLDIuNjk3LTEuOTA0LDQuNjg0LTUuODk0LDUuMDk3QzE4LjE5OSwyMC40OSwxOSwyMi4xLDE5LDIzLjMxM3YyLjczNCBjMCwwLjEwNC0wLjAyMywwLjE3OS0wLjAzNSwwLjI2OEMyMy42NDEsMjQuNjc2LDI3LDIwLjIzNiwyNywxNUMyNyw4LjM3MywyMS42MjcsMywxNSwzeiI+PC9wYXRoPjwvc3ZnPg=="
               />
             </a>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 import GitHubCalendar from "react-github-calendar";
-import quickSort from "../javascript/quicksort";
+import quickSort from "../scripts/quicksort";
 import ProjectCard from "./ProjectCard";
 
 import projectsOriginal from "../public/projects.json";
@@ -20,23 +20,23 @@ import script from "../public/icons/scripts.png";
 import portfoliowebsite from "../public/images/portfoliowebsite.png";
 import legacywebsite from "../public/images/website.png";
 
-const images = {
+const images: any = {
   "Project Cornucopia": cornucopiaLogo,
   "right angle": rightAngle,
-  Hercules: hercules,
+  "Hercules": hercules,
   "Homework Manager": hwManager,
   "Simple Device Repair Manager": deviceRepairManager,
   "CLI Pomodoro": pomodoro,
   "Portfolio Website": portfoliowebsite,
   "[Legacy] Portfolio Site": legacywebsite,
-  script: script
+  "script": script
 };
 
-export default function ProjectsSection(props) {
+export default function ProjectsSection(props: any) {
   const [mode, setMode] = useState(0);
   const [projects, setProjects] = useState(projectsOriginal);
 
-  const changeMode = val => {
+  const changeMode = (val: number) => {
     setMode(val);
     setProjects(quickSort(projects, val, 0, projects.length - 1));
   };
@@ -87,7 +87,7 @@ export default function ProjectsSection(props) {
                 ? images[projects[0]["name"]]
                 : projectsDefault
             }
-            className="rounded-lg shadow-2xl w-11/12"
+            className="rounded-lg w-11/12"
             alt={projects[0]["name"]}
           />
           <div>
@@ -114,7 +114,7 @@ export default function ProjectsSection(props) {
           </div>
         </div>
       </div>
-      <div className="grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 auto-rows-auto grid-x-2 gap-y-10 my-2 place-items-center w-11/12 overflow-hidden">
+      <div className="grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 auto-rows-auto grid-x-2 gap-y-10 my-2 place-items-center w-11/12 ">
         {projects.slice(1).map(proj => (
           <ProjectCard
             name={proj["name"]}

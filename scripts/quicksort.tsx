@@ -1,13 +1,13 @@
 
 let today = new Date();
 
-function swap(items, leftIndex, rightIndex){
+function swap(items: any, leftIndex: number, rightIndex: number){
     let temp = items[leftIndex];
     items[leftIndex] = items[rightIndex];
     items[rightIndex] = temp;
 }
 
-function getVal(items, key, index) {
+function getVal(items: any, key: number, index: number) {
     if (key === 0) { // sort by score
         return items[index]["score"];
     } else {
@@ -15,8 +15,8 @@ function getVal(items, key, index) {
     }
 }
 
-function partitionScore(items, left, right) {
-    let pivot = getVal(items, 0, [Math.floor((right + left) / 2)]) //middle element
+function partitionScore(items: any, left: number, right: number) {
+    let pivot = getVal(items, 0, Math.floor((right + left) / 2)) //middle element
     let i = left; //left pointer
     let j = right; //right pointer
 
@@ -36,8 +36,8 @@ function partitionScore(items, left, right) {
     return i;
 }
 
-function partitionDate(items, left, right) {
-    let pivot = getVal(items, 1, [Math.floor((right + left) / 2)]) //middle element
+function partitionDate(items: any, left: number, right: number) {
+    let pivot = getVal(items, 1, Math.floor((right + left) / 2)) //middle element
     let i = left; //left pointer
     let j = right; //right pointer
 
@@ -57,7 +57,7 @@ function partitionDate(items, left, right) {
     return i;
 }
 
-function quickSort(items, key, left, right) {
+function quickSort(items: any, key: number, left: number, right: number) {
     let index;
     if (items.length > 1) {
         

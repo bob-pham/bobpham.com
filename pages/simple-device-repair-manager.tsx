@@ -14,9 +14,9 @@ import View from "../public/images/device_repair_manager/view_showcase.png";
 const tech = ["Java", "Java Swing", "JUnit"];
 
 export default function SimpleDeviceRepairManager() {
-  const development = useRef(null);
-  const uml = useRef(null);
-  const pictures = useRef(null);
+  const development = useRef<null | HTMLHeadingElement>(null);
+  const uml = useRef<null | HTMLDivElement>(null);
+  const pictures = useRef<null | HTMLHeadingElement>(null);
 
   return (
     <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y font-montserrat text-white max-w-screen">
@@ -46,33 +46,42 @@ export default function SimpleDeviceRepairManager() {
           </div>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: development.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (development.current) {
+                window.scrollTo({
+                  top: development.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Development + Implementation
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: uml.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (uml.current) {
+                window.scrollTo({
+                  top: uml.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - UML
           </button>
           <button
             className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
-            onClick={() =>
-              window.scrollTo({
-                top: pictures.current.offsetTop,
-                behaviour: "smooth"
-              })
+            onClick={() => {
+              if (pictures.current) {
+                window.scrollTo({
+                  top: pictures.current.offsetTop,
+                  behavior: "smooth"
+                })
+              }
+            }
             }
           >
             - Image Gallery
@@ -99,12 +108,13 @@ export default function SimpleDeviceRepairManager() {
           Swing GUI to manage inputs to the device data fields. A full UML of
           the project can be seen here:
         </p>
+        <div ref={uml}>
         <Image
           src={UML}
           className="w-3/4 place-self-center my-5"
-          ref={uml}
           alt="Simple Device Manager UML"
         />
+        </div>
         <p>
           Data persistence was implemented by parsing the objects and storing
           them in a single JSON. Upon entry into the program, users choose to
