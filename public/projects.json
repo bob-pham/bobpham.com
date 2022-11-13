@@ -29,10 +29,10 @@
     {
         "name": "Portfolio Website",
         "score": 4,
-        "dateStart": "2022-9",
-        "dateEnd": "2022-10",
+        "dateStart": "2022-11",
+        "dateEnd": "2022-11",
         "description": "This website! Portfolio website to showcase my projects",
-        "tech": ["React", "Tailwindcss", "Three.js"],
+        "tech": ["React", "Next.js", "Tailwindcss", "Three.js"],
         "url": "/portfolio-website"
     },
     {
@@ -73,8 +73,17 @@
         "script": true
     },
     {
-        "name": "Useful R Functions",
+        "name": "[Legacy] Portfolio Site",
         "score": 9,
+        "dateStart": "2022-05",
+        "dateEnd": "2022-06",
+        "description": "My older, defunct portfolio website, which hosts information about me as well as my technical projects.",
+        "tech": ["HTML", "CSS", "JavaScript", "Three.js", "Blender"],
+        "url": "/legacy-portfolio-site"
+    },
+    {
+        "name": "Useful R Functions",
+        "score": 10,
         "dateStart": "2022-02",
         "dateEnd": "2022-02",
         "description": "R Script that contains useful statistical formulas",
@@ -84,7 +93,7 @@
     },
     {
         "name": "CLI Pomodoro",
-        "score": 10,
+        "score": 11,
         "dateStart": "2022-08",
         "dateEnd": "2022-08",
         "description": "Bash script pomodoro script",

@@ -116,7 +116,7 @@ export default function AboutMe() {
                 <br />
                 Check it out on my legacy site using the link below:
               </p>
-              <a className="btn btn-accent">Legacy Site</a>
+              <a className="btn btn-accent" href="/legacy-portfolio-site">Legacy Site</a>
             </div>
           </Popup>
           <div className="grid place-items-center mt-2">

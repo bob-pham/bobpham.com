@@ -17,6 +17,8 @@ import pomodoro from '../public/images/pomodoro.png';
 import rightAngle from '../public/images/right_angle/logo.png';
 import projectsDefault from '../public/images/projects.png';
 import script from '../public/icons/scripts.png';
+import portfoliowebsite from '../public/images/portfoliowebsite.png';
+import legacywebsite from '../public/images/website.png';
 
 const images = {
   'Project Cornucopia': cornucopiaLogo,
@@ -25,6 +27,8 @@ const images = {
   'Homework Manager': hwManager,
   'Simple Device Repair Manager': deviceRepairManager,
   'CLI Pomodoro': pomodoro,
+  'Portfolio Website': portfoliowebsite,
+  '[Legacy] Portfolio Site': legacywebsite,
   script: script
 };
 

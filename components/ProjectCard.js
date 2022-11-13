@@ -13,10 +13,10 @@ export default function ProjectCard(props) {
       </figure>
       <div className="card-body">
         <h2 className="card-title font-bebasneue text-2xl">{props.name}</h2>
-        <div className="grid grid-cols-6 place-items-center w-3/4 bg-slate-900 p-2 rounded-xl">
+        <div className="grid grid-cols-6 place-items-center w-fit bg-slate-900 p-2 rounded-xl">
           <Image className="col-span-1" src={calendar} alt="calendar" />
           <h1 className="col-span-4">
-            {props.dateStart + ' '}-{' ' + props.dateEnd}
+            {props.dateStart === props.dateEnd ? props.dateStart : props.dateStart + ' - ' + props.dateEnd}
           </h1>
         </div>
         <p>{props.description}</p>
