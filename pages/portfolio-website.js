@@ -1,8 +1,8 @@
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import website from '../public/images/portfoliowebsite.png';
+import website from "../public/images/portfoliowebsite.png";
 
-const tech = ['React', 'Next.js', 'Tailwindcss', 'Three.js', , 'Blender'];
+const tech = ["React", "Next.js", "Tailwindcss", "Three.js", , "Blender"];
 
 export default function PortfolioSite() {
   return (
@@ -45,16 +45,16 @@ export default function PortfolioSite() {
           fix all of these issues, and go even further beyond.
           <br />
           <br />
-            <strong>This site is still incomplete.</strong>
-            <br />
+          <strong>This site is still incomplete.</strong>
           <br />
-            <strong>TODO:</strong>
+          <br />
+          <strong>TODO:</strong>
         </p>
         <ul className="list-disc font-bold">
-                <li>Create a model</li>
-                <li>Model interactivity/motion with Three.js</li>
-                <li>Embed demos of clientside projects</li>
-            </ul>
+          <li>Create a model</li>
+          <li>Model interactivity/motion with Three.js</li>
+          <li>Embed demos of clientside projects</li>
+        </ul>
       </div>
     </main>
   );

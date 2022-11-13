@@ -1,13 +1,13 @@
-import { useRef } from 'react';
-import Image from 'next/image';
+import { useRef } from "react";
+import Image from "next/image";
 
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import AddClass from '../public/images/hw_manager/hw add class.png';
-import HomeScreen from '../public/images/hw_manager/hw homescreen.png';
-import ViewClass from '../public/images/hw_manager/hw view class.png';
+import AddClass from "../public/images/hw_manager/hw add class.png";
+import HomeScreen from "../public/images/hw_manager/hw homescreen.png";
+import ViewClass from "../public/images/hw_manager/hw view class.png";
 
-const tech = ['JavaScript', 'HTML', 'CSS'];
+const tech = ["JavaScript", "HTML", "CSS"];
 
 export default function HomeworkManager() {
   const development = useRef(null);
@@ -40,7 +40,7 @@ export default function HomeworkManager() {
             onClick={() =>
               window.scrollTo({
                 top: Dev.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -51,7 +51,7 @@ export default function HomeworkManager() {
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -100,13 +100,13 @@ export default function HomeworkManager() {
           had terrible asymptotic runtimes. The to-do-list priority system had
           three primary functions: insertAssessment, removeAssessment, and
           update, which would re-sort the assessments based on priority if
-          values in an assessment were changed. Insert/removeAssessment ran at{' '}
+          values in an assessment were changed. Insert/removeAssessment ran at{" "}
           <strong>O(n)</strong> with my initial sorted array implementation. Due
           to sorting, update ran at <strong>O(n^2)</strong> using the quicksort
           algorithm. To improve the asymptotic runtimes, I changed the
           implementation to a priority tree, implemented with a binary heap data
           model. This drastically improved the runtimes of
-          insert/removeAssessment to <strong>O(logn)</strong> and{' '}
+          insert/removeAssessment to <strong>O(logn)</strong> and{" "}
           <strong>O(n)</strong> for update. The frontend of advanced homework
           planner was created using HTML and CSS. Initially, this was done with
           the BootStrap framework; however, this is currently being redone to

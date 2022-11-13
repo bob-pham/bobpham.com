@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import { Chart } from 'react-google-charts';
-import Popup from 'reactjs-popup';
+import Image from "next/image";
+import { Chart } from "react-google-charts";
+import Popup from "reactjs-popup";
 
-import profile from '../public/icons/thingaa.png';
+import profile from "../public/icons/thingaa.png";
 
 const Profile = () => {
   return (
@@ -16,54 +16,54 @@ const Profile = () => {
 
 export default function AboutMe() {
   const columns = [
-    { type: 'string', id: 'Company' },
-    { type: 'string', id: 'Bar Label' },
-    { type: 'string', role: 'tooltip' },
-    { type: 'date', id: 'Start' },
-    { type: 'date', id: 'End' }
+    { type: "string", id: "Company" },
+    { type: "string", id: "Bar Label" },
+    { type: "string", role: "tooltip" },
+    { type: "date", id: "Start" },
+    { type: "date", id: "End" }
   ];
 
   const rows = [
     [
-      'Intel',
-      'Firmware Engineer Intern',
+      "Intel",
+      "Firmware Engineer Intern",
       "Sep 2022 - Present | Developing firmware for custom security HW block, for next generation IPU's and FNIC's as part of NEX Cloud Networking Group (NCNG)",
       new Date(2022, 9, 6),
       new Date()
     ],
     [
-      'UBC',
-      'Studying - Honours CS',
-      'Sep 2020 - Present | Relevant Courses: Data Structures and Algorithms, Software Design, Computer Systems',
+      "UBC",
+      "Studying - Honours CS",
+      "Sep 2020 - Present | Relevant Courses: Data Structures and Algorithms, Software Design, Computer Systems",
       new Date(2020, 9, 6),
       new Date(2022, 9, 5)
     ],
     [
-      'PRS',
-      'Technical Assistant',
-      'Jun 2021 - Aug 2021 | Project leader in Desktop and Laptop Repair',
+      "PRS",
+      "Technical Assistant",
+      "Jun 2021 - Aug 2021 | Project leader in Desktop and Laptop Repair",
       new Date(2021, 6, 1),
       new Date(2021, 8, 31)
     ]
   ];
 
   const option = {
-    backgroundColor: '#9CA3AF',
-    colors: ['#127cc1', '#6EC4E8', '#16A34A'],
+    backgroundColor: "#9CA3AF",
+    colors: ["#127cc1", "#6EC4E8", "#16A34A"],
     tooltip: {
       isHtml: true,
-      textStyle: '#000000'
+      textStyle: "#000000"
     },
     timeline: {
       barLabelStyle: {
-        fontName: 'montserrat',
+        fontName: "montserrat",
         fontSize: 14,
-        textStyle: '#000000'
+        textStyle: "#000000"
       },
       rowLabelStyle: {
-        fontName: 'montserrat',
+        fontName: "montserrat",
         fontSize: 14,
-        color: '#0F172A'
+        color: "#0F172A"
       }
     },
     animation: {
@@ -72,7 +72,7 @@ export default function AboutMe() {
     hAxis: {
       // textStyle: '#FFFFFF'
     },
-    fontName: 'montserrat',
+    fontName: "montserrat",
     allowHtml: true
   };
 
@@ -90,7 +90,7 @@ export default function AboutMe() {
             }
             modal
           >
-            <div className="mx-10 bg-slate-600 p-10 rounded-xl grid place-items-center text-white font-montserrat">
+            <div className="mx-10 bg-slate-600 p-10 rounded-xl grid place-items-center text-white font-montserrat overflow-hidden">
               <h1 className="text-xl text-green-500">
                 This section is still a WIP
               </h1>
@@ -116,7 +116,9 @@ export default function AboutMe() {
                 <br />
                 Check it out on my legacy site using the link below:
               </p>
-              <a className="btn btn-accent" href="/legacy-portfolio-site">Legacy Site</a>
+              <a className="btn btn-accent" href="/legacy-portfolio-site">
+                Legacy Site
+              </a>
             </div>
           </Popup>
           <div className="grid place-items-center mt-2">
@@ -151,9 +153,9 @@ export default function AboutMe() {
             </a>
           </div>
         </div>
-        <div className="grid">
-          <div className="grid bg-gradient-to-r from-slate-800 to-gray-800 h-full m-3 rounded-xl px-10 pb-10 drop-shadow-2xl">
-            <p className="text-white font-montserrat pt-10 place-self-center">
+        <div className="grid overflow-hidden">
+          <div className="grid bg-gradient-to-r from-slate-800 to-gray-800 h-full m-3 rounded-xl px-10 pb-10 overflow-hidden">
+            <p className="text-white font-montserrat pt-10 place-self-center overflow-hidden">
               Hello! I'm Bob.
               <br />
               <br />

@@ -1,14 +1,14 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 export default function LandingPage({ timeout = 60 }) {
   const canvas = useRef();
 
-  const backgroundColor = 'rgba(17, 24, 39, 1)';
-  const backgroundFade = 'rgba(17, 24, 39, 0.25)';
-  const textColor = '#16A34A';
+  const backgroundColor = "rgba(17, 24, 39, 1)";
+  const backgroundFade = "rgba(17, 24, 39, 0.25)";
+  const textColor = "#16A34A";
 
   useEffect(() => {
-    const context = canvas.current.getContext('2d');
+    const context = canvas.current.getContext("2d");
 
     const width = document.body.offsetWidth;
     const height = document.body.offsetHeight;
@@ -28,7 +28,7 @@ export default function LandingPage({ timeout = 60 }) {
       context.fillRect(0, 0, width, height);
 
       context.fillStyle = textColor;
-      context.font = '20pt monospace';
+      context.font = "20pt monospace";
 
       yPositions.forEach((y, index) => {
         const text = String.fromCharCode(Math.random() * 128);
@@ -46,12 +46,12 @@ export default function LandingPage({ timeout = 60 }) {
   }, [canvas, timeout]);
 
   return (
-    <div className="w-full h-full grid place-items-center font-bebasneue sm:text-5xl text-2xl text-white text-center">
+    <div className="w-full h-full grid place-items-center font-bebasneue sm:text-5xl text-2xl text-white text-center overflow-hidden">
       <canvas
-        className="h-full w-full absolute z-0 bg-white text-lg"
+        className="h-full w-full absolute z-0 bg-white text-lg overflow-hidden top-0 left-0"
         ref={canvas}
       ></canvas>
-      <div className="md:w-fit w-11/12 rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x border-2 border-slate-800 drop-shadow-sm z-10">
+      <div className="md:w-fit w-11/12 overflow-hidden rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x border-2 border-slate-800 drop-shadow-sm z-10">
         <h1 className="h-min m-1">Hello, I'm Bob</h1>
         <h1 className="h-min m-1">Firmware Engineer Intern @ Intel</h1>
         <h1 className="h-min m-1">Honours CS Student @ UBC</h1>

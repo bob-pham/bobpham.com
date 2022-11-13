@@ -1,20 +1,20 @@
-import { useRef } from 'react';
-import Image from 'next/image';
+import { useRef } from "react";
+import Image from "next/image";
 
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import Logo from '../public/images/right_angle/logo.png';
-import Correct from '../public/images/right_angle/Correct.png';
-import Calibrate from '../public/images/right_angle/Calibrate.png';
-import Incorrect from '../public/images/right_angle/Incorrect.png';
+import Logo from "../public/images/right_angle/logo.png";
+import Correct from "../public/images/right_angle/Correct.png";
+import Calibrate from "../public/images/right_angle/Calibrate.png";
+import Incorrect from "../public/images/right_angle/Incorrect.png";
 
 const tech = [
-  'Python',
-  'Flask',
-  'React',
-  'Tailwindcss',
-  'OpenCV',
-  'media pipe'
+  "Python",
+  "Flask",
+  "React",
+  "Tailwindcss",
+  "OpenCV",
+  "media pipe"
 ];
 
 export default function RightAngle() {
@@ -62,7 +62,7 @@ export default function RightAngle() {
             onClick={() =>
               window.scrollTo({
                 top: challenges.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -73,7 +73,7 @@ export default function RightAngle() {
             onClick={() =>
               window.scrollTo({
                 top: improvements.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -84,7 +84,7 @@ export default function RightAngle() {
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >

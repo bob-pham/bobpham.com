@@ -1,17 +1,17 @@
-import { useRef } from 'react';
-import Image from 'next/image';
+import { useRef } from "react";
+import Image from "next/image";
 
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import HomeScreenShowCase from '../public/images/device_repair_manager/homescreen_showcase.png';
-import DesktopShowCase from '../public/images/device_repair_manager/desktop_showcase.png';
-import LaptopShowCase from '../public/images/device_repair_manager/laptop_showcase.png';
-import PhoneShowCase from '../public/images/device_repair_manager/phone_showcase.png';
-import SDRManager from '../public/images/device_repair_manager/simple_device_repair_manager.png';
-import UML from '../public/images/device_repair_manager/UML_design_diagram.png';
-import View from '../public/images/device_repair_manager/view_showcase.png';
+import HomeScreenShowCase from "../public/images/device_repair_manager/homescreen_showcase.png";
+import DesktopShowCase from "../public/images/device_repair_manager/desktop_showcase.png";
+import LaptopShowCase from "../public/images/device_repair_manager/laptop_showcase.png";
+import PhoneShowCase from "../public/images/device_repair_manager/phone_showcase.png";
+import SDRManager from "../public/images/device_repair_manager/simple_device_repair_manager.png";
+import UML from "../public/images/device_repair_manager/UML_Design_Diagram.png";
+import View from "../public/images/device_repair_manager/view_showcase.png";
 
-const tech = ['Java', 'Java Swing', 'JUnit'];
+const tech = ["Java", "Java Swing", "JUnit"];
 
 export default function SimpleDeviceRepairManager() {
   const development = useRef(null);
@@ -49,7 +49,7 @@ export default function SimpleDeviceRepairManager() {
             onClick={() =>
               window.scrollTo({
                 top: development.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -60,7 +60,7 @@ export default function SimpleDeviceRepairManager() {
             onClick={() =>
               window.scrollTo({
                 top: uml.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -71,7 +71,7 @@ export default function SimpleDeviceRepairManager() {
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >

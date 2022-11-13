@@ -1,7 +1,7 @@
-import { useRef, useEffect } from 'react';
-import Image from 'next/image';
-import MenuBar from '../components/MenuBar';
-import profile from '../public/icons/thingaa.png';
+import { useRef, useEffect } from "react";
+import Image from "next/image";
+import MenuBar from "../components/MenuBar";
+import profile from "../public/icons/thingaa.png";
 
 const Profile = () => {
   return (
@@ -16,12 +16,12 @@ const Profile = () => {
 export default function Contact({ timeout = 60 }) {
   const canvas = useRef();
 
-  const backgroundColor = 'rgba(17, 24, 39, 1)';
-  const backgroundFade = 'rgba(17, 24, 39, 0.25)';
-  const textColor = '#16A34A';
+  const backgroundColor = "rgba(17, 24, 39, 1)";
+  const backgroundFade = "rgba(17, 24, 39, 0.25)";
+  const textColor = "#16A34A";
 
   useEffect(() => {
-    const context = canvas.current.getContext('2d');
+    const context = canvas.current.getContext("2d");
 
     const width = document.body.offsetWidth;
     const height = document.body.offsetHeight;
@@ -41,7 +41,7 @@ export default function Contact({ timeout = 60 }) {
       context.fillRect(0, 0, width, height);
 
       context.fillStyle = textColor;
-      context.font = '20pt monospace';
+      context.font = "20pt monospace";
 
       yPositions.forEach((y, index) => {
         const text = String.fromCharCode(Math.random() * 128);
@@ -63,7 +63,7 @@ export default function Contact({ timeout = 60 }) {
       <MenuBar head="Contact" />
       <main className="grid grid-cols-1 place-items-center h-screen w-screen m-0">
         <canvas
-          className="h-screen w-full absolute z-0 bg-white text-lg"
+          className="h-screen w-full absolute z-0 bg-white text-lg top-0 left-0"
           ref={canvas}
         ></canvas>
         <div className="grid place-items-center">

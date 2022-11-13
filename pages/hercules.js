@@ -1,12 +1,12 @@
-import { useRef } from 'react';
-import Image from 'next/image';
-import ProjectHeader from '../components/ProjectHeader';
+import { useRef } from "react";
+import Image from "next/image";
+import ProjectHeader from "../components/ProjectHeader";
 
-import HomeScreen from '../public/images/hercules/home.png';
-import ChangeRoom from '../public/images/hercules/changeroomscreenshot.png';
-import QuestPage from '../public/images/hercules/questpage.png';
+import HomeScreen from "../public/images/hercules/home.png";
+import ChangeRoom from "../public/images/hercules/changeroomscreenshot.png";
+import QuestPage from "../public/images/hercules/questpage.png";
 
-const tech = ['Java', 'Android', 'Android Studio', 'XML'];
+const tech = ["Java", "Android", "Android Studio", "XML"];
 
 export default function Hercules() {
   const Dev = useRef(null);
@@ -47,7 +47,7 @@ export default function Hercules() {
             onClick={() =>
               window.scrollTo({
                 top: Dev.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -58,7 +58,7 @@ export default function Hercules() {
             onClick={() =>
               window.scrollTo({
                 top: improvements.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >
@@ -69,7 +69,7 @@ export default function Hercules() {
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: 'smooth'
+                behaviour: "smooth"
               })
             }
           >

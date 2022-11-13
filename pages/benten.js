@@ -1,6 +1,6 @@
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-const tech = ['C++', 'Image Magick', 'CMake'];
+const tech = ["C++", "Image Magick", "CMake"];
 
 export default function Benten() {
   return (

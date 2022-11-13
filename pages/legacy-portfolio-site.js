@@ -1,8 +1,8 @@
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import website from '../public/images/website.png';
+import website from "../public/images/website.png";
 
-const tech = ['HTML', 'CSS', 'JavaScript', 'Three.js', 'Blender'];
+const tech = ["HTML", "CSS", "JavaScript", "Three.js", "Blender"];
 
 export default function LegacyPortfolioSite() {
   return (
