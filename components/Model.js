@@ -1,9 +1,9 @@
-import { useEffect, useRef } from "react";
-import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
+import { useEffect, useRef } from 'react';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 
-import person from "../assets/compressed.glb";
+import person from '../assets/compressed.glb';
 
 export default function Model() {
   const mountRef = useRef(null);
@@ -23,12 +23,12 @@ export default function Model() {
     const loader = new GLTFLoader();
     const dracoLoader = new DRACOLoader();
 
-    dracoLoader.setDecoderPath("node_modules/three/examples/js/libs/draco/");
+    dracoLoader.setDecoderPath('node_modules/three/examples/js/libs/draco/');
     dracoLoader.preload();
 
     loader.setDRACOLoader(dracoLoader);
 
-    loader.load(person, (gltf) => scene.add(gltf.scene));
+    loader.load(person, gltf => scene.add(gltf.scene));
     scene.add(ambientLight);
 
     renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);

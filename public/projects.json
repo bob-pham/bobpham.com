@@ -5,7 +5,7 @@
         "dateStart": "2022-05",
         "dateEnd": "2022-07",
         "description": "Full-stack web app that aims to reduce food waste by scanning user grocery receipts to manage kitchen pantries",
-        "tech": ["Python", "Django", "React", "Tailwindcss", "OpenCV"],
+        "tech": ["Python", "Django", "React", "OpenCV", "Tailwindcss"],
         "url": "/project-cornucopia"
     },
     {

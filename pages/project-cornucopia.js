@@ -1,17 +1,17 @@
-import { useRef } from "react";
-import Image from "next/image";
+import { useRef } from 'react';
+import Image from 'next/image';
 
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from '../components/ProjectHeader';
 
-import logo from "../public/images/cornucopia/logo.png";
-import monochromeProcess from "../public/images/cornucopia/monochromatization.png";
-import finalProcess from "../public/images/cornucopia/finalprocess.png";
-import home from "../public/images/cornucopia/home.png";
-import mobileAddItem from "../public/images/cornucopia/mobile add item.png";
-import homeMobile from "../public/images/cornucopia/homemobile.png";
-import login from "../public/images/cornucopia/Cornucopia Login.png";
+import logo from '../public/images/cornucopia/logo.png';
+import monochromeProcess from '../public/images/cornucopia/monochromatization.png';
+import finalProcess from '../public/images/cornucopia/finalprocess.png';
+import home from '../public/images/cornucopia/home.png';
+import mobileAddItem from '../public/images/cornucopia/mobile add item.png';
+import homeMobile from '../public/images/cornucopia/homemobile.png';
+import login from '../public/images/cornucopia/Cornucopia Login.png';
 
-const tech = ["Python", "Django", "React", "Tailwindcss", "OpenCV"];
+const tech = ['Python', 'Django', 'React', 'Tailwindcss', 'OpenCV'];
 
 export default function ProjectCornucopia() {
   const imageProcessing = useRef(null);
@@ -48,77 +48,77 @@ export default function ProjectCornucopia() {
             <div className="divider"></div>
           </div>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: imageProcessing.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Image Processing + Text Recognition
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: textFiltering.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Text Filtering + Correction
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: testingFramework.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Custom (accuracy) Testing Framework
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: recipeFinding.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Recipe Finding
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: recalls.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Recall Identification
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: backFrontEnd.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Backend + Frontend
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
@@ -233,7 +233,11 @@ export default function ProjectCornucopia() {
           alt="Monochrome Process"
         />
         <p>Thus, the final process that was chosen was to down + grayscale</p>
-        <Image className="my-5 rounded-xl place-self-center" src={finalProcess} alt="Final Process"/>
+        <Image
+          className="my-5 rounded-xl place-self-center"
+          src={finalProcess}
+          alt="Final Process"
+        />
         <h2
           className="text-center text-lg mb-4 text-green-500"
           ref={textFiltering}
@@ -290,11 +294,11 @@ export default function ProjectCornucopia() {
           amazing", the output file will display "[c][o][r]nucopia is amazing"
           <br />
           <br />
-          Misidentified characters are highlighed using {"{}"}. For example, if
+          Misidentified characters are highlighed using {'{}'}. For example, if
           an extra character was in a line, it would be flagged as unnessessary
           like "cornucopia is amazing
-          {"{!}"}". If a characteris misidentified, the correct character would
-          be displayed as well "cor{"{n(m)}"}ucopia is amazing"
+          {'{!}'}". If a characteris misidentified, the correct character would
+          be displayed as well "cor{'{n(m)}'}ucopia is amazing"
         </p>
         <h2
           className="text-center text-lg m-8 text-green-500"
@@ -343,13 +347,13 @@ export default function ProjectCornucopia() {
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 md:w-5/6 w-11/12">
           <div className="carousel w-full rounded-xl max-h-80">
             <div
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={login} className="w-auto" alt="Login Screen"/>
+              <Image src={login} className="w-9/12 h-fit" alt="Login Screen" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">
                   ❮
@@ -363,7 +367,11 @@ export default function ProjectCornucopia() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={homeMobile} className="w-auto" alt="Mobile Home Screen"/>
+              <Image
+                src={homeMobile}
+                className="w-auto"
+                alt="Mobile Home Screen"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -375,9 +383,9 @@ export default function ProjectCornucopia() {
             </div>
             <div
               id="slide3"
-              className="carousel-item relative w-full justify-center bg-slate-700 p-3"
+              className="carousel-item relative w-full justify-center bg-slate-700 p-3 grid"
             >
-              <Image src={home} className="w-auto" alt="Home Screen"/>
+              <Image src={home} className="w-9/12 h-fit place-self-center" alt="Home Screen" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
@@ -391,7 +399,11 @@ export default function ProjectCornucopia() {
               id="slide4"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={mobileAddItem} className="w-auto" alt="Add Item Menu"/>
+              <Image
+                src={mobileAddItem}
+                className="w-auto"
+                alt="Add Item Menu"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮

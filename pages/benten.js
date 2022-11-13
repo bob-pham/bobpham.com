@@ -1,6 +1,6 @@
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from '../components/ProjectHeader';
 
-const tech = ["C++", "Image Magick", "CMake"];
+const tech = ['C++', 'Image Magick', 'CMake'];
 
 export default function Benten() {
   return (
@@ -12,10 +12,10 @@ export default function Benten() {
       />
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
         <p>
-          [WIP] Benten is a multithreaded CLI image editor written in C++ and utilizes
-          the ImageMagick library. Benten does not give the user the usual
-          granular control of a traditional editor, rather it transforms images
-          into predefined permutations. Each permutation is a testbed for
+          [WIP] Benten is a multithreaded CLI image editor written in C++ and
+          utilizes the ImageMagick library. Benten does not give the user the
+          usual granular control of a traditional editor, rather it transforms
+          images into predefined permutations. Each permutation is a testbed for
           different algorithms, and computer vision tools.
           <br />
           <br />

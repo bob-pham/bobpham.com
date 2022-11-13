@@ -1,20 +1,20 @@
-import { useRef } from "react";
-import Image from "next/image";
+import { useRef } from 'react';
+import Image from 'next/image';
 
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from '../components/ProjectHeader';
 
-import Logo from "../public/images/right_angle/logo.png";
-import Correct from "../public/images/right_angle/Correct.png";
-import Calibrate from "../public/images/right_angle/Calibrate.png";
-import Incorrect from "../public/images/right_angle/Incorrect.png";
+import Logo from '../public/images/right_angle/logo.png';
+import Correct from '../public/images/right_angle/Correct.png';
+import Calibrate from '../public/images/right_angle/Calibrate.png';
+import Incorrect from '../public/images/right_angle/Incorrect.png';
 
 const tech = [
-  "Python",
-  "Flask",
-  "React",
-  "Tailwindcss",
-  "OpenCV",
-  "media pipe",
+  'Python',
+  'Flask',
+  'React',
+  'Tailwindcss',
+  'OpenCV',
+  'media pipe'
 ];
 
 export default function RightAngle() {
@@ -58,33 +58,33 @@ export default function RightAngle() {
             <div className="divider"></div>
           </div>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: challenges.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Challenges
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: improvements.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Possible Future Improvements
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
@@ -147,13 +147,17 @@ export default function RightAngle() {
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 md:w-5/6 w-11/12">
           <div className="carousel w-full rounded-xl max-h-80">
             <div
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={Calibrate} className="w-auto" alt="Calibration Showcase"/>
+              <Image
+                src={Calibrate}
+                className="w-9/12 h-fit"
+                alt="Calibration Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -167,7 +171,11 @@ export default function RightAngle() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={Correct} className="w-auto" alt="Correct Posture Showcase"/>
+              <Image
+                src={Correct}
+                className="w-9/12 h-fit"
+                alt="Correct Posture Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -181,7 +189,11 @@ export default function RightAngle() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={Incorrect} className="w-auto" alt="Slouching Showcase"/>
+              <Image
+                src={Incorrect}
+                className="w-9/12 h-fit"
+                alt="Slouching Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮

@@ -1,12 +1,12 @@
-import { useRef } from "react";
-import Image from "next/image";
-import ProjectHeader from "../components/ProjectHeader";
+import { useRef } from 'react';
+import Image from 'next/image';
+import ProjectHeader from '../components/ProjectHeader';
 
-import HomeScreen from "../public/images/hercules/home.png";
-import ChangeRoom from "../public/images/hercules/changeroomscreenshot.png";
-import QuestPage from "../public/images/hercules/questpage.png";
+import HomeScreen from '../public/images/hercules/home.png';
+import ChangeRoom from '../public/images/hercules/changeroomscreenshot.png';
+import QuestPage from '../public/images/hercules/questpage.png';
 
-const tech = ["Java", "Android", "Android Studio", "XML"];
+const tech = ['Java', 'Android', 'Android Studio', 'XML'];
 
 export default function Hercules() {
   const Dev = useRef(null);
@@ -43,33 +43,33 @@ export default function Hercules() {
             <div className="divider"></div>
           </div>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: Dev.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Development and Implementation
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: improvements.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Possible Future Improvements
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
@@ -149,13 +149,13 @@ export default function Hercules() {
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 md:w-5/6 w-11/12">
           <div className="carousel w-full rounded-xl max-h-80">
             <div
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={ChangeRoom} className="w-auto" alt="Change Room"/>
+              <Image src={ChangeRoom} className="w-auto" alt="Change Room" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -169,7 +169,7 @@ export default function Hercules() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={QuestPage} className="w-auto" alt="Quest Page"/>
+              <Image src={QuestPage} className="w-auto" alt="Quest Page" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -183,7 +183,7 @@ export default function Hercules() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={HomeScreen} className="w-auto" alt="Home Screen"/>
+              <Image src={HomeScreen} className="w-auto" alt="Home Screen" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮

@@ -1,14 +1,14 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 export default function LandingPage({ timeout = 60 }) {
   const canvas = useRef();
 
-  const backgroundColor = "rgba(17, 24, 39, 1)";
-  const backgroundFade = "rgba(17, 24, 39, 0.25)";
-  const textColor = "#16A34A";
+  const backgroundColor = 'rgba(17, 24, 39, 1)';
+  const backgroundFade = 'rgba(17, 24, 39, 0.25)';
+  const textColor = '#16A34A';
 
   useEffect(() => {
-    const context = canvas.current.getContext("2d");
+    const context = canvas.current.getContext('2d');
 
     const width = document.body.offsetWidth;
     const height = document.body.offsetHeight;
@@ -28,7 +28,7 @@ export default function LandingPage({ timeout = 60 }) {
       context.fillRect(0, 0, width, height);
 
       context.fillStyle = textColor;
-      context.font = "20pt monospace";
+      context.font = '20pt monospace';
 
       yPositions.forEach((y, index) => {
         const text = String.fromCharCode(Math.random() * 128);
@@ -46,7 +46,7 @@ export default function LandingPage({ timeout = 60 }) {
   }, [canvas, timeout]);
 
   return (
-    <div className=" w-100 grid place-items-center font-bebasneue sm:text-5xl text-3xl text-white text-center">
+    <div className="w-full h-full grid place-items-center font-bebasneue sm:text-5xl text-2xl text-white text-center">
       <canvas
         className="h-full w-full absolute z-0 bg-white text-lg"
         ref={canvas}

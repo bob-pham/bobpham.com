@@ -1,12 +1,12 @@
-import { useState } from "react";
-import Image from "next/image";
-import Popup from "reactjs-popup";
+import { useState } from 'react';
+import Image from 'next/image';
+import Popup from 'reactjs-popup';
 
-import MenuBar from "../components/MenuBar";
-import ResumeCode from "../components/ResumeCode";
+import MenuBar from '../components/MenuBar';
+import ResumeCode from '../components/ResumeCode';
 
-import header from "../public/images/coopHeader.png";
-import Cornucopia from "../public/images/cornucopia/logo.png";
+import header from '../public/images/coopHeader.png';
+import Cornucopia from '../public/images/cornucopia/logo.png';
 
 const Languages = () => {
   const [languages, setLanguages] = useState(0);
@@ -19,8 +19,8 @@ const Languages = () => {
         <span
           className={
             languages == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -46,8 +46,8 @@ const Frameworks = () => {
         <span
           className={
             frameworks == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -77,8 +77,8 @@ const Tools = () => {
         <span
           className={
             tools == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -105,8 +105,8 @@ const Job1 = () => {
         <span
           className={
             job1 == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -123,7 +123,7 @@ const Job1 = () => {
       <ul className="leading-4 list-disc px-3">
         <li>
           Implementing new <strong>cryptographic algorithms</strong> for custom
-          security HW block using <strong>Assembly</strong> and{" "}
+          security HW block using <strong>Assembly</strong> and{' '}
           <strong>C</strong>, for next generation IPU's and FNIC's as part of
           NEX Cloud Networking Group (NCNG), FW security team
         </li>
@@ -152,8 +152,8 @@ const Job2 = () => {
         <span
           className={
             job2 == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -194,8 +194,8 @@ const Projects = () => {
         <span
           className={
             projects == 0
-              ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
+              ? 'indicator-item indicator-end badge badge-accent animate-bounce font-montserrat'
+              : 'hidden'
           }
         >
           !
@@ -218,8 +218,8 @@ const Project1 = () => {
           <span
             className={
               project1 == 0
-                ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-                : "hidden"
+                ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+                : 'hidden'
             }
           >
             !
@@ -268,8 +268,8 @@ const Project2 = () => {
             <span
               className={
                 project2 == 0
-                  ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
-                  : "hidden"
+                  ? 'indicator-item indicator-end badge badge-accent animate-bounce font-montserrat'
+                  : 'hidden'
               }
             >
               !
@@ -301,7 +301,7 @@ const Project2 = () => {
           </li>
           <li>
             Backend logic managed with <strong>Django</strong>, user data stored
-            in <strong>SQL</strong> database, and frontend created with{" "}
+            in <strong>SQL</strong> database, and frontend created with{' '}
             <strong>React</strong>
           </li>
         </ul>
@@ -322,8 +322,8 @@ const Project3 = () => {
           <span
             className={
               project3 == 0
-                ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-                : "hidden"
+                ? 'indicator-item indicator-center badge badge-accent animate-bounce font-montserrat'
+                : 'hidden'
             }
           >
             !
@@ -344,8 +344,8 @@ const Project3 = () => {
         <ul className="list-disc leading-4 px-3">
           <li>
             Developed backend systems managing in-game currency, experience,
-            item-inventory, item-shop, quests, and questline systems using{" "}
-            <strong>Java</strong>, and frontend GUI with{" "}
+            item-inventory, item-shop, quests, and questline systems using{' '}
+            <strong>Java</strong>, and frontend GUI with{' '}
             <strong>Android Studio</strong> tools and <strong>XML</strong>
           </li>
           <li>
@@ -363,25 +363,31 @@ export default function Resume() {
   return (
     <>
       <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-xy overflow-hidden scroll-smooth snap-proximity snap-y">
-        <MenuBar head="Resume"/>
+        <MenuBar head="Resume" />
         <div className="grid place-items-center mt-20">
           <h1 className="font-montserrat text-white text-xl text-center">
             Interactive Resume
           </h1>
           <h3 className="text-center">
-            Created Entirely with React + TailwindCSS! Identical to my actual resume!
+            Created Entirely with React + TailwindCSS! Identical to my actual
+            resume!
           </h3>
           <h3 className="font-montserrat text-green-500 text-lg mb-5 animate-bounce">
             Click around!
           </h3>
 
-        <a href="https://drive.google.com/file/d/1s9E60gqCFklQF0CQgA9NobL5Ain8a6b9/view?usp=share_link" target="_" className="btn btn-accent my-5">Download my real resume here</a>
-
+          <a
+            href="https://drive.google.com/file/d/1s9E60gqCFklQF0CQgA9NobL5Ain8a6b9/view?usp=share_link"
+            target="_"
+            className="btn btn-accent my-5"
+          >
+            Download my real resume here
+          </a>
         </div>
         <div className="grid place-self-center place-items-center w-11/12 overflow-scroll mt-5  text-[14px]">
           <article className="place-self-center bg-white w-[794px] h-[1123px] pt-5 z-0">
             <div className="flex justify-end w-full px-10">
-              <Image className="w-3/4 " src={header} alt="Co-op Header"/>
+              <Image className="w-3/4 " src={header} alt="Co-op Header" />
             </div>
             <div className="flex flex-col font-serif text-black px-[80px] w-full">
               <div className="flex w-full">
@@ -398,7 +404,7 @@ export default function Resume() {
                 <div className="w-7/12 justify-self-end mt-4 overflow-visible">
                   <a href="https://www.linkedin.com/in/bobpham" target="_">
                     <p className="text-right transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                      <strong>Linkedin:</strong>{" "}
+                      <strong>Linkedin:</strong>{' '}
                       https://www.linkedin.com/in/bobpham
                     </p>
                   </a>
@@ -429,7 +435,7 @@ export default function Resume() {
               <div className="w-full">
                 <ul className="list-disc px-3 m-0 leading-snug">
                   <li>
-                    3rd Year Bachelor of Science,{" "}
+                    3rd Year Bachelor of Science,{' '}
                     <strong>Honours Computer Science</strong>
                   </li>
                   <li>
@@ -675,7 +681,11 @@ export default function Resume() {
                 >
                   <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
                     <h1 className="font-bold">Cornucopia</h1>
-                    <Image className="w-1/2 my-5" src={Cornucopia} alt="Cornucopia"/>
+                    <Image
+                      className="w-1/2 my-5"
+                      src={Cornucopia}
+                      alt="Cornucopia"
+                    />
                     <p>
                       Project Cornucopia PythonDjangoReactTailwindcssOpenCV
                       Cornucopia is an app which helps users manage kitchen

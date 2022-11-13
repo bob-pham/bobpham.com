@@ -1,17 +1,17 @@
-import { useRef } from "react";
-import Image from "next/image";
+import { useRef } from 'react';
+import Image from 'next/image';
 
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from '../components/ProjectHeader';
 
-import HomeScreenShowCase from "../public/images/device_repair_manager/homescreen_showcase.png";
-import DesktopShowCase from "../public/images/device_repair_manager/desktop_showcase.png";
-import LaptopShowCase from "../public/images/device_repair_manager/laptop_showcase.png";
-import PhoneShowCase from "../public/images/device_repair_manager/phone_showcase.png";
-import SDRManager from "../public/images/device_repair_manager/simple_device_repair_manager.png";
-import UML from "../public/images/device_repair_manager/UML_design_diagram.png";
-import View from "../public/images/device_repair_manager/view_showcase.png";
+import HomeScreenShowCase from '../public/images/device_repair_manager/homescreen_showcase.png';
+import DesktopShowCase from '../public/images/device_repair_manager/desktop_showcase.png';
+import LaptopShowCase from '../public/images/device_repair_manager/laptop_showcase.png';
+import PhoneShowCase from '../public/images/device_repair_manager/phone_showcase.png';
+import SDRManager from '../public/images/device_repair_manager/simple_device_repair_manager.png';
+import UML from '../public/images/device_repair_manager/UML_design_diagram.png';
+import View from '../public/images/device_repair_manager/view_showcase.png';
 
-const tech = ["Java", "Java Swing", "JUnit"];
+const tech = ['Java', 'Java Swing', 'JUnit'];
 
 export default function SimpleDeviceRepairManager() {
   const development = useRef(null);
@@ -45,33 +45,33 @@ export default function SimpleDeviceRepairManager() {
             <div className="divider"></div>
           </div>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: development.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - Development + Implementation
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: uml.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
             - UML
           </button>
           <button
-            className="my-2"
+            className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-700 hover:rounded-lg hover:px-4"
             onClick={() =>
               window.scrollTo({
                 top: pictures.current.offsetTop,
-                behaviour: "smooth",
+                behaviour: 'smooth'
               })
             }
           >
@@ -99,7 +99,12 @@ export default function SimpleDeviceRepairManager() {
           Swing GUI to manage inputs to the device data fields. A full UML of
           the project can be seen here:
         </p>
-        <Image src={UML} className="w-3/4 place-self-center my-5" ref={uml} alt="Simple Device Manager UML"/>
+        <Image
+          src={UML}
+          className="w-3/4 place-self-center my-5"
+          ref={uml}
+          alt="Simple Device Manager UML"
+        />
         <p>
           Data persistence was implemented by parsing the objects and storing
           them in a single JSON. Upon entry into the program, users choose to
@@ -116,13 +121,17 @@ export default function SimpleDeviceRepairManager() {
         <h1 className="text-2xl" ref={pictures}>
           Image Gallery
         </h1>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 md:w-5/6 w-11/12">
           <div className="carousel w-full rounded-xl max-h-80">
             <div
               id="slide1"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={HomeScreenShowCase} className="w-auto" alt="Home Screen Showcase"/>
+              <Image
+                src={HomeScreenShowCase}
+                className="w-auto"
+                alt="Home Screen Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide6" className="btn btn-circle">
                   ❮
@@ -136,7 +145,11 @@ export default function SimpleDeviceRepairManager() {
               id="slide2"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={DesktopShowCase} className="w-auto" alt="Desktop Showcase"/>
+              <Image
+                src={DesktopShowCase}
+                className="w-auto"
+                alt="Desktop Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -150,7 +163,11 @@ export default function SimpleDeviceRepairManager() {
               id="slide3"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={LaptopShowCase} className="w-auto" alt="Laptop Showcase"/>
+              <Image
+                src={LaptopShowCase}
+                className="w-auto"
+                alt="Laptop Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮
@@ -164,7 +181,11 @@ export default function SimpleDeviceRepairManager() {
               id="slide4"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={PhoneShowCase} className="w-auto" alt="Phone Showcase"/>
+              <Image
+                src={PhoneShowCase}
+                className="w-auto"
+                alt="Phone Showcase"
+              />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -178,7 +199,7 @@ export default function SimpleDeviceRepairManager() {
               id="slide5"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={View} className="w-auto" alt="View Devices"/>
+              <Image src={View} className="w-auto" alt="View Devices" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">
                   ❮
@@ -192,7 +213,7 @@ export default function SimpleDeviceRepairManager() {
               id="slide6"
               className="carousel-item relative w-full justify-center bg-slate-700 p-3"
             >
-              <Image src={SDRManager} className="w-auto" alt="SDR Manager"/>
+              <Image src={SDRManager} className="w-auto" alt="SDR Manager" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide5" className="btn btn-circle">
                   ❮
