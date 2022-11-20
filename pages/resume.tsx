@@ -528,6 +528,9 @@ export default function Resume() {
                         <li>VSCode</li>
                         <li>VSCode Neovim - Extension (Highly recommended)</li>
                         <li>Atom One Dark Pro - Theme</li>
+                        <li>Glassit (opacity: 246) - Extension</li>
+                        <li>Oh my posh (windows) / Oh my zsh (Linux)</li>
+                        <li>FiraMono Nerd Font & Agnoster</li>
                         <li>Git/GitHub</li>
                       </ul>
                     </div>

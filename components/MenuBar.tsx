@@ -17,8 +17,7 @@ export default function MenuBar(props: any) {
           href="https://img.icons8.com/color/48/000000/code.png"
         />
       </Head>
-      <menu className="w-screen absolute z-40">
-        <div className="navbar bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x text-white border-b-2 border-slate-800">
+        <div className="w-screen z-40 navbar bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x text-white border-b-2 border-slate-800">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,7 +38,7 @@ export default function MenuBar(props: any) {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-green-500"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box text-green-500"
               >
                 <li>
                   <a href="/contact">Contact</a>
@@ -47,7 +46,7 @@ export default function MenuBar(props: any) {
                 <li>
                   <a href="/resume">Resume</a>
                 </li>
-                <li tabIndex={0}>
+                <li tabIndex={0} className="downdown-bottom">
                   <a className="justify-between">
                     Projects
                     <svg
@@ -85,7 +84,7 @@ export default function MenuBar(props: any) {
               <li>
                 <a href="/resume">Resume</a>
               </li>
-              <li tabIndex={0}>
+              <li tabIndex={0} className="">
                 <a>
                   Projects
                   <svg
@@ -125,7 +124,6 @@ export default function MenuBar(props: any) {
             </a>
           </div>
         </div>
-      </menu>
     </>
   );
 }
