@@ -168,7 +168,7 @@ export default function AboutMe() {
               practices.
               <br />
               <br />I am currently interested in internship opportunities for
-              summer 2023. Message me for all inquiries and/or if you're
+              summer 2024/25. Message me for all inquiries and/or if you're
               interested in working together on a project!
             </p>
           </div>

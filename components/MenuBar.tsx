@@ -17,7 +17,7 @@ export default function MenuBar(props: any) {
           href="https://img.icons8.com/color/48/000000/code.png"
         />
       </Head>
-        <div className="w-screen z-40 navbar bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x text-white border-b-2 border-slate-800">
+        <div className="max-h-min w-screen z-40 navbar bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x text-white border-b-2 border-slate-800">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">

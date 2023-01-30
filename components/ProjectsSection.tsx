@@ -19,6 +19,9 @@ import projectsDefault from "../public/images/projects.png";
 import script from "../public/icons/scripts.png";
 import portfoliowebsite from "../public/images/portfoliowebsite.png";
 import legacywebsite from "../public/images/website.png";
+import mayaHome from "../public/images/maya/maya_home.png";
+import storAIBot from "../public/images/storai_teller/robot.png";
+
 
 const images: any = {
   "Project Cornucopia": cornucopiaLogo,
@@ -29,7 +32,9 @@ const images: any = {
   "CLI Pomodoro": pomodoro,
   "Portfolio Website": portfoliowebsite,
   "[Legacy] Portfolio Site": legacywebsite,
-  "script": script
+  "script": script,
+  "Maya": mayaHome,
+  "StorAI Teller": storAIBot
 };
 
 export default function ProjectsSection(props: any) {

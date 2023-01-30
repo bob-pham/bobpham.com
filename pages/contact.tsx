@@ -62,13 +62,13 @@ export default function Contact({ timeout = 60 }) {
 
   return (
     <>
-      <MenuBar head="Contact" />
-      <main className="grid grid-cols-1 place-items-center h-screen w-screen m-0">
+      <main className="grid grid-cols-1 min-h-screen bg-gray-900 animate-gradient-y overflow-hidden scroll-smooth snap-proximity snap-y">
+        <MenuBar className="max-height-fit" head="Contact" />
         <canvas
           className="h-screen w-full absolute z-0 bg-white text-lg top-0 left-0"
           ref={canvas}
         ></canvas>
-        <div className="grid place-items-center mt-16">
+        <div className="grid place-items-center my-16">
           <Profile />
           <div className="text-center font-montserrat text-white bg-slate-700 border-white border p-10 rounded-xl m-0 z-10">
             <div className="md:w-fit w-11/12 rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x drop-shadow-sm font-bebasneue text-2xl">
