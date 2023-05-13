@@ -1,22 +1,15 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 import Image from "next/image";
-import ProjectHeader from '../components/ProjectHeader';
+import ProjectHeader from "../components/ProjectHeader";
 
-import robot from '../public/images/storai_teller/robot.png';
-import loadingPage from '../public/images/storai_teller/loading_page.png';
-import createStory from '../public/images/storai_teller/create_story_page.png';
-import page1 from '../public/images/storai_teller/page1.png';
-import pageLast from '../public/images/storai_teller/pagelast.png';
-import homePage from '../public/images/storai_teller/homepage.png';
+import robot from "../public/images/storai_teller/robot.png";
+import loadingPage from "../public/images/storai_teller/loading_page.png";
+import createStory from "../public/images/storai_teller/create_story_page.png";
+import page1 from "../public/images/storai_teller/page1.png";
+import pageLast from "../public/images/storai_teller/pagelast.png";
+import homePage from "../public/images/storai_teller/homepage.png";
 
-const tech = [
-  "Python",
-  "Flask",
-  "React",
-  "Tailwindcss",
-  "OpenAI",
-  "DaisyUI"
-];
+const tech = ["Python", "Flask", "React", "Tailwindcss", "OpenAI", "DaisyUI"];
 
 export default function StorAITeller() {
   const development = useRef<null | HTMLHeadingElement>(null);
@@ -33,28 +26,40 @@ export default function StorAITeller() {
         demo="hzhaBG5DpFo"
       />
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
+        <p className="text-center text-xl">
+          <br />
+          By Lilian & Bob Pham
+          <br />
+        </p>
         <p>
-          StorAI Teller is innovative webapp that allows kids and parents to create completely
-          unique stories using AI. Its no question that kids should be reading more, it helps
-          expand vocabulary, improves writing, builds independence and self confidence, and fuels
-          imagination Not everyone has access to books: books can be expensive, and libraries
-          are not always commonplace or well stocked. Online, books may be more accessible,
-          but can also be behind a paywall.
+          Introducing StorAI Teller, the cutting-edge web application that
+          harnesses the power of Artificial Intelligence to revolutionize the
+          way kids and parents create stories. We all know the benefits of
+          reading for children: it enhances vocabulary, improves writing skills,
+          fosters independence and self-confidence, and ignites imagination.
+          Unfortunately, not everyone has equal access to books. Libraries may
+          be scarce, and books can be expensive. Moreover, digital books are
+          often behind paywalls.
           <br />
           <br />
-          StoryAI Teller solves this problem by potentially creating an infinite well of unique
-          stories at a click of a button. Currently free, though likely AI pictures/text
-          completion will always be dirt cheap compared to hiring professionals.
+          With StoryAI Teller, these problems are a thing of the past. Our web
+          app generates unique stories at the click of a button, offering an
+          infinite well of exciting adventures for young readers. Our innovative
+          machine learning algorithm uses Natural Language Processing techniques
+          to analyze user inputs, tailoring each story to their interests and
+          preferences.
           <br />
           <br />
-          There are additional benefits to StorAI Teller as well, it can stimulates children’s
-          creativity, aiding them in gaining inspiration and understanding of how stories
-          are created and structured. Additionally, activities can be structured around StorAI
-          Teller: Don’t like the pictures that are generated? A cool activity would be to draw
-          your own, using the AI generated photos as a launching point.
+          Best of all, our app is currently free. While AI-generated text and
+          images will always be significantly cheaper than hiring professional
+          writers and illustrators, we want to make sure everyone has access to
+          our incredible platform.
           <br />
           <br />
-          Try it Today! (Currently in Alpha)
+          In short, StorAI Teller is a game-changer. We're leveraging
+          state-of-the-art technologies such as AI, machine learning, and
+          natural language processing to empower young readers and ignite their
+          love of storytelling. Join us on this exciting journey today.
         </p>
         <div className="grid place-items-center my-5 text-green-500">
           <div className="flex flex-col w-1/2 place-self-center">
@@ -68,10 +73,9 @@ export default function StorAITeller() {
                 window.scrollTo({
                   top: development.current.offsetTop,
                   behavior: "smooth"
-                })
+                });
               }
-            }
-            }
+            }}
           >
             - Development and Implementation
           </button>
@@ -82,10 +86,9 @@ export default function StorAITeller() {
                 window.scrollTo({
                   top: improvements.current.offsetTop,
                   behavior: "smooth"
-                })
+                });
               }
-            }
-            }
+            }}
           >
             - Future Improvements
           </button>
@@ -96,49 +99,45 @@ export default function StorAITeller() {
                 window.scrollTo({
                   top: pictures.current.offsetTop,
                   behavior: "smooth"
-                })
+                });
               }
-            }
-            }
+            }}
           >
             - Image Gallery
           </button>
         </div>
         <div className="flex flex-col w-1/2 place-self-center">
-          <h1 className="text-xl mt-10 text-center"
-            ref={development}>
+          <h1 className="text-xl mt-10 text-center" ref={development}>
             Development + Implementation
           </h1>
           <div className="divider"></div>
         </div>
         <p>
-          StorAI Teller uses a Flask backend, and OpenAI's python library to create
-          stories based on prompts and its associated pictures. The frontend was made
-          using React and TailwindCSS.
+          StorAI Teller employs a Flask backend, leveraging OpenAI's powerful
+          Python library to generate unique stories based on user prompts and
+          associated pictures. The frontend, developed using React and
+          TailwindCSS, is intentionally simple, designed to cater to our target
+          audience - children. 
           <br />
           <br />
-          The frontend webapp is kept intentially simple - after all, the target
-          audience of this app are children. Users can set a theme, which is able to be
-          literally anything, as well as set as include as many characters as they want.
+          Users can set any theme they desire and include as many characters as
+          they like. These themes are sent to the backend in an API call where
+          they undergo advanced filtering and refinement to avoid mature themes
+          or those disallowed by OpenAI's terms of service. These themes are
+          then utilized to create a prompt which is used to generate a story
+          with OpenAI's Text Completion API.
           <br />
           <br />
-          The theme and characters are sent to the backend in an API call, where they
-          are further parsed. Themes are filtered and refined to avoid mature themes
-          and those disallowed by OpenAI's terms of service. The themes are then used
-          to create a prompt which is used to create a story with OpenAI's Text Completion
-          API.
+          Once the story has been created, it is parsed into constituent pages
+          and further modified to create prompts for associated images. Since
+          pictures take significant time to construct, their size is limited to
+          524x524, and the associated parsing and API calls are parallelized
+          using multithreading to optimize performance.
           <br />
           <br />
-          Once the story has been created, the story is further parsed. First, it is
-          seperated into consituent pages. These pages are then furthered parsed
-          and modified, in order to create prompts to create associated images.
-          If the prompt is disallowed by OpenAI, no image is created. Since pictures
-          take a significant time to be constructed, their size is limited to 524x524,
-          and the associated parsing and API calls are parallelized using multithreading
-          <br />
-          <br />
-          Finally, the story book is sent back to the user as a response, and the
-          frontend constructs a book.
+          The storybook is then sent back to the user as a response, and the
+          frontend constructs a book with all the bells and whistles that
+          children love.
         </p>
         <h2
           className="text-center text-lg mb-4 text-green-500"
@@ -146,7 +145,9 @@ export default function StorAITeller() {
         >
           Future Improvements
         </h2>
-        <p>The project is still in alpha, many improvements and enhancements can be done
+        <p>
+          The project is still in alpha, many improvements and enhancements can
+          be done
           <br />
           <br />
           - Add Users
@@ -158,8 +159,7 @@ export default function StorAITeller() {
           - Allow users to share stories
           <br />
           - Ability to save constructed stories as books
-          <br />
-          - Drag and drop friendly mobile UI for kids
+          <br />- Drag and drop friendly mobile UI for kids
         </p>
       </div>
       <div className="grid place-items-center text-green-500">
@@ -279,5 +279,5 @@ export default function StorAITeller() {
         </a>
       </div>
     </main>
-  )
+  );
 }

@@ -33,14 +33,28 @@ export default function ProjectCornucopia() {
       />
       <div className="grid place-self-center w-11/12 text-white mb-10 max-w-screen">
         <p>
-          Cornucopia is an app which helps users manage kitchen pantries and
-          minimize food waste Users are able to add grocery items to their
-          pantry, and Cornucopia will notify them when their items are expired.
-          Pantry items can be added individually, or in batches by scanning
-          grocery receipts. Additionally, users will be notified if any food
-          item within their pantry has been recalled for saftey reasons.
-          Cornucopia also is able to scan user pantry, and suggest meals which
-          use items that may expire soon.
+          Cornucopia is an innovative pantry management application that
+          utilizes advanced algorithms to reduce food waste and enhance kitchen
+          organization. The app empowers users to seamlessly add grocery items
+          to their pantry, which is intelligently monitored to ensure optimal
+          freshness and quality. Using sophisticated notification systems,
+          Cornucopia automatically alerts users when their items are nearing
+          expiration or have been recalled for safety reasons. 
+          <br />
+          <br />
+          Pantry items can be conveniently added to the app individually or in
+          bulk, leveraging state-of-the-art scanning technologies that
+          streamline the process. In addition, Cornucopia's cutting-edge
+          features include meal suggestion functionality that dynamically scans
+          the user's pantry, identifying and recommending recipe options that
+          maximize ingredient use and reduce waste.
+          <br />
+          <br />
+          With Cornucopia, users can take advantage of a comprehensive,
+          technology-driven solution to minimize waste, streamline meal
+          planning, and optimize their kitchen organization.
+          <br />
+          <br />
         </p>
         <div className="grid place-items-center my-5 text-green-500">
           <div className="flex flex-col w-1/2 place-self-center">
