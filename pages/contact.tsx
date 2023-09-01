@@ -73,8 +73,8 @@ export default function Contact({ timeout = 60 }) {
           <div className="text-center font-montserrat text-white bg-slate-700 border-white border p-10 rounded-xl m-0 z-10">
             <div className="md:w-fit w-11/12 rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x drop-shadow-sm font-bebasneue text-2xl">
               <h1 className="h-min m-1">Hello, I'm Bob</h1>
-              <h1 className="h-min m-1">Firmware Engineer Intern @ Intel</h1>
               <h1 className="h-min m-1">Honours CS Student @ UBC</h1>
+              <h1 className="h-min m-1">Prev Firmware Engineer Intern @ Intel</h1>
             </div>
             <div className="mt-5 ">
               <h1 className="font-bold">Contact Info:</h1>
@@ -85,8 +85,8 @@ export default function Contact({ timeout = 60 }) {
               <a href="https://github.com/bob-pham">
                 <h1 className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-800 hover:rounded-lg hover:px-4 hover:py-2">GitHub: <span className="text-green-500">github.com/bob-pham</span></h1>
               </a>
-              <a href="https://bob-pham.github.io/">
-                <h1 className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-800 hover:rounded-lg hover:px-4 hover:py-2">Website: <span className="text-green-500">bob-pham.github.io</span></h1>
+              <a href="https://bobpham.vercel.app/">
+                <h1 className="my-2 transition ease-in-out hover:-translate-y-1 hover:bg-slate-800 hover:rounded-lg hover:px-4 hover:py-2">Website: <span className="text-green-500">bobpham.vercel.app</span></h1>
               </a>
             </div>
           </div>

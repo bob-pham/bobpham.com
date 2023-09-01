@@ -116,7 +116,7 @@ const Job1 = () => {
             Intel - Firmware Engineer Intern
           </strong>
           <p className="w-1/2 text-right justify-self-end">
-            Sep 2022 - Present
+            Sep 2022 - Sep 2023
           </p>
         </div>
       </div>

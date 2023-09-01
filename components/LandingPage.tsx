@@ -55,8 +55,8 @@ export default function LandingPage({ timeout = 60 }) {
       ></canvas>
       <div className="md:w-fit w-11/12 overflow-hidden rounded-xl p-10 bg-gradient-to-br from-slate-800 to-zinc-700 via-gray-800 animate-gradient-x border-2 border-slate-800 drop-shadow-sm z-10">
         <h1 className="h-min m-1">Hello, I'm Bob</h1>
-        <h1 className="h-min m-1">Firmware Engineer Intern @ Intel</h1>
         <h1 className="h-min m-1">Honours CS Student @ UBC</h1>
+        <h1 className="h-min m-1">Prev Firmware Engineer Intern @ Intel</h1>
       </div>
     </div>
   );

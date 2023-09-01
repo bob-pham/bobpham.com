@@ -27,9 +27,9 @@ export default function AboutMe() {
     [
       "Intel",
       "Firmware Engineer Intern",
-      "Sep 2022 - Present | Developing firmware for custom security HW block, for next generation IPU's and FNIC's as part of NEX Cloud Networking Group (NCNG)",
+      "Sep 2022 - Sep 2023 | Developing firmware for custom security HW block, for next generation IPU's and FNIC's as part of NEX Cloud Networking Group (NCNG)",
       new Date(2022, 9, 6),
-      new Date()
+      new Date(2023, 9, 1)
     ],
     [
       "UBC",
@@ -160,12 +160,14 @@ export default function AboutMe() {
               <br />
               <br />
               I am a third-year honours computer science student at the
-              University of British Columbia. Currently, I am a firmware
-              engineer intern at Intel, as part of the NEX Cloud Networking
-              Group (NCNG), working on firmware security. I am passionate about
+              University of British Columbia. I am passionate about
               programming and am continually striving to push my abilities to
               the next level, understand new technologies, and learn industry
               practices.
+              <br />
+              Previously, I was a firmware engineer intern at Intel, as part 
+              of the NEX Cloud Networking Group (NCNG), working on firmware 
+              security. 
               <br />
               <br />I am currently interested in internship opportunities for
               summer 2024/25. Message me for all inquiries and/or if you're
