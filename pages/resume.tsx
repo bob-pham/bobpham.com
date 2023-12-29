@@ -3,7 +3,6 @@ import Image from "next/image";
 import Popup from "reactjs-popup";
 
 import MenuBar from "../components/MenuBar";
-import ResumeCode from "../components/ResumeCode";
 
 import header from "../public/images/coopheader.png";
 import Cornucopia from "../public/images/cornucopia/logo.png";
@@ -397,7 +396,7 @@ export default function Resume() {
           </h3>
 
           <a
-            href="https://drive.google.com/file/d/1s9E60gqCFklQF0CQgA9NobL5Ain8a6b9/view?usp=share_link"
+            href="https://drive.google.com/file/d/1-q4rHFroVfRtFb7E8BxK8_6hsjdpNF_M/view"
             target="_"
             className="btn btn-accent my-5"
           >
@@ -700,7 +699,13 @@ export default function Resume() {
             </div>
           </article>
         </div>
-        <ResumeCode />
+        <a
+          href="https://github.com/bob-pham/bob-pham.github.io/blob/version2/pages/resume.tsx"
+          target="_"
+          className="btn grid grid-cols-2 gap-0 bg-green-600 hover:bg-green-400 text-white border-white border-2 mt-2 mb-5 w-fit place-self-center"
+        >
+          Review the code here!
+        </a>
       </main>
     </>
   );
