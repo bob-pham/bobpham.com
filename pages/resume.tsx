@@ -17,19 +17,18 @@ const Languages = () => {
     >
       <div className="indicator w-1/2">
         <span
-          className={
-            languages == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={languages == 0
+            ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
         <h3 className="font-bold">Programming Languages:</h3>
       </div>
       <p>
-        Assembly, Bash/Zsh, C, C++, C#, Go*, HTML + CSS, Java, JavaScript,
-        LaTeX, Lua*, Python, R, Racket, Rust*, SQL, TypeScript
+        Assembly (x86/ARM), Bash/Zsh, C, C++, C#, HTML + CSS, Java, JavaScript,
+        LaTeX, Lua, PHP, Python, R, Racket, SQL, TCL, TypeScript, Verilog/System
+        Verilog
       </p>
     </div>
   );
@@ -44,11 +43,9 @@ const Frameworks = () => {
     >
       <div className="indicator w-11/12">
         <span
-          className={
-            frameworks == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={frameworks == 0
+            ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
@@ -57,8 +54,8 @@ const Frameworks = () => {
         </h3>
       </div>
       <p>
-        Angular*, Bootstrap, Django, Flask, GraphQL*, Image Magick, JUnit,
-        MongoDB*, MySQL*, Next.js*, Node.js*, OpenCV*, React, React Native*,
+        Bootstrap, Django, Docker, Express, Flask, Image Magick, JUnit, Mocha,
+        MySQL, Next.js, Node.js, OpenCV, OpenGL, React, React Native,
         TailwindCSS, Three.js, Unity
       </p>
     </div>
@@ -75,19 +72,17 @@ const Tools = () => {
     >
       <div className="indicator w-3/4">
         <span
-          className={
-            tools == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={tools == 0
+            ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
         <h3 className="font-bold">Development Tools and Environments</h3>
       </div>
       <p className="mb-0">
-        Android Studio, Azure DevOps, CMake, Git/GitHub, IntelliJ IDEA, Jira,
-        Linux*, Vim, Visual Studio, VSCode, Vite, Webpack*
+        AWS, Azure DevOps, CMake, Git/GitHub, Jetbrains, Jira, Linux, Vim,
+        Visual Studio, VSCode, Vite
       </p>
     </div>
   );
@@ -103,11 +98,9 @@ const Job1 = () => {
     >
       <div className="indicator w-full">
         <span
-          className={
-            job1 == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={job1 == 0
+            ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
@@ -122,18 +115,45 @@ const Job1 = () => {
       </div>
       <ul className="leading-4 list-disc px-3">
         <li>
-          Implementing new <strong>cryptographic algorithms</strong> for custom
-          security HW block using <strong>Assembly</strong> and{" "}
-          <strong>C</strong>, for next generation IPU's and FNIC's as part of
-          NEX Cloud Networking Group (NCNG), FW security team
+          Lead the development of the X.509 certificate generation feature for
+          SPDM compliant device attestation for a next generation security
+          offload IP, implemented in <strong>assembly</strong>
         </li>
         <li>
-          designed binary data and <strong>device attestation</strong> parsers,
-          streamlining verification and cross team collaboration
+          Primary developer of a suite of <strong>Python</strong>{" "}
+          applications for the generation, verification, and parsing of
+          certificates and certificate chains relating to device attestation,
+          simplifying cross team development, communication, and collaboration
         </li>
         <li>
-          Developing <strong>Python</strong> testing framework and system test
-          suites that simplifiy verification of new functionality
+          Upgraded and enhanced the IP to support next-generation{" "}
+          <strong>signing</strong>, <strong>hashing</strong>, and{" "}
+          <strong>asymmetric key encryption cryptographic algorithms</strong>
+          {" "}
+          using
+          <strong>assembly</strong> and <strong>C</strong>
+        </li>
+        <li>
+          Developed a <strong>Python</strong> wrapper for a{" "}
+          <strong>TCL + SV</strong>{" "}
+          test suite, allowing for faster test development and simpler
+          integration with modern security libraries and verification tools
+        </li>
+        <li>
+          Authored a control flow visualization tool using{" "}
+          <strong>Python</strong> and{" "}
+          <strong>Graphviz</strong>, which generates UML diagrams live during
+          CPU simulation execution, increasing developer visibility into a
+          previously black-box system
+        </li>
+        <li>
+          Refactored testing infrastructure to utilize multi-threading for test
+          generation and execution, reducing total runtime by upwards of 500%
+        </li>
+        <li>
+          Gained strong understanding of cryptography security protocols for
+          both software and firmware development, earning a white and yellow
+          belt in Intel’s security belt certification program
         </li>
       </ul>
     </div>
@@ -150,11 +170,9 @@ const Job2 = () => {
     >
       <div className="indicator w-full">
         <span
-          className={
-            job2 == 0
-              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={job2 == 0
+            ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
@@ -192,11 +210,9 @@ const Projects = () => {
     >
       <div className="indicator w-1/3">
         <span
-          className={
-            projects == 0
-              ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
-              : "hidden"
-          }
+          className={projects == 0
+            ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
+            : "hidden"}
         >
           !
         </span>
@@ -216,20 +232,18 @@ const Project1 = () => {
       <div className="flex m-0">
         <div className="indicator w-full">
           <span
-            className={
-              project1 == 0
-                ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-                : "hidden"
-            }
+            className={project1 == 0
+              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+              : "hidden"}
           >
             !
           </span>
           <div className="flex w-full">
             <strong className="w-3/4 text-left justify-self-start ">
-              Benten - C++
+              Benten - C++, OpenGL, Image Magick, FFMPEG
             </strong>
             <p className="w-1/4 text-right justify-self-end">
-              Sep 2022 - Present
+              Sep 2023 - Present
             </p>
           </div>
         </div>
@@ -238,16 +252,19 @@ const Project1 = () => {
         <p>Multithreaded CLI Image Editor</p>
         <ul className="list-disc leading-4 px-3">
           <li>
-            Isolates areas by similar colour or shape using BFS and
-            edge-detection algorithms for parallel processing
+            Implemented advanced image processing algorithms, including edge
+            detection, color correction, and noise reduction, to enhance the
+            visual quality of images/videos, and isolating them for parallel
+            processing
+          </li>
+          <li>
+            Used <strong>OpenGL</strong>{" "}
+            to leverage the system’s GPU for enhanced performance and rendering
+            capabilities
           </li>
           <li>
             Safeguards against race conditions and deadlocks using mutexes and
             semaphores
-          </li>
-          <li>
-            Edits and saves images into 10 complex predefined styles using Image
-            Magick library
           </li>
         </ul>
       </div>
@@ -266,11 +283,9 @@ const Project2 = () => {
         <div className="flex w-full">
           <div className="indicator w-3/4">
             <span
-              className={
-                project2 == 0
-                  ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
-                  : "hidden"
-              }
+              className={project2 == 0
+                ? "indicator-item indicator-end badge badge-accent animate-bounce font-montserrat"
+                : "hidden"}
             >
               !
             </span>
@@ -288,21 +303,28 @@ const Project2 = () => {
         </p>
         <ul className="list-disc leading-4 px-3">
           <li>
-            Grocery receipt image manipulation and text recognition accomplished
-            with <strong>OpenCV</strong>and <strong>PyTesseract</strong>
+            Scans, parses, and saves grocery receipts with{" "}
+            <strong>OpenCV</strong>and <strong>PyTesseract</strong>
           </li>
           <li>
-            Developed custom unit testing framework to assess accuracy of text
-            parsing and filtering algorithms
+            Utilized graph theory (<strong>BFS</strong>,{" "}
+            <strong>Dijkstra</strong>) to develop a recipe recommendation
+            engine, generating personalized suggestions based on ingredients,
+            expiration dates, and user preferences
           </li>
           <li>
-            Notifies users of food recalls using periodic API calls to
-            government institutions and a web scraper
+            Created database schema to store user data and recipes using{" "}
+            <strong>Django’s ORM</strong> and <strong>MySQL</strong>
           </li>
           <li>
-            Backend logic managed with <strong>Django</strong>, user data stored
-            in <strong>SQL</strong> database, and frontend created with{" "}
-            <strong>React</strong>
+            Created secure API endpoints with appropriate authentication
+            mechanisms, such as token-based authentication, to protect sensitive
+            user data and ensure secure interactions with the application
+          </li>
+          <li>
+            Responsive User Interface developed using <strong>React</strong>,
+            {" "}
+            <strong>Tailwindcss</strong>, and <strong>Vite</strong>
           </li>
         </ul>
       </div>
@@ -320,11 +342,9 @@ const Project3 = () => {
       <div className="flex m-0">
         <div className="indicator w-full">
           <span
-            className={
-              project3 == 0
-                ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
-                : "hidden"
-            }
+            className={project3 == 0
+              ? "indicator-item indicator-center badge badge-accent animate-bounce font-montserrat"
+              : "hidden"}
           >
             !
           </span>
@@ -386,46 +406,42 @@ export default function Resume() {
         </div>
         <div className="grid place-self-center place-items-center w-11/12 overflow-scroll mt-5  text-[14px]">
           <article className="place-self-center bg-white w-[794px] h-[1123px] pt-5 z-0">
-            <div className="flex justify-end w-full px-10">
-              <Image className="w-3/4 " src={header} alt="Co-op Header" />
-            </div>
-            <div className="flex flex-col font-serif text-black px-[80px] w-full">
-              <div className="flex w-full">
-                <div className="w-5/12 justify-self-start">
-                  <h1 className="text-4xl font-bold">Bob Pham</h1>
-                  <p className="text-left transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                    <strong>Email:</strong> bobbaopham@gmail.com
-                  </p>
-                  <p className="text-left transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                    <strong>Phone:</strong> (604) - 352 - 2975
-                  </p>
-                  <h2 className="font-bold text-xl">Education</h2>
+            <div className="flex flex-col font-serif text-black px-[56px] w-full mt-10">
+              <div className="grid grid-cols-1 w-max place-items-center">
+                <div className="grid w-max place-items-center">
+                  <h1 className="text-4xl font-bold w-max">Bob Pham</h1>
                 </div>
-                <div className="w-7/12 justify-self-end mt-4 overflow-visible">
+                <div className="w-max grid place-items-center grid-cols-5">
+                  <p className="text-left mx-[-4px] px-[-4px] transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
+                    bobbaopham@gmail.com |
+                  </p>
+                  <p className="text-left mx-[-4px] px-[-4px] transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
+                    (604) - 352 - 2975 |
+                  </p>
                   <a href="https://www.linkedin.com/in/bobpham" target="_">
-                    <p className="text-right transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                      <strong>Linkedin:</strong>{" "}
-                      https://www.linkedin.com/in/bobpham
+                    <p className="text-right mx-[-4px] px-[-4px] transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
+                      linkedin.com/in/bobpham |
                     </p>
                   </a>
                   <a href="/">
-                    <p className="text-right transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                      <strong>Website:</strong> https://bob-pham.github.io/
+                    <p className="text-right mx-[-4px] px-[-4px] transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
+                      bobpham.vercel.app |
                     </p>
                   </a>
                   <a href="https://github.com/bob-pham" target="_">
-                    <p className="text-right transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
-                      <strong>Github:</strong> https://github.com/bob-pham
+                    <p className="text-right mx-[-4px] px-[-4px] transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2">
+                      github.com/bob-pham
                     </p>
                   </a>
                 </div>
               </div>
+              <h2 className="font-bold text-xl">Education</h2>
               <div className="divider bg-black h-[2px] m-0"></div>
               <div className="flex w-full mt-0">
                 <div className="flex w-full">
                   <p className="justify-self-start w-10/12">
-                    <strong>University of British Columbia</strong> - Vancouver,
-                    BC
+                    <strong>University of British Columbia</strong>{" "}
+                    - Vancouver, BC
                   </p>
                   <strong className="justify-self-end text-right w-6/12">
                     Expected Graduation: May 2025
@@ -439,14 +455,65 @@ export default function Resume() {
                     <strong>Honours Computer Science</strong>
                   </li>
                   <li>
-                    4.1 GPA (87%) Overall, 4.33 GPA (90%) Computer Science (4.33
+                    4.1 GPA (88%) Overall, 4.33 GPA (90%) Computer Science (4.33
                     Scale)
                   </li>
                   <li>
-                    Relevant courses: Data Structures and Algorithms, Software
-                    Design, Computer Systems
+                    Relevant courses: Object Oriented Programming, Algorithms
+                    and Data Structures, Computer Systems, Relational Databases,
+                    Software Engineering, Algorithm Design and Analysis
                   </li>
                 </ul>
+              </div>
+              <div className="flex flex-col ">
+                <div className="flex w-full">
+                  <h2 className="w-1/2 font-bold text-xl m-0 justify-self-start">
+                    Experience
+                  </h2>
+                </div>
+                <div className="divider bg-black h-[2px] m-0"></div>
+                <Popup
+                  trigger={
+                    <button className="w-full text-left">
+                      <Job1 />
+                    </button>
+                  }
+                  modal
+                >
+                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
+                    <h1 className="font-bold">
+                      Intel - Firmware Engineer Intern
+                    </h1>
+                    <p>
+                      I was able to spend a year working as a Firmware Engineer
+                      Itern at Intel. Since I work in a security team and handle
+                      sensitive device information/secrets, I cannot speak about
+                      much of what I was able to create and accomplish. As far
+                      as what is currently within the resume, this is a
+                      representative but vague description of some of these
+                      tasks. Though, based on these facts the knowledgable
+                      reader should be able to extrapolate my abilities. Feel
+                      free to contact me if you want any clarifications. many of
+                      my accomplishments at Intel need to be kept vague and
+                      non-specific.
+                      <br />
+                      <br />
+                      Other tidbits of information:
+                    </p>
+                    <ul className="list-disc leading-4">
+                      <li>Intel Security Yellow + White Belt Certified</li>
+                      <li>
+                        Developed suite of scripts to parse and interpret
+                        previously unknown binary data
+                      </li>
+                      <li>
+                        Implemented assembly microcode of functions implementing
+                        cutting edge cryptography algorithms
+                      </li>
+                      <li>Pushing for further C adoption within team</li>
+                    </ul>
+                  </div>
+                </Popup>
               </div>
               <div className="flex flex-col">
                 <h2 className="font-bold text-xl m-0">Technical Skills</h2>
@@ -537,85 +604,7 @@ export default function Resume() {
                   </Popup>
                 </div>
               </div>
-              <div className="flex flex-col ">
-                <div className="flex w-full">
-                  <h2 className="w-1/2 font-bold text-xl m-0 justify-self-start">
-                    Experience
-                  </h2>
-                  <p className="w-1/2 m-0 text-right justify-self-end text-[12px]">
-                    *Currently Acquiring
-                  </p>
-                </div>
-                <div className="divider bg-black h-[2px] m-0"></div>
-                <Popup
-                  trigger={
-                    <button className="w-full text-left">
-                      <Job1 />
-                    </button>
-                  }
-                  modal
-                >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
-                    <h1 className="font-bold">
-                      Intel - Firmware Engineer Intern
-                    </h1>
-                    <p>
-                      As of the time of writing, I am a Firmware Engineer Itern
-                      at Intel. Since I work in a security team and handle
-                      sensitive device information/secrets, I cannot speak about
-                      much of what I was able to create and accomplish. As far
-                      as what is currently within the resume, this is a
-                      representative but vague description of some of these
-                      tasks. Though, based on these facts the knowledgable
-                      reader should be able to extrapolate my abilities. Feel
-                      free to contact me if you want any clarifications. many of
-                      my accomplishments at Intel need to be kept vague and
-                      non-specific.
-                      <br />
-                      <br />
-                      Other tidbits of information:
-                    </p>
-                    <ul className="list-disc leading-4">
-                      <li>Intel Security Yellow + White Belt Certified</li>
-                      <li>
-                        Developed suite of scripts to parse and interpret
-                        previously unknown binary data
-                      </li>
-                      <li>
-                        Implemented assembly microcode of functions implementing
-                        cutting edge cryptography algorithms
-                      </li>
-                      <li>Pushing for further C adoption within team</li>
-                    </ul>
-                  </div>
-                </Popup>
-                <Popup
-                  trigger={
-                    <button className="w-full text-left">
-                      <Job2 />
-                    </button>
-                  }
-                  modal
-                >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
-                    <h1 className="font-bold">Product Repurposing Solutions</h1>
-                    <p>
-                      Product Repurposing Solutions (PRS) is a local business
-                      that refurbishes used electronics. As one of the first
-                      hires are PRS, I was able to influence much of the repair
-                      and refurbish process, and was able to touch many
-                      different aspects of the business, though my focus was
-                      primarily on laptop repair.
-                      <br />
-                      <br />
-                      Part of being a professional is being knowledgable in the
-                      tools that you use. Having a job both designing low-level
-                      computer systems and repairing them are skills that I
-                      value.
-                    </p>
-                  </div>
-                </Popup>
-              </div>
+
               <div className="flex flex-col">
                 <Popup
                   trigger={
@@ -690,7 +679,6 @@ export default function Resume() {
                       alt="Cornucopia"
                     />
                     <p>
-                      Project Cornucopia PythonDjangoReactTailwindcssOpenCV
                       Cornucopia is an app which helps users manage kitchen
                       pantries and minimize food waste Users are able to add
                       grocery items to their pantry, and Cornucopia will notify
@@ -702,40 +690,6 @@ export default function Resume() {
                       suggest meals which use items that may expire soon.
                     </p>
                     <a href="/project-cornucopia">
-                      <button className="btn bg-green-500 text-white mt-10">
-                        Learn More
-                      </button>
-                    </a>
-                  </div>
-                </Popup>
-                <Popup
-                  trigger={
-                    <button className="w-full text-left">
-                      <Project3 />
-                    </button>
-                  }
-                  modal
-                >
-                  <div className="grid place-items-center bg-gradient-to-br from-slate-700 to-blue-900 via-gray-700 animate-gradient-x rounded-lg p-10 font-montserrat mx-10">
-                    <h1 className="font-bold">Hercules</h1>
-                    <p>
-                      Hercules is a project created during NwHacks 2022 by
-                      myself and a team of three others. Hercules is a
-                      "gamified" health tracking app, oriented towards those who
-                      struggle to maintain a healthy lifestyle. The app is
-                      engineered to incentivize users to work out, eat well, and
-                      develop healthy habits by rewarding them for fulfilling
-                      their fitness plans, or “questlines”, which are comprised
-                      of different tasks. Each user has a customizable avatar,
-                      and upon completion of certain goals "quests", users will
-                      earn gold and experience points that can be used to buy
-                      items at the shop and increase their character’s stats. As
-                      a proof of concept developed over the course of 24 hours,
-                      it is relatively simple, however a simple algorithm was
-                      developed to make it harder to earn rewards with
-                      inconsistent or unhealthy progress.
-                    </p>
-                    <a href="/hercules">
                       <button className="btn bg-green-500 text-white mt-10">
                         Learn More
                       </button>
