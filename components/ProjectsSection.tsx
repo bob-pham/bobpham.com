@@ -21,7 +21,8 @@ import portfoliowebsite from "../public/images/portfoliowebsite.png";
 import legacywebsite from "../public/images/website.png";
 import mayaHome from "../public/images/maya/maya_home.png";
 import storAIBot from "../public/images/storai_teller/robot.png";
-
+import sectionsQuery from "../public/images/insight_ubc/search_success.png";
+import pokedatadex from "../public/images/pokedatadex/logo.png";
 
 const images: any = {
   "Project Cornucopia": cornucopiaLogo,
@@ -34,7 +35,9 @@ const images: any = {
   "[Legacy] Portfolio Site": legacywebsite,
   "script": script,
   "Maya": mayaHome,
-  "StorAI Teller": storAIBot
+  "StorAI Teller": storAIBot,
+  "Insight UBC": sectionsQuery,
+  "PokeDataDex": pokedatadex
 };
 
 export default function ProjectsSection(props: any) {

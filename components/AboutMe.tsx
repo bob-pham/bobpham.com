@@ -36,7 +36,7 @@ export default function AboutMe() {
       "Studying - Honours CS",
       "Sep 2020 - Present | Relevant Courses: Data Structures and Algorithms, Software Design, Computer Systems",
       new Date(2020, 9, 6),
-      new Date(2022, 9, 5)
+      new Date()
     ],
     [
       "PRS",
