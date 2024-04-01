@@ -14,7 +14,7 @@
     "dateStart": "2022-05",
     "dateEnd": "Present",
     "description": "Multithreaded CLI Image Editor, mutates images into predefined variations",
-    "tech": ["C++", "Image Magick", "C"],
+    "tech": ["Rust", "C++", "Image Magick", "C"],
     "url": "/benten"
   },
   {
@@ -34,6 +34,15 @@
     "description": "right angle is a posture correction web-application that uses computer vision help users improve their posture by detecting and notifying users when they have good and bad sitting posture.",
     "tech": ["Python", "Flask", "React", "Tailwindcss", "OpenCV", "media pipe"],
     "url": "/right-angle"
+  },
+  {
+    "name": "Frost-Byte",
+    "score": 5,
+    "dateStart": "2024-03",
+    "dateEnd": "Present",
+    "description": "Frost-Byte is an alternative to OS level NAS software, being a simple, intuitive, and performant solution for infrequently accessed cold storage",
+    "tech": ["Rust", "MySQL", "Ubuntu"],
+    "url": "/frost-byte"
   },
   {
     "name": "Insight UBC",

@@ -25,9 +25,8 @@ const Languages = () => {
         <h3 className="font-bold">Programming Languages:</h3>
       </div>
       <p>
-        Assembly (x86/ARM), Bash/Zsh, C, C++, C#, HTML + CSS, Java, JavaScript,
-        LaTeX, Lua, PHP, Python, R, Racket, SQL, TCL, TypeScript, Verilog/System
-        Verilog
+        Assembly (x86/ARM), Bash, C, C++, C#, HTML + CSS, Java, JavaScript,
+        Python, R, Rust, SQL, TCL, TypeScript
       </p>
     </div>
   );
@@ -53,9 +52,8 @@ const Frameworks = () => {
         </h3>
       </div>
       <p>
-        Bootstrap, Django, Docker, Express, Flask, Image Magick, JUnit, Mocha,
-        MySQL, Next.js, Node.js, OpenCV, OpenGL, React, React Native,
-        TailwindCSS, Three.js, Unity
+        Bootstrap, Django, Express, Flask, JUnit, Mocha, MySQL, Next.js,
+        Node.js, NumPy, OpenCV, OpenGL, Pandas, React.js, Tailwind CSS, Three.js
       </p>
     </div>
   );
@@ -80,8 +78,8 @@ const Tools = () => {
         <h3 className="font-bold">Development Tools and Environments</h3>
       </div>
       <p className="mb-0">
-        AWS, Azure DevOps, CMake, Git/GitHub, Jetbrains, Jira, Linux, Vim,
-        Visual Studio, VSCode, Vite
+        AWS, Azure DevOps, CMake, Docker, Git/GitHub, Jetbrains, Jira, Linux,
+        Vim, Visual Studio, VSCode, Vite
       </p>
     </div>
   );
@@ -92,7 +90,7 @@ const Job1 = () => {
 
   return (
     <div
-      className="bg-white transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2"
+      className="bg-white transition ease-in-out hover:-translate-y-1 hover:bg-gray-100 rounded-lg hover:px-2 leading-2"
       onClick={() => setJob1(1)}
     >
       <div className="indicator w-full">
@@ -114,29 +112,27 @@ const Job1 = () => {
       </div>
       <ul className="leading-4 list-disc px-3">
         <li>
-          Lead the development of the X.509 certificate generation feature for
-          SPDM compliant device attestation for a next generation security
-          offload IP, implemented in <strong>assembly</strong>
+          Spearheaded the development of the X.509 certificate generation
+          feature for SPDM compliant device attestation for a next generation
+          security offload IP using <strong>assembly</strong>
         </li>
         <li>
-          Primary developer of a suite of <strong>Python</strong>{" "}
-          applications for the generation, verification, and parsing of
-          certificates and certificate chains relating to device attestation,
-          simplifying cross team development, communication, and collaboration
+          Developed a unified set of <strong>Python</strong>{" "}
+          applications for the generation, verification and parsing of web
+          certificates, enabling seamless certificate management, eliminating
+          manual processes, and enhancing cross-team collaboration through
+          improved data visibility and streamlined workflows
         </li>
         <li>
-          Upgraded and enhanced the IP to support next-generation{" "}
-          <strong>signing</strong>, <strong>hashing</strong>, and{" "}
-          <strong>asymmetric key encryption cryptographic algorithms</strong>
-          {" "}
-          using
-          <strong>assembly</strong> and <strong>C</strong>
+          Upgraded and enhanced the IP to support next-generation signing,
+          hashing, and asymmetric key encryption cryptographic algorithms,
+          implemented using <strong>assembly</strong> and <strong>C</strong>
         </li>
         <li>
-          Developed a <strong>Python</strong> wrapper for a{" "}
-          <strong>TCL + SV</strong>{" "}
-          test suite, allowing for faster test development and simpler
-          integration with modern security libraries and verification tools
+          Halved developer effort and simplified integration with external tools
+          by developing a <strong>Pyton</strong> wrapper for a{" "}
+          <strong>TCL</strong> +
+          <strong>SV</strong> test suite
         </li>
         <li>
           Authored a control flow visualization tool using{" "}
@@ -146,13 +142,14 @@ const Job1 = () => {
           previously black-box system
         </li>
         <li>
-          Refactored testing infrastructure to utilize multi-threading for test
-          generation and execution, reducing total runtime by upwards of 500%
+          Maintained and contributed to proprietary and homegrown solutions,
+          including microcode assembly
+          <strong>assembler/compiler</strong> and assembly syntax highlighter
         </li>
         <li>
-          Gained strong understanding of cryptography security protocols for
-          both software and firmware development, earning a white and yellow
-          belt in Intel’s security belt certification program
+          Refactored testing infrastructure to utilize multi-threading for test
+          generation and execution, reducing total runtime by upwards of{" "}
+          <strong>80%</strong>
         </li>
       </ul>
     </div>
@@ -251,10 +248,9 @@ const Project1 = () => {
         <p>Multithreaded CLI Image Editor</p>
         <ul className="list-disc leading-4 px-3">
           <li>
-            Implemented advanced image processing algorithms, including edge
-            detection, color correction, and noise reduction, to enhance the
-            visual quality of images/videos, and isolating them for parallel
-            processing
+            Implemented image processing algorithms, including edge detection,
+            color correction, and noise reduction, to enhance the visual quality
+            of images/videos, and isolating them for parallel processing
           </li>
           <li>
             Used <strong>OpenGL</strong>{" "}
@@ -262,8 +258,8 @@ const Project1 = () => {
             capabilities
           </li>
           <li>
-            Safeguards against race conditions and deadlocks using mutexes and
-            semaphores
+            Created inpainting and outpainting functionality with texture
+            synthesis
           </li>
         </ul>
       </div>
@@ -316,9 +312,9 @@ const Project2 = () => {
             <strong>Django’s ORM</strong> and <strong>MySQL</strong>
           </li>
           <li>
-            Created secure API endpoints with appropriate authentication
-            mechanisms, such as token-based authentication, to protect sensitive
-            user data and ensure secure interactions with the application
+            Created secure API endpoints with token-based authentication, to
+            protect sensitive user data and ensure secure interactions with the
+            application
           </li>
           <li>
             Responsive User Interface developed using <strong>React</strong>,
@@ -396,7 +392,7 @@ export default function Resume() {
           </h3>
 
           <a
-            href="https://drive.google.com/file/d/1-q4rHFroVfRtFb7E8BxK8_6hsjdpNF_M/view"
+            href="https://drive.google.com/file/d/1pUsTEY8CQYjSAoY24X3g6e8fwVE_V9AX/view?usp=sharing"
             target="_"
             className="btn btn-accent my-5"
           >
@@ -458,9 +454,7 @@ export default function Resume() {
                     Scale)
                   </li>
                   <li>
-                    Relevant courses: Object Oriented Programming, Algorithms
-                    and Data Structures, Computer Systems, Relational Databases,
-                    Software Engineering, Algorithm Design and Analysis
+                    Dean's Honour List (2021, 2022)
                   </li>
                 </ul>
               </div>

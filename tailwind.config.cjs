@@ -48,7 +48,7 @@ module.exports = {
           fontFamily: {
               'bebasneue': ['"Bebas Neue"', 'sans-serif'],
               'montserrat': ['Montserrat', 'sans-serif'],
-              'serif': ['Times New Roman']
+              'serif': ['Arial']
           }
           
       },
