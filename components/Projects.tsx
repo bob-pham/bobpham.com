@@ -10,6 +10,8 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import { Button } from "./ui/button";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -18,7 +20,19 @@ export default function Projects() {
         Projects
       </h3>
       <GitHubCalendar username="bob-pham" />
-      <BentoGrid className="max-w-4xl mx-auto">
+      <a href="https://github.com/bob-pham" target="_blank">
+        <Button className="border-white border m-8">
+          <Image
+            src="/logos/github_logo.png"
+            height={20}
+            width={20}
+            alt="Github"
+            className="bg-white rounded-full"
+          />{" "}
+          Github
+        </Button>
+      </a>
+      <BentoGrid className="w-11/12 mx-auto">
         {items.map((item, i) => (
           <BentoGridItem
             key={i}
