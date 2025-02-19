@@ -16,7 +16,7 @@ import Image from "next/image";
 export default function Projects() {
   return (
     <div className="text-white my-16 w-full grid place-items-center">
-      <h3 className="py-16 text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
+      <h3 className="py-16 text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
         Projects
       </h3>
       <GitHubCalendar username="bob-pham" />

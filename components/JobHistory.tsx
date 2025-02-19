@@ -4,7 +4,7 @@ import JobCard from "./ui/job-card";
 export default function JobHistory() {
   return (
     <div className="text-white my-16 w-full">
-      <h3 className="py-16 text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
+      <h3 className="py-16 text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
         Experience
       </h3>
       <div className="grid columns-1 place-items-center">
@@ -30,7 +30,7 @@ export default function JobHistory() {
           description="Firmware engineer intern, developing firmware, microcode, and software for a next generation hardware security module for IPU and FNIC SoC's"
         />
       </div>
-      <h3 className="py-16 text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
+      <h3 className="py-16 text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
         Education
       </h3>
       <div className="grid columns-1 place-items-center">
