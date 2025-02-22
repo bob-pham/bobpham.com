@@ -1,4 +1,5 @@
 import JobHistory from "@/components/JobHistory";
+import LinkBar from "@/components/LinkBar";
 import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import { EvervaultCard } from "@/components/ui/evervault-card";
@@ -52,10 +53,11 @@ export default function Home() {
             <TypewriterEffectSmooth words={nameText} />
           </h1>
           <TypewriterEffectSmooth words={subText} />
-          <div className="w-full flex items-center justify-center text-white">
+          <div className="w-full flex items-center justify-center text-white grid grid-cols-1">
             <p className="text-center text-white">
               Hi, my name is Bob and I write software. Beep boop.
             </p>
+            <LinkBar />
           </div>
         </div>
       </div>
