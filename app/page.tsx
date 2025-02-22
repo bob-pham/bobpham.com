@@ -48,7 +48,7 @@ export default function Home() {
     <div className="min-h-screen min-w-full h-full w-full">
       <div className="min-h-screen h-full grid place-items-center">
         <Spotlight />
-        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 grid place-items-center">
+        <div className=" p-4 max-w-7xl  mx-auto relative z-5  w-full pt-20 md:pt-0 grid place-items-center">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             <TypewriterEffectSmooth words={nameText} />
           </h1>
@@ -61,9 +61,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="overflow-y-scroll min-h-fit w-full">
-        <JobHistory />
-        <Projects />
+      <div className="overflow-y-scroll min-h-fit min-w-screen grid place-items-center">
+          <JobHistory />
+          <Projects />
       </div>
     </div>
   );

@@ -1,45 +1,55 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { loadMetadata } from "@/lib/projects";
 
-export default function Projects() {
+const Header = ({ logo }: { logo: string | null }) => {
   return (
-    <div className="text-white my-16 w-full grid place-items-center">
-      <h3 className="py-16 text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center ">
+    <div className="grid place-items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-600 to-neutral-500 p-1">
+      <Image
+        src={logo ? logo : "/projects/projects.png"}
+        alt="logo"
+        height={200}
+        width={200}
+        className="max-h-24 min-h-24 w-auto"
+      />
+    </div>
+  );
+};
+
+export default async function Projects() {
+  const projects = await loadMetadata();
+  return (
+    <div className="text-white my-16 grid place-items-center w-full">
+      <h3 className="py-16 text-white sm:text-xl md:text-3xl lg:text-5xl font-bold text-center">
         Projects
       </h3>
-      <GitHubCalendar username="bob-pham" />
-      <a href="https://github.com/bob-pham" target="_blank">
-        <Button className="border-white border m-8">
-          <Image
-            src="/logos/github_logo.png"
-            height={20}
-            width={20}
-            alt="Github"
-            className="bg-white rounded-full"
-          />{" "}
-          Github
-        </Button>
-      </a>
+      <div className="grid place-items-center w-1/2">
+        <GitHubCalendar username="bob-pham" />
+        <a href="https://github.com/bob-pham" target="_blank">
+          <Button className="border-white border m-8">
+            <Image
+              src="/logos/github_logo.png"
+              height={20}
+              width={20}
+              alt="Github"
+              className="bg-white rounded-full"
+            />{" "}
+            Github
+          </Button>
+        </a>
+      </div>
       <BentoGrid className="w-11/12 mx-auto">
-        {items.map((item, i) => (
+        {projects.map((project, i) => (
           <BentoGridItem
             key={i}
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            icon={item.icon}
+            title={project.title}
+            description={project.description}
+            header={<Header logo={project.logo} />}
+            link={`projects/${project.link}`}
+            items={project.tech}
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
           />
         ))}
@@ -47,51 +57,3 @@ export default function Projects() {
     </div>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
-const items = [
-  {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-  },
-];

@@ -13,6 +13,7 @@
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.7",
     "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
     "@tabler/icons-react": "^3.30.0",
     "@tailwindcss/typography": "^0.5.16",
@@ -33,6 +34,7 @@
     "react-dom": "^19.0.0",
     "react-github-calendar": "^4.5.5",
     "react-youtube": "^10.1.0",
+    "rehype-starry-night": "^2.2.0",
     "remark-gfm": "^4.0.1",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"

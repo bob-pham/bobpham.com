@@ -1,12 +1,15 @@
 ---
 title: Project Cornucopia
+description: Full-stack web app that aims to reduce food waste by scanning user grocery receipts to manage kitchen pantries
+link: cornucopia
+startDate: 05-01-2022
+endDate: 07-01-2022
 tech: 
 - TailwindCSS
 - Python
 - Flask
 - React
 - OpenCV
-description: Full-stack web app that aims to reduce food waste by scanning user grocery receipts to manage kitchen pantries
 logo: /projects/cornucopia/home.png
 demoVideo: FyvjRFwsdPY
 gitLink: https://github.com/bob-pham/Project-Cornucopia
@@ -25,6 +28,8 @@ Pantry items can be conveniently added to the app individually or in bulk, lever
 With Cornucopia, users can take advantage of a comprehensive, technology-driven solution to minimize waste, streamline meal planning, and optimize their kitchen organization.
 
 #### Development + Implementation
+
+---
 
 Cornucopia enables users to upload receipts to add items to their pantry in bulk. After uploading the image to the server, Cornucopia scans the receipt for grocery items, which are then sent back to the user to confirm. PyTesseract is the tool used for text recognition within each image, but because PyTesseract is able to read text from any image, this process can sometimes be slow. Images are optimized for PyTesseract by first compressing them (by downscaling), and then gray-scaling the image.
 
@@ -46,6 +51,8 @@ I also played around with the idea of further cropping the image after down-scal
 Monochrome Process
 
 Thus, the final process that was chosen was to down + grayscale
+
+---
 
 #### Final Process
 

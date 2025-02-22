@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
+import rehypeStarryNight from 'rehype-starry-night'
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -17,7 +18,7 @@ const withMDX = createMDX({
   options: {
     jsx: true,
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
+    rehypePlugins: [rehypeStarryNight],
   },
 });
 

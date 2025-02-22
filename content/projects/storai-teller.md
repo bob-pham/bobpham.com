@@ -1,12 +1,25 @@
-# StorAI Teller
-
-<ProjectHeader 
-name="StorAI Teller"
-logo="/projects/storai-teller/robot.png"
-tech={["TailwindCSS", "Python", "Flask", "React", "OpenAI"]}
-gitLink="https://github.com/bob-pham/Stor-AI-Teller"
-demo="hzhaBG5DpFo"
-/>
+---
+title: StorAI Teller
+description: StorAI Teller is innovative webapp that allows kids and parents to create completely unique children picturebooks using AI.
+link: storai-teller
+startDate: 01-01-2023
+endDate: 01-01-2023
+tech: 
+- TailwindCSS
+- Python
+- Flask
+- React
+- OpenAI
+logo: /projects/storai-teller/robot.png
+demoVideo: hzhaBG5DpFo
+gitLink: https://github.com/bob-pham/Stor-AI-Teller
+demoImages:
+- /projects/storai-teller/homepage.png
+- /projects/storai-teller/create_story_page.png
+- /projects/storai-teller/loading_page.png
+- /projects/storai-teller/page1.png
+- /projects/storai-teller/pagelast.png
+---
 
 #### By Lilian & Bob Pham
 
@@ -19,6 +32,8 @@ Best of all, our app is currently free. While AI-generated text and images will 
 In short, StorAI Teller is a game-changer. We're leveraging state-of-the-art technologies such as AI, machine learning, and natural language processing to empower young readers and ignite their love of storytelling. Join us on this exciting journey today.
 
 ### Development + Implementation
+
+---
 
 StorAI Teller employs a Flask backend, leveraging OpenAI's powerful Python library to generate unique stories based on user prompts and associated pictures. The frontend, developed using React and TailwindCSS, is intentionally simple, designed to cater to our target audience - children.
 
@@ -37,11 +52,3 @@ The project is still in alpha, many improvements and enhancements can be done, s
 - Ability to save constructed stories as books
 - Drag and drop friendly mobile UI for kids
 
-<DemoCarousel images={[
-"/projects/storai-teller/homepage.png",
-"/projects/storai-teller/create_story_page.png",
-"/projects/storai-teller/loading_page.png",
-"/projects/storai-teller/page1.png",
-"/projects/storai-teller/pagelast.png",
-]
-}/>

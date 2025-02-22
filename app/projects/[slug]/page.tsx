@@ -2,13 +2,13 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getProjects, loadProject } from "@/lib/projects";
 import { useMDXComponents } from "@/mdx-components";
 import remarkGfm from "remark-gfm";
+import rehypeStarryNight from 'rehype-starry-night'
 import ProjectHeader from "@/components/ProjectHeader";
 import DemoCarousel from "@/components/DemoCarousel";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const { slug } = await params;
   const project = await loadProject(slug);
-  console.log(project)
   return (
     <>
       <ProjectHeader
@@ -17,13 +17,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
         tech={project.data.tech}
         gitLink={project.data.gitLink}
         demo={project.data.demoVideo}
-        />
+        startDate={project.data.startDate}
+        endDate={project.data.endDate}
+      />
       <MDXRemote
         source={project.content}
         components={useMDXComponents()}
-        options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+        options={{ mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [rehypeStarryNight] } }}
       />
-      <DemoCarousel images={project.data.demoImages} />
+      {project.data.demoImages ? (
+        <DemoCarousel images={project.data.demoImages} />
+      ) : (
+        <></>
+      )}
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 import ProjectHeader from "./components/ProjectHeader";
 import DemoCarousel from "./components/DemoCarousel";
+import { Button } from "./components/ui/button";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -25,10 +26,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </h4>
     ),
-    p: ({ children }) => <p className="text-md">{children}</p>,
-    th: ({ children }) => (
-      <th className="text-white font-bold">{children}</th>
-    ),
+    p: ({ children }) => <p className="text-md grid">{children}</p>,
+    th: ({ children }) => <th className="text-white font-bold">{children}</th>,
     strong: ({ children }) => (
       <strong className="text-white font-bold">{children}</strong>
     ),
@@ -41,13 +40,18 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ({ children }) => (
       <li className="list-item text-white list-disc list-inside">{children}</li>
     ),
+    button: ({ children }) => <Button>{children}</Button>,
+    a: ({ children }) => <a className="text-white" target="_blank">{children}</a>,
+    code: ({ children }) => <code className="text-white">{children}</code>,
     img: (props) => (
-      <Image
-        sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
-        {...(props as ImageProps)}
-      />
+        <Image
+          width={800}
+          height={800}
+          className="w-1/2 place-self-center"
+          {...(props as ImageProps)}
+        />
     ),
+    iframe: ({ children }) => <iframe className="text-white">{children}</iframe>,
     ProjectHeader,
     DemoCarousel,
     Image,
