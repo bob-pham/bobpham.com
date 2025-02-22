@@ -26,6 +26,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </h4>
     ),
     p: ({ children }) => <p className="text-md">{children}</p>,
+    th: ({ children }) => (
+      <th className="text-white font-bold">{children}</th>
+    ),
+    strong: ({ children }) => (
+      <strong className="text-white font-bold">{children}</strong>
+    ),
     ul: ({ children }) => (
       <ul className="list-disc list-inside text-white pl-6">{children}</ul>
     ),

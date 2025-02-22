@@ -12,6 +12,7 @@ import Image from "next/image";
 export default function DemoCarousel({ images }: { images: string[] }) {
   return (
     <div className="grid place-items-center w-full bg-transparent">
+      <h3 className="text-white font-bold text-center text-xl">Images</h3>
     <Carousel className="w-1/2">
       <CarouselContent>
         {images.map((image, index) => (

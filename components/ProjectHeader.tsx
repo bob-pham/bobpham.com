@@ -21,6 +21,9 @@ export default function ProjectHeader({
 }) {
   return (
     <div className="grid place-items-center w-full">
+      <h1 className="text-4xl font-bold text-center my-2 text-white">
+        {name}
+      </h1>
       <Image
         className="pb-4 px-4 max-h-96 w-auto place-self-center"
         src={logo ? logo : projects}
