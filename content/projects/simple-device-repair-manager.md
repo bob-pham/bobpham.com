@@ -17,7 +17,12 @@ demoImages:
 - /projects/device_repair_manager/view_showcase.png
 ---
 
-This is a simple desktop application that assists in Desktop/Laptop/Phone repair/refurbish process. This application helps streamline the repair process by keeping track of device repair status and parts, which can be especially helpful when working in a team setting. All devices are indexed with a unique numeric ID, and has search features that can search your device inventory and returns ID's of devices with desired attributes.
+This is a simple desktop application that assists in Desktop/Laptop/Phone
+repair/refurbish process. This application helps streamline the repair process
+by keeping track of device repair status and parts, which can be especially
+helpful when working in a team setting. All devices are indexed with a unique
+numeric ID, and has search features that can search your device inventory and
+returns ID's of devices with desired attributes.
 
 #### Features
 
@@ -38,12 +43,24 @@ This is a simple desktop application that assists in Desktop/Laptop/Phone repair
 
 ### Development + Implementation
 
-The simple device repair manager project demonstrates my understanding of object-oriented design, particularly regarding polymorphism and inheritance.
+The simple device repair manager project demonstrates my understanding of
+object-oriented design, particularly regarding polymorphism and inheritance.
 
-The program's core functionality revolves around the three devices, desktops, laptops, and phones. All three inherit from an abstract 'device' class, which encapsulates core functionality that all three instruments share, such as: powering, storage size, operating system, etc. An interface was created to represent mobile devices, also having a battery and screen. Similar abstractions were created with the Java Swing GUI to manage inputs to the device data fields. A full UML of the project can be seen here:
+The program's core functionality revolves around the three devices, desktops,
+laptops, and phones. All three inherit from an abstract 'device' class, which
+encapsulates core functionality that all three instruments share, such as:
+powering, storage size, operating system, etc. An interface was created to
+represent mobile devices, also having a battery and screen. Similar
+abstractions were created with the Java Swing GUI to manage inputs to the
+device data fields. A full UML of the project can be seen here:
 
 ![uml](/projects/device_repair_manager/UML_Design_Diagram.png)
 
-Data persistence was implemented by parsing the objects and storing them in a single JSON. Upon entry into the program, users choose to load an existing JSON file or create a new one.
+Data persistence was implemented by parsing the objects and storing them in a
+single JSON. Upon entry into the program, users choose to load an existing JSON
+file or create a new one.
 
-Simple device repair manager was created using a test-driven development process done using JUnit. The backend code boasts a 100% code coverage score; however, unit tests were not made for the frontend code due to complexity and time constraints.
+Simple device repair manager was created using a test-driven development
+process done using JUnit. The backend code boasts a 100% code coverage score;
+however, unit tests were not made for the frontend code due to complexity and
+time constraints.

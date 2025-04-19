@@ -23,10 +23,19 @@ demoImages:
 - /projects/bermuda/boss-2.png
 ---
 
-An expedition team never returned from exploring an unknown area at the bottom of the ocean. You are dispatched to go investigate. While exploring in your submarine, you’re attacked by a mysterious creature and the submarine is torn apart. You find yourself surrounded by the debris of the expedition team’s submarines and equipment trailing off towards a cave-like entrance
-All you have left is an oxygen tank, an atmospheric diving suit, and a harpoon gun to explore through these caves and figure out what happened.
+An expedition team never returned from exploring an unknown area at the bottom
+of the ocean. You are dispatched to go investigate. While exploring in your
+submarine, you’re attacked by a mysterious creature and the submarine is torn
+apart. You find yourself surrounded by the debris of the expedition team’s
+submarines and equipment trailing off towards a cave-like entrance
+
+All you have left is an oxygen tank, an atmospheric diving suit, and a harpoon
+gun to explore through these caves and figure out what happened.
   
-Bermuda is an underwater roguelike where survival hinges on managing your oxygen supply. Dive deep into procedurally generated challenges, evade dangers, and explore the depths. Built entirely on a custom game engine developed from scratch using C++, OpenGL, CMake, and SDL2.
+Bermuda is an underwater roguelike where survival hinges on managing your
+oxygen supply. Dive deep into procedurally generated challenges, evade dangers,
+and explore the depths. Built entirely on a custom game engine developed from
+scratch using C++, OpenGL, CMake, and SDL2.
 
 ### Credits:
 - Andy Li [@andyyyli](https://github.com/AndyyyLi)
@@ -37,14 +46,17 @@ Bermuda is an underwater roguelike where survival hinges on managing your oxygen
 - Tony Zhang [@TonyZhang1112](https://github.com/TonyZhang1112)
 
 # Requirements
-Most of the requirements have been included as header libaries. The follow may or may not need to be installed
+Most of the requirements have been included as header libaries. The follow may
+or may not need to be installed
 
 ### General requirements:
 - `CMake`
 - `C++14`
 
 ### Windows
-Hitting `Build` within Visual Studio should be enough, but otherwise you may have to install [C++ CMake Tools for Windows](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio#installation)
+Hitting `Build` within Visual Studio should be enough, but otherwise you may
+have to install [C++ CMake Tools for
+Windows](https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio#installation)
 
 ### MacOS
 The following packages (may be) required:

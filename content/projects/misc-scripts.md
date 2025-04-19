@@ -8,17 +8,29 @@ tech:
 
 # Daisy UI Code Mockup Script
 
-Scripts used to generate HTML or JSX to be used within one of Daisy UI's code mockups. These can be seen used throughout my site.
+Scripts used to generate HTML or JSX to be used within one of Daisy UI's code
+mockups. These can be seen used throughout my site.
 
-Also allows for syntax highlighting, which you specify in a .json file named config.json into the sample directory, which store the regex and highlight colour for syntax highlighting. Two categories, keywords and other. Example ReGex are within the configs directory of the GitHub repo, but these .json files need to be renamed and moved in order to work.
+Also allows for syntax highlighting, which you specify in a .json file named
+config.json into the sample directory, which store the regex and highlight
+colour for syntax highlighting. Two categories, keywords and other. Example
+ReGex are within the configs directory of the GitHub repo, but these .json
+files need to be renamed and moved in order to work.
 
 Usage instructions can be found on the GitHub README, linked above.
 
 ### Development + Implementation
 
-I wanted to display the code of some of my simpler projects like scripts within my portfolio site. However, I did not want to include a screenshot of my code, since I appreciate the ability to be able to simply copy + paste code from a website, which that wouldn't allow. I was already using DaisyUI for many of the UI components, and I liked how the code blocks looked and so I chose to use it.
+I wanted to display the code of some of my simpler projects like scripts within
+my portfolio site. However, I did not want to include a screenshot of my code,
+since I appreciate the ability to be able to simply copy + paste code from a
+website, which that wouldn't allow. I was already using DaisyUI for many of the
+UI components, and I liked how the code blocks looked and so I chose to use it.
 
-This is a Python script that analyzes the code in the specified file, and goes line by line converting it into a format that HTML/JSX allows. There is also syntax highlighting, but this was chosen to be ommitted on this site specifically for the sake of smaller packages being sent to the user.
+This is a Python script that analyzes the code in the specified file, and goes
+line by line converting it into a format that HTML/JSX allows. There is also
+syntax highlighting, but this was chosen to be ommitted on this site
+specifically for the sake of smaller packages being sent to the user.
 
 ```python
 import os
@@ -101,7 +113,8 @@ handle_inputs()
 
 # Useful-R-Functions
 
-A collection of R functions that make certain calculations simpler. Built on top of pre-existing R functions. 
+A collection of R functions that make certain calculations simpler. Built on
+top of pre-existing R functions. 
 
 Copy + Paste into RStudio or similar
 
@@ -296,7 +309,8 @@ n_prop <- function(phat, conf_level, me) {
 
 # CLI Pomodoro App
 
-A simple bash pomodoro script for productivity. Feature a clean minimal CLI UI, with progress bar and progress %
+A simple bash pomodoro script for productivity. Feature a clean minimal CLI UI,
+with progress bar and progress %
 
 Use:
 Can be initiated with the following commands:
@@ -309,9 +323,11 @@ Can be initiated with the following commands:
 
 ### Development + Implementation
 
-During my time coding in the terminal with NeoVim, I thought that it would be nice to have my pomodoro app also run within the terminal.
+During my time coding in the terminal with NeoVim, I thought that it would be
+nice to have my pomodoro app also run within the terminal.
 
-Thus I created a simple CLI pomodoro app with bash, so that it could be used within any linux distro without different exports
+Thus I created a simple CLI pomodoro app with bash, so that it could be used
+within any linux distro without different exports
 
 ```shell
 #!/bin/bash

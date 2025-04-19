@@ -9,7 +9,13 @@ tech:
 logo: /projects/findingbarrel.png
 ---
 
-Finding Barrel OS is a microkernel-based operating system designed around a capability-based security model, ensuring fine-grained access control and isolation between processes. Working on this project gave me deep insights into low-level systems programming, memory management, and secure OS design. I gained hands-on experience with kernel development, IPC mechanisms, and designing a minimal yet extensible architecture. This project significantly strengthened my understanding of OS fundamentals and security principles.
+Finding Barrel OS is a microkernel-based operating system designed around a
+capability-based security model, ensuring fine-grained access control and
+isolation between processes. Working on this project gave me deep insights into
+low-level systems programming, memory management, and secure OS design. I
+gained hands-on experience with kernel development, IPC mechanisms, and
+designing a minimal yet extensible architecture. This project significantly
+strengthened my understanding of OS fundamentals and security principles.
 
 ### Paper
 

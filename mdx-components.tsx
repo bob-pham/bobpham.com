@@ -2,6 +2,7 @@ import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 import ProjectHeader from "./components/ProjectHeader";
 import DemoCarousel from "./components/DemoCarousel";
+import JobHistory from "@/components/JobHistory";
 import { Button } from "./components/ui/button";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -54,6 +55,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     iframe: ({ children }) => <iframe className="text-white">{children}</iframe>,
     ProjectHeader,
     DemoCarousel,
+    JobHistory,
     Image,
     ...components,
   };

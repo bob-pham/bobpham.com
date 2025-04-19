@@ -24,7 +24,7 @@ export default function ClientNavbar({
             item="Home"
           ></MenuItem>
         </a>
-        <a href="/">
+        <a href="/aboutme">
           <MenuItem
             setActive={setActive}
             active={active}

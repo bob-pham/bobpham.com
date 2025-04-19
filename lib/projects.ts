@@ -1,22 +1,19 @@
-import { readdir, readFile } from "fs/promises";
+import { readFile } from "fs/promises";
+import { loadFiles } from "@/lib/server-util"
 import matter from "gray-matter";
 import path from "path";
 
 const dir = path.join(process.cwd(), "content/projects");
 
-async function loadFiles() {
-  return (await readdir(dir)).filter((file) => file.endsWith(".md"));
-}
-
 export async function getProjects() {
-  const names = await loadFiles();
+  const names = await loadFiles(dir);
   return names.map((name) => {
     return { slug: path.basename(name, ".md") };
   });
 }
 
 export async function loadMetadata() {
-  const names = await loadFiles();
+  const names = await loadFiles(dir);
   const files = await Promise.all(
     names.map((name) => readFile(path.join(dir, name)))
   );
