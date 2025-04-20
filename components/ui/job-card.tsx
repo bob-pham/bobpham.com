@@ -45,7 +45,7 @@ export default function JobCard({
             )}
           </div>
         </div>
-        {link ? <Button><Link href={link} target="_blank" className="text-white">Read More</Link></Button> : <></>}
+        {link ? <Button className="bg-white text-black"><Link href={link} target="_blank" className="text-slate-900 font-bold no-underline">Read More</Link></Button> : <></>}
       </CardContent>
     </Card>
   );

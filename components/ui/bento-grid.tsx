@@ -71,7 +71,7 @@ export const BentoGridItem = ({
         {link ? (
           <div className="flex justify-start align-middle">
             <a href={link} target="_blank">
-              <Button className="bg-black mt-2 text-white ">Read More</Button>
+              <Button className="bg-white mt-2 text-slate-900 font-bold">Read More</Button>
             </a>
           </div>
         ) : (
