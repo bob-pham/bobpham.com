@@ -4,6 +4,7 @@ import ProjectHeader from "./components/ProjectHeader";
 import DemoCarousel from "./components/DemoCarousel";
 import JobHistory from "@/components/JobHistory";
 import { Button } from "./components/ui/button";
+import LinkBar from "./components/LinkBar";
 
 export function useMDXComponents(components?: MDXComponents): MDXComponents {
   return {
@@ -57,6 +58,7 @@ export function useMDXComponents(components?: MDXComponents): MDXComponents {
     ProjectHeader,
     DemoCarousel,
     JobHistory,
+    LinkBar,
     Image,
     ...components,
   };

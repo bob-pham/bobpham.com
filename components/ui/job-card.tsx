@@ -39,13 +39,31 @@ export default function JobCard({
           </CardDescription>
           <div className="grid place-items-center grid-cols-1 col-span-1 min-h-11/12">
             {logo !== undefined ? (
-              <Image src={logo} alt={name} width={200} height={400} className="bg-white rounded-xl p-3 min-h-11/12"/>
+              <Image
+                src={logo}
+                alt={name}
+                width={200}
+                height={400}
+                className="bg-white rounded-xl p-3 min-h-11/12"
+              />
             ) : (
               <></>
             )}
           </div>
         </div>
-        {link ? <Button className="bg-white text-black"><Link href={link} target="_blank" className="text-slate-900 font-bold no-underline">Read More</Link></Button> : <></>}
+        {link ? (
+          <Button className="bg-white text-black ">
+            <Link
+              href={link}
+              target="_blank"
+              className="hover:text-white text-slate-900 font-bold no-underline"
+            >
+              Read More
+            </Link>
+          </Button>
+        ) : (
+          <></>
+        )}
       </CardContent>
     </Card>
   );

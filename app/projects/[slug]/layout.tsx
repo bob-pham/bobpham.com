@@ -1,5 +1,5 @@
 import NavBar from "@/components/NavBar";
-import "../globals.css";
+import "../../globals.css";
 
 export default function RootLayout({
   children,
@@ -9,9 +9,9 @@ export default function RootLayout({
   return (
     <>
       <link rel="icon" type="image/svg+xml" href="/terminal.png" />
-      <div className="grid place-items-center grid-cols-1 text-white mb-16">
+      <div className="grid place-items-center grid-cols-1 text-white my-16">
         <NavBar className="top-2 z-10" />
-        <div className="w-11/12 md:10/12 rounded-3xl mb-16 px-16 pb-16">
+        <div className="w-10/12 bg-zinc-900 rounded-3xl m-16 p-16 grid place-items-center">
           {children}
         </div>
       </div>

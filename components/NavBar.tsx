@@ -8,3 +8,4 @@ export default async function NavBar({ className }: { className?: string }) {
       <ClientNavbar className={className} projects={projects} />
   );
 }
+
