@@ -3,6 +3,7 @@ import { useMDXComponents } from "@/mdx-components";
 import remarkGfm from "remark-gfm";
 import rehypeStarryNight from "rehype-starry-night";
 import { loadTopLevel } from "@/lib/top-level";
+import { Metadata } from "next";
 
 function RenderMDX({ content }: { content: string }) {
   const components = useMDXComponents();
@@ -29,4 +30,11 @@ export default async function Page() {
 
   return <RenderMDX content={project.content} />;
 }
+export const metadata: Metadata = {
+  title: "Bob Pham - About Me",
+  description: "Bob Pham - About Me",
+  icons: {
+    icon: "/terminal.png",
+  },
+};
 

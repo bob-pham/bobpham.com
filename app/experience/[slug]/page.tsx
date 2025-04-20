@@ -7,6 +7,7 @@ import rehypeStarryNight from "rehype-starry-night";
 function RenderMDX({ content }: { content: string }) {
   const components = useMDXComponents();
   return (
+    <>
     <MDXRemote
       source={content}
       components={components}
@@ -17,6 +18,7 @@ function RenderMDX({ content }: { content: string }) {
         },
       }}
     />
+    </>
   );
 }
 
@@ -33,3 +35,12 @@ export async function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const slug = await params;
+  const experience = await loadExperience(slug.slug);
+
+  return {
+    title: `Bob Pham - ${experience.data.title}`,
+  };
+}

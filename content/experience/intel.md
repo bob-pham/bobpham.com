@@ -1,3 +1,7 @@
+---
+title: Intel
+---
+
 # Intel
 
 ![intel](/logos/intel_logo.png)

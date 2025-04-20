@@ -50,4 +50,14 @@ export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const slug = await params;
+  const project = await loadProject(slug.slug);
+
+  return {
+    title: `Bob Pham - ${project.data.title}`,
+    description: project.data.description ?? "A project on my site",
+  };
+}
+
 export const dynamicParams = false;

@@ -1,3 +1,7 @@
+---
+title: UBC Orbit
+---
+
 # UBC Orbit
 
 ![ubc orbit](/logos/ubc_orbit.png)

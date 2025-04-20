@@ -1,3 +1,7 @@
+---
+title: Invinity Energy Systems
+---
+
 # Invinity Energy Systems
 
 ![invinity](/logos/invinity_energy_systems_logo.svg)

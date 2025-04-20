@@ -3,6 +3,7 @@ import LinkBar from "@/components/LinkBar";
 import Projects from "@/components/Projects";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { Metadata } from "next";
 
 const nameText = [
   {
@@ -40,6 +41,14 @@ const subText = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Bob Pham - Portfolio",
+  description: "Bob Pham - Portfolio",
+  icons: {
+    icon: "/terminal.png",
+  },
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen min-w-full h-full w-full max-w-full">
@@ -59,8 +68,8 @@ export default function Home() {
         </div>
       </div>
       <div className="overflow-y-scroll min-h-fit min-w-screen max-w-full grid place-items-center">
-          <JobHistory />
-          <Projects />
+        <JobHistory />
+        <Projects />
       </div>
     </div>
   );
