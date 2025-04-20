@@ -33,7 +33,7 @@ export default function ClientNavbar({
             item="About Me"
           ></MenuItem>
         </Link>
-        <Link href="/" className="p-4">
+        <Link href="/Bob_Pham_Resume.pdf" target="_" className="p-4">
           <Button className="bg-zinc-900 border-white border rounded-3xl">
             Download CV
           </Button>
@@ -47,7 +47,7 @@ export default function ClientNavbar({
             ))}
           </div>
         </MenuItem>
-        <Link href="/">
+        <Link href="/blog">
           <MenuItem
             setActive={setActive}
             active={active}

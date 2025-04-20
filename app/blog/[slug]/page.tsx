@@ -3,7 +3,6 @@ import { useMDXComponents } from "@/mdx-components";
 import remarkGfm from "remark-gfm";
 import rehypeStarryNight from "rehype-starry-night";
 import ProjectHeader from "@/components/ProjectHeader";
-import DemoCarousel from "@/components/DemoCarousel";
 import { getBlog, loadBlog } from "@/lib/blog";
 
 function RenderMDX({ content }: { content: string }) {
@@ -37,6 +36,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         startDate={blog.data.startDate}
         endDate={blog.data.endDate}
       />
+      <RenderMDX content={blog.content} />
     </>
   );
 }
