@@ -6,7 +6,7 @@ import TechCard from "./TechCard";
 
 const projects = "/projects/projects.png";
 
-function formatDate(startDate: string | null, endDate: string | null) {
+function formatDate(startDate: string | undefined, endDate: string | undefined) {
   if (!startDate) {
     return "";
   }
@@ -26,7 +26,7 @@ function formatDate(startDate: string | null, endDate: string | null) {
     "Nov",
     "Dec",
   ];
-  let start = `${mths[date.getMonth()]} ${date.getFullYear()}`;
+  const start = `${mths[date.getMonth()]} ${date.getFullYear()}`;
   let end = "Present";
 
   if (endDate != null) {

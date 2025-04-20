@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,7 +19,7 @@ export const MenuItem = ({
   item,
   children,
 }: {
-  setActive: (item: string) => void;
+  setActive: (item: string | null) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
@@ -106,6 +106,7 @@ export const ProductItem = ({
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link

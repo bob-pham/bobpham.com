@@ -8,21 +8,22 @@ export const EvervaultCard = ({
   children,
   className,
 }: {
-  children?: any;
+  children?: React.ReactNode;
   className?: string;
 }) => {
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    let str = generateRandomString(3000);
+    const str = generateRandomString(3000);
     setRandomString(str);
   }, []);
 
-  function onMouseMove({ currentTarget, clientX, clientY }: any) {
-    let { left, top } = currentTarget.getBoundingClientRect();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function onMouseMove({ currentTarget, clientX, clientY }: {currentTarget: any; clientX: number; clientY: number;}) {
+    const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
@@ -56,9 +57,10 @@ export const EvervaultCard = ({
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
-  let style = { maskImage, WebkitMaskImage: maskImage };
+  const maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
     <div className="pointer-events-none">
@@ -89,6 +91,7 @@ export const generateRandomString = (length: number) => {
   return result;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Icon = ({ className, ...rest }: any) => {
   return (
     <svg

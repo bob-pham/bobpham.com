@@ -5,7 +5,7 @@ import DemoCarousel from "./components/DemoCarousel";
 import JobHistory from "@/components/JobHistory";
 import { Button } from "./components/ui/button";
 
-export function useMDXComponents(components: MDXComponents): MDXComponents {
+export function useMDXComponents(components?: MDXComponents): MDXComponents {
   return {
     h1: ({ children }) => (
       <h1 className="text-4xl font-bold text-center my-2 text-white">
@@ -44,6 +44,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     button: ({ children }) => <Button>{children}</Button>,
     a: ({ children }) => <a className="text-white" target="_blank">{children}</a>,
     code: ({ children }) => <code className="text-white">{children}</code>,
+    blockquote: ({ children }) => <blockquote className="text-white">{children}</blockquote>,
     img: (props) => (
         <Image
           width={800}

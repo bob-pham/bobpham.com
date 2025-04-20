@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function LinkBar() {
   return (
     <div className="grid place-items-center">
       <div className="flex space-x-10 place-items-center px-4 size-fit">
-        <a
+        <Link
           href="mailto:bobbaopham@gmail.com"
           className="bg-white grid place-items-center rounded-full"
         >
@@ -18,8 +19,8 @@ export default function LinkBar() {
               className="place-self-center"
             />
           </Button>
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.linkedin.com/in/bobpham/"
           target="_"
           className="bg-white grid place-items-center rounded-full"
@@ -33,8 +34,8 @@ export default function LinkBar() {
               className="place-self-center"
             />
           </Button>
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://github.com/bob-pham"
           target="_"
           className="bg-white grid place-items-center rounded-full"
@@ -48,8 +49,8 @@ export default function LinkBar() {
               className="place-self-center"
             />
           </Button>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           target="_"
           className="bg-white grid place-items-center rounded-full"
@@ -63,7 +64,7 @@ export default function LinkBar() {
               className="place-self-center"
             />
           </Button>
-        </a>
+        </Link>
 
       </div>
     </div>

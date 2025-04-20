@@ -1,11 +1,8 @@
 import JobHistory from "@/components/JobHistory";
 import LinkBar from "@/components/LinkBar";
-import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
-import { EvervaultCard } from "@/components/ui/evervault-card";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-import Image from "next/image";
 
 const nameText = [
   {
@@ -45,7 +42,7 @@ const subText = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-full h-full w-full">
+    <div className="min-h-screen min-w-full h-full w-full max-w-full">
       <div className="min-h-screen h-full grid place-items-center">
         <Spotlight />
         <div className=" p-4 max-w-7xl  mx-auto relative z-5  w-full pt-20 md:pt-0 grid place-items-center">
@@ -61,7 +58,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="overflow-y-scroll min-h-fit min-w-screen grid place-items-center">
+      <div className="overflow-y-scroll min-h-fit min-w-screen max-w-full grid place-items-center">
           <JobHistory />
           <Projects />
       </div>

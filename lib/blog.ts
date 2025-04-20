@@ -2,18 +2,24 @@ import { readFile } from "fs/promises";
 import { loadFiles } from "@/lib/server-util"
 import matter from "gray-matter";
 import path from "path";
-import { ProjectMetadata } from "@/types/Project";
+import { BlogMetadata } from "@/types/Blog";
 
-const dir = path.join(process.cwd(), "content/projects");
+const dir = path.join(process.cwd(), "content/blog");
+const parent_dir = path.join(process.cwd(), "content/");
 
-export async function getProjects() {
+export async function getBlog() {
   const names = await loadFiles(dir);
   return names.map((name) => {
     return { slug: path.basename(name, ".md") };
   });
 }
 
-export async function loadMetadata(): Promise<ProjectMetadata[]> {
+export async function loadBlogHome() {
+  const file = await readFile(path.join(parent_dir, "blog.md"), "utf8");
+  return matter(file);
+}
+
+export async function loadAllPosts(): Promise<BlogMetadata[]> {
   const names = await loadFiles(dir);
   const files = await Promise.all(
     names.map((name) => readFile(path.join(dir, name)))
@@ -27,7 +33,7 @@ export async function loadMetadata(): Promise<ProjectMetadata[]> {
     });
 }
 
-export async function loadProject(slug: string) {
+export async function loadBlog(slug: string) {
   const file = await readFile(path.join(dir, slug + ".md"), "utf8");
   return matter(file);
 }

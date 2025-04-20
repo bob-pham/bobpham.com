@@ -6,6 +6,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { Button } from "./button";
+import Link from "next/link";
 
 export default function JobCard({
   name,
@@ -13,15 +15,17 @@ export default function JobCard({
   description,
   date,
   logo,
+  link,
 }: {
-  name?: string;
+  name: string;
   position?: string;
   description?: string;
   date?: string;
   logo?: string;
+  link?: string;
 }) {
   return (
-    <Card className="w-10/12 bg-zinc-900 text-white my-4">
+    <Card className="w-10/12 bg-zinc-900 text-white my-4 max-w-full">
       <CardHeader>
         <CardTitle>
           {name} - {position}
@@ -41,6 +45,7 @@ export default function JobCard({
             )}
           </div>
         </div>
+        {link ? <Button><Link href={link} target="_blank" className="text-white">Read More</Link></Button> : <></>}
       </CardContent>
     </Card>
   );

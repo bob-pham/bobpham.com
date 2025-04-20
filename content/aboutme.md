@@ -15,4 +15,4 @@ Outside of work, you’ll find me snowboarding, hiking, messing with Minecraft
 redstone contraptions, or climbing the StarCraft II ladder. I’m always chasing
 mastery—whether in code, competition, or life.
 
-<JobHistory />
+<JobHistory></JobHistory>

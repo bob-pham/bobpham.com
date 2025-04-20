@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+import { ProjectMetadata } from "@/types/Project";
+import Link from "next/link";
 
 export default function ClientNavbar({
   className,
   projects,
 }: {
   className?: string;
-  projects: any;
+  projects: ProjectMetadata[];
 }) {
   const [active, setActive] = useState<string | null>(null);
   return (
@@ -17,41 +19,41 @@ export default function ClientNavbar({
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu>
-        <a href="/">
+        <Link href="/">
           <MenuItem
             setActive={setActive}
             active={active}
             item="Home"
           ></MenuItem>
-        </a>
-        <a href="/aboutme">
+        </Link>
+        <Link href="/aboutme">
           <MenuItem
             setActive={setActive}
             active={active}
             item="About Me"
           ></MenuItem>
-        </a>
-        <a href="/" className="p-4">
+        </Link>
+        <Link href="/" className="p-4">
           <Button className="bg-zinc-900 border-white border rounded-3xl">
             Download CV
           </Button>
-        </a>
+        </Link>
         <MenuItem setActive={setActive} active={active} item="Projects">
           <div className="flex flex-col space-y-4 text-sm p-4">
-            {projects.map((project: any, i: number) => (
+            {projects.map((project: ProjectMetadata, i: number) => (
               <HoveredLink href={`/projects/${project.link}`} key={i}>
                 {project.title}
               </HoveredLink>
             ))}
           </div>
         </MenuItem>
-        <a href="/">
+        <Link href="/">
           <MenuItem
             setActive={setActive}
             active={active}
             item="Blog"
           ></MenuItem>
-        </a>
+        </Link>
       </Menu>
     </div>
   );
