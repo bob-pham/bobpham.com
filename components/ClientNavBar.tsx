@@ -4,7 +4,6 @@ import {
   Navbar,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -131,9 +130,8 @@ export function MobileNavBar() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <Button className="bg-white w-full">
+              <Button className="bg-white w-full" key={`mobile-link-${idx}`}>
                 <Link
-                  key={`mobile-link-${idx}`}
                   href={item.link}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="relative text-black font-bold no-underline"
