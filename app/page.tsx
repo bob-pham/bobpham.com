@@ -56,7 +56,7 @@ export default function Home() {
         <Spotlight />
         <div className=" p-4 max-w-7xl  mx-auto relative z-5  w-full pt-20 md:pt-0 grid place-items-center">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            <TypewriterEffectSmooth words={nameText} />
+            <TypewriterEffectSmooth words={nameText} size="large"/>
           </h1>
           <TypewriterEffectSmooth words={subText} />
           <div className="w-full flex items-center justify-center text-white grid grid-cols-1">

@@ -113,7 +113,7 @@ export function MobileNavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full top-10 inset-x-0 max-w-2xl mx-auto z-50 rounded-full border bg-zinc-900 text-white border-white/[0.2] shadow-input flex justify-center space-x-12 px-4 md:hidden">
+    <div className="fixed w-full top-10 inset-x-0 max-w-2xl mx-auto z-50 rounded-full border bg-zinc-900 text-white border-white/[0.2] shadow-input flex justify-center space-x-12 md:hidden">
       <Navbar className="top-10 inset-x-0 max-w-2xl mx-auto z-50">
         {/* Mobile Navigation */}
         <MobileNav>
